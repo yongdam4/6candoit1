@@ -1,0 +1,155 @@
+@charset "UTF-8";
+body {
+  margin: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+input[type=radio]{  
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #12690b;
+  border-radius: 50%;
+  outline: none; 
+}
+
+input[type=radio]:checked{  
+  background-color: #12690b;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 0 2px #12690b;
+}
+
+.signup {
+  font-family: "Roboto", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  background: #F2F4F8;
+  border-radius: 10px;  
+  min-height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.id-text {
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 16px;
+  color: #000000;
+}
+
+.input-box{
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  height: 5vh;
+  width: 50vh;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder{
+  color: #d9d9d9;
+}
+
+button{  
+  background: #ffffff;
+  outline: none;
+  border: 2px #525252 solid;
+}
+
+.id-check-text, .pwd-check-text{
+  text-align: center;
+  font-size: 12px;
+}
+
+.checknumber-button{
+  width: 100px;
+
+}
+
+.cell-detail{
+  text-align: center;
+}
+
+tr, td{
+  min-width: 110px;
+  height: 40px;
+}
+
+.gender-box{  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.gender-box label{
+  margin-right: 80px;
+  display: flex;
+  align-items: center;  
+}
+
+.gender-box label:last-child{
+  margin-right: 0;
+}
+
+.signup-text{
+  font-family: "Noto Sans KR", sans-serif;  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.id-check-btn{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background: #d4f7bc;
+  border: #b0d198 1px solid;
+  font-size: 18px;
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.checknumber-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+  background: #d4f7bc;
+  border: #b0d198 1px solid;
+  font-size: 18px;
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.signup-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  background: #d4f7bc;
+  border: #b0d198 1px solid;
+  font-size: 18px;
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

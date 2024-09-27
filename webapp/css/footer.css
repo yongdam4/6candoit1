@@ -1,0 +1,75 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+  max-height: 150px;
+  width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #edf8e8;
+}
+
+ .footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 7px 150px;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+}
+
+.company,
+.ceo,
+.worker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.CEO,
+.worker div {
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #12690b;
+  white-space: nowrap;  
+}
+
+.foodpia {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #12690b;   
+  white-space: nowrap;
+  font-size: 32px;
+}
+
+.CEO,
+.worker div {
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.worker div{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footerbottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 30px;
+  width: 100%;
+}
+
+.url {
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 16px;
+  color: #12690b;
+  text-align: center;
+}
