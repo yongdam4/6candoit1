@@ -12,5 +12,5 @@
 3. main에 push하기위한 순서를 반드시 지킬 것
    1)  위 1.을 했다면 작업한 내용을 소스트리에서 본인명으로된 브랜치(branch)를 선택 후 본인의 깃허브 브랜치(branch)에 커밋 or push할 것
    2)  소스트리의 main 브랜치(branch)를 선택 후 본인의 깃허브 브랜치(branch)에서 작업한 내용을 pull(가져오기)함.
-   3)  pull한 후 main 깃허브 브랜치(branch)에 다시 push하기
+   3)  pull을 한 뒤 main 깃허브 브랜치(branch)에 다시 push하기
    4)  위 과정을 반복하기
