@@ -7,39 +7,39 @@ public class Member {
 	private String userPwd;
 	private String userName;
 	private String gender;
-	private String userAge;
+	private int age;
 	private String email;
 	private String phone;
-	private Date enrollDate;
 	private String address;
+	private Date enrollDate;
 	private String grade;
-	private String adminGrade;
+	private String admingrade;
 	private int userCoin;
-	private String deluserFlag;
-	private Date  deluserDate;
+	private Date deleteDate;
+	private String delFlag;
 	
 	public Member() {
 		super();
 	}
 
-	public Member(String userId, String userPwd, String userName, String gender, String userAge, String email,
-			String phone, Date enrollDate, String address, String grade, String adminGrade, int userCoin,
-			String deluserFlag, Date deluserDate) {
+	public Member(String userId, String userPwd, String userName, String gender, int age, String email, String phone,
+			String address, Date enrollDate, String grade, String admingrade, int userCoin, Date deleteDate,
+			String delFlag) {
 		super();
 		this.userId = userId;
 		this.userPwd = userPwd;
 		this.userName = userName;
 		this.gender = gender;
-		this.userAge = userAge;
+		this.age = age;
 		this.email = email;
 		this.phone = phone;
-		this.enrollDate = enrollDate;
 		this.address = address;
+		this.enrollDate = enrollDate;
 		this.grade = grade;
-		this.adminGrade = adminGrade;
+		this.admingrade = admingrade;
 		this.userCoin = userCoin;
-		this.deluserFlag = deluserFlag;
-		this.deluserDate = deluserDate;
+		this.deleteDate = deleteDate;
+		this.delFlag = delFlag;
 	}
 
 	public String getUserId() {
@@ -74,12 +74,12 @@ public class Member {
 		this.gender = gender;
 	}
 
-	public String getUserAge() {
-		return userAge;
+	public int getAge() {
+		return age;
 	}
 
-	public void setUserAge(String userAge) {
-		this.userAge = userAge;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	public String getEmail() {
@@ -98,20 +98,20 @@ public class Member {
 		this.phone = phone;
 	}
 
-	public Date getEnrollDate() {
-		return enrollDate;
-	}
-
-	public void setEnrollDate(Date enrollDate) {
-		this.enrollDate = enrollDate;
-	}
-
 	public String getAddress() {
 		return address;
 	}
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public Date getEnrollDate() {
+		return enrollDate;
+	}
+
+	public void setEnrollDate(Date enrollDate) {
+		this.enrollDate = enrollDate;
 	}
 
 	public String getGrade() {
@@ -122,12 +122,12 @@ public class Member {
 		this.grade = grade;
 	}
 
-	public String getAdminGrade() {
-		return adminGrade;
+	public String getAdmingrade() {
+		return admingrade;
 	}
 
-	public void setAdminGrade(String adminGrade) {
-		this.adminGrade = adminGrade;
+	public void setAdmingrade(String admingrade) {
+		this.admingrade = admingrade;
 	}
 
 	public int getUserCoin() {
@@ -138,31 +138,28 @@ public class Member {
 		this.userCoin = userCoin;
 	}
 
-	public String getDeluserFlag() {
-		return deluserFlag;
+	public Date getDeleteDate() {
+		return deleteDate;
 	}
 
-	public void setDeluserFlag(String deluserFlag) {
-		this.deluserFlag = deluserFlag;
+	public void setDeleteDate(Date deleteDate) {
+		this.deleteDate = deleteDate;
 	}
 
-	public Date getDeluserDate() {
-		return deluserDate;
+	public String getDelFlag() {
+		return delFlag;
 	}
 
-	public void setDeluserDate(Date deluserDate) {
-		this.deluserDate = deluserDate;
+	public void setDelFlag(String delFlag) {
+		this.delFlag = delFlag;
 	}
 
 	@Override
 	public String toString() {
 		return "Member [userId=" + userId + ", userPwd=" + userPwd + ", userName=" + userName + ", gender=" + gender
-				+ ", userAge=" + userAge + ", email=" + email + ", phone=" + phone + ", enrollDate=" + enrollDate
-				+ ", address=" + address + ", grade=" + grade + ", adminGrade=" + adminGrade + ", userCoin=" + userCoin
-				+ ", deluserFlag=" + deluserFlag + ", deluserDate=" + deluserDate + "]";
+				+ ", age=" + age + ", email=" + email + ", phone=" + phone + ", address=" + address + ", enrollDate="
+				+ enrollDate + ", grade=" + grade + ", admingrade=" + admingrade + ", userCoin=" + userCoin
+				+ ", deleteDate=" + deleteDate + ", delFlag=" + delFlag + "]";
 	}
-	
-	
-	
 	
 }

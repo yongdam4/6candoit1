@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
-<welcome-file-list>
+  <welcome-file-list>
     <welcome-file>MainPage.html</welcome-file>
     <welcome-file>MainPage.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>admin.do</display-name>
+    <servlet-name>admin.do</servlet-name>
+    <servlet-class>com.semi.member.controller.AdminMemberLoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>admin.do</servlet-name>
+    <url-pattern>/admin.do</url-pattern>
+  </servlet-mapping>
 </web-app>
