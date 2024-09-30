@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/globals.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/FindId1.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/styleguide.css" />
+    <link rel="stylesheet" href="../css/FindId1.css" />
 </head>
 
 <body>

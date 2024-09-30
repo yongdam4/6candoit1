@@ -4,7 +4,7 @@ body {
     height: 100%;
 }
 
-.find-id {
+.find-pwd {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -14,7 +14,7 @@ body {
     background-color: #ffffff;
 }
 
-.find-id .header {
+.find-pwd .header {
     display: flex;
     flex-direction: column;
     max-height: 150px;
@@ -27,7 +27,7 @@ body {
     background-color: #ffffff;
 }
 
-.find-id .top {
+.find-pwd .top {
     display: flex;
     height: 75px;
     align-items: center;
@@ -39,7 +39,7 @@ body {
     background-color: #ffffff;
 }
 
-.find-id .home-button {
+.find-pwd .home-button {
     display: flex;
     max-width: 150px;
     align-items: center;
@@ -51,7 +51,7 @@ body {
     flex-grow: 1;
 }
 
-.find-id .text-wrapper {
+.find-pwd .text-wrapper {
     position: relative;
     flex: 1;
     align-self: stretch;
@@ -65,7 +65,7 @@ body {
     line-height: 26.4px;
 }
 
-.find-id .search-bar {
+.find-pwd .search-bar {
     display: flex;
     max-width: 550px;
     align-items: center;
@@ -82,7 +82,7 @@ body {
     flex-grow: 1;
 }
 
-.find-id .search-icon {
+.find-pwd .search-icon {
     max-width: 45px;
     max-height: 45px;
     position: relative;
@@ -91,7 +91,7 @@ body {
     flex-grow: 1;
 }
 
-.find-id .div-wrapper {
+.find-pwd .div-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +102,7 @@ body {
     flex-grow: 1;
 }
 
-.find-id .div {
+.find-pwd .div {
     position: relative;
     flex: 1;
     align-self: stretch;
@@ -115,7 +115,7 @@ body {
     line-height: 20px;
 }
 
-.find-id .cart-login {
+.find-pwd .cart-login {
     display: flex;
     min-width: 250px;
     max-width: 250px;
@@ -128,7 +128,7 @@ body {
     background-color: #ffffff;
 }
 
-.find-id .shoppin-cart-button {
+.find-pwd .shoppin-cart-button {
     display: flex;
     max-width: 150px;
     align-items: center;
@@ -139,7 +139,7 @@ body {
     border-radius: 100px;
 }
 
-.find-id .shopping-cart-icon {
+.find-pwd .shopping-cart-icon {
     max-width: 40px;
     width: 40px;
     max-height: 40px;
@@ -147,7 +147,7 @@ body {
     align-self: stretch;
 }
 
-.find-id .shopping-cart-text {
+.find-pwd .shopping-cart-text {
     display: flex;
     max-width: 200px;
     align-items: center;
@@ -159,7 +159,7 @@ body {
     align-self: stretch;
 }
 
-.find-id .text-wrapper-2 {
+.find-pwd .text-wrapper-2 {
     position: relative;
     flex: 1;
     height: 43px;
@@ -172,7 +172,7 @@ body {
     line-height: 17.6px;
 }
 
-.find-id .login-button {
+.find-pwd .login-button {
     display: flex;
     max-width: 120px;
     align-items: center;
@@ -184,13 +184,13 @@ body {
     align-self: stretch;
 }
 
-.find-id .login-icon {
+.find-pwd .login-icon {
     width: 45px;
     position: relative;
     align-self: stretch;
 }
 
-.find-id .login-text {
+.find-pwd .login-text {
     display: flex;
     max-width: 60px;
     align-items: center;
@@ -202,7 +202,7 @@ body {
     align-self: stretch;
 }
 
-.find-id .text-wrapper-3 {
+.find-pwd .text-wrapper-3 {
     position: relative;
     flex: 1;
     font-family: "Roboto-Regular", Helvetica;
@@ -214,7 +214,7 @@ body {
     line-height: 17.6px;
 }
 
-.find-id .menu {
+.find-pwd .menu {
     display: flex;
     height: 75px;
     align-items: center;
@@ -226,7 +226,7 @@ body {
     align-self: stretch;
 }
 
-.find-id .category-button {
+.find-pwd .category-button {
     display: flex;
     min-width: 150px;
     max-width: 200px;
@@ -244,7 +244,7 @@ body {
     -webkit-backdrop-filter: blur(4px) brightness(100%);
 }
 
-.find-id .img {
+.find-pwd .img {
     flex: 1;
     max-width: 50px;
     flex-grow: 1;
@@ -253,7 +253,7 @@ body {
     align-self: stretch;
 }
 
-.find-id .text-wrapper-4 {
+.find-pwd .text-wrapper-4 {
     position: relative;
     flex: 1;
     align-self: stretch;
@@ -267,7 +267,7 @@ body {
     line-height: 20px;
 }
 
-.find-id .div-wrapper-2 {
+.find-pwd .div-wrapper-2 {
     display: flex;
     max-width: 130px;
     align-items: center;
@@ -278,7 +278,7 @@ body {
     flex-grow: 1;
 }
 
-.find-id .text-wrapper-5 {
+.find-pwd .text-wrapper-5 {
     position: relative;
     flex: 1;
     align-self: stretch;
@@ -292,7 +292,7 @@ body {
     line-height: 16px;
 }
 
-.find-id .body {
+.find-pwd .body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,8 +304,7 @@ body {
     padding: 50px 900px 50px;
 
 }
-
-.find-id .find-Id-form {
+.find-pwd .Change-Pwd-form {
     display: flex;
     flex-direction: column;
     /* 세로 방향으로 정렬 */
@@ -321,8 +320,7 @@ body {
     border-radius: 10px;
 
 }
-
-.find-id .find-Id-text {
+.find-pwd .Change-Pwd-text {
     background-color: #f2f4f8;
     width: 100%;
     height: 25%;
@@ -341,7 +339,8 @@ body {
     padding: 20px;
 }
 
-.find-id .mid {
+
+.find-pwd .mid {
 
     width: 90%;
     height: 80%;
@@ -350,8 +349,8 @@ body {
     padding-bottom: 30px;
 }
 
-.find-id .name-function,
-.find-id .phone-function {
+.find-pwd .New-Pwd,
+.find-pwd .New-Pwd-re {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -361,8 +360,9 @@ body {
 
 }
 
-.find-id .name-blank,
-.find-id .phone-blank {
+
+.find-pwd .New-Pwd-Blank,
+.find-pwd .New-Pwd-Blank-re {
 
     display: flex;
     align-items: center;
@@ -399,7 +399,7 @@ input::placeholder {
     border-color: #12690b;
 }
 
-.find-id .find-button {
+.find-pwd .find-button {
     width: 100%;
     height: 20%;
     padding: 20px;
@@ -415,172 +415,26 @@ input::placeholder {
 }
 
 
-
-.find-id .footer {
-    position: relative;
-    align-self: stretch;
+.find-pwd .footer {
     width: 100%;
     height: 150px;
     background-color: #edf8e8;
-}
-
-.find-id .top-2 {
-    position: absolute;
-    width: 1440px;
-    height: 98px;
-    top: 1px;
-    left: 0;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-color: #d9d9d9;
-}
-
-.find-id .company {
-    position: absolute;
-    width: 425px;
-    height: 84px;
-    top: 7px;
-    left: 150px;
-}
-
-.find-id .foodpia {
-    position: absolute;
-    height: 26px;
-    top: 28px;
-    left: 0;
+  }
+  
+  .find-pwd .company .foodpia,
+  .find-pwd .ceo .CEO,
+  .find-pwd .worker .JM,
+  .find-pwd .worker .YD,
+  .find-pwd .worker .HS,
+  .find-pwd .worker .JH,
+  .find-pwd .worker .SH {
     font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: 26.4px;
-    white-space: nowrap;
-}
-
-.find-id .ceo {
-    position: absolute;
-    width: 250px;
-    height: 84px;
-    top: 7px;
-    left: 595px;
-}
-
-.find-id .CEO {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 0;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
     font-size: 16px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .worker {
-    position: absolute;
-    width: 425px;
-    height: 84px;
-    top: 7px;
-    left: 865px;
-}
-
-.find-id .JM {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 19px;
+  }
+  
+  .find-pwd .url {
     font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .YD {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 105px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .HS {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 191px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .JH {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 277px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .SH {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 363px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .URL-wrapper {
-    position: absolute;
-    width: 1440px;
-    height: 50px;
-    top: 99px;
-    left: 0;
-}
-
-.find-id .URL {
-    position: absolute;
-    height: 20px;
-    top: 14px;
-    left: 30px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
     font-size: 14px;
-    letter-spacing: 0;
-    line-height: 19.6px;
-    white-space: nowrap;
-}
+    color: #000;
+  }
