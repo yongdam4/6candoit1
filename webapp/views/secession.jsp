@@ -9,7 +9,7 @@
 	<!-- css -->
 	<link rel="stylesheet" href="../css/globals.css" /> 
     <link rel="stylesheet" href="../css/styleguide.css" />
-    <link rel="stylesheet" href="../css/inquiry.css" />
+    <link rel="stylesheet" href="../css/secession.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +18,10 @@
 </head>
 <body>
 
-    <div class="inquiry"> 회원탈퇴 </div>
+    <div class="secession"> 회원탈퇴 </div>
     
-    <div class="inquiry-content">
-        <div class="inquiry-user-info">
+    <div class="secession-content">
+        <div class="secession-user-info">
             <div class="input-group">
                 <label for="user-id">탈퇴할 회원의 아이디</label> <br>
                 <input id="user-id" type="text" placeholder="탈퇴할 아이디 입력" />
@@ -43,7 +43,7 @@
             </div>
         </div>        
     
-        <div class="inquiry-reason">
+        <div class="secession-reason">
             <label class="reason-text">탈퇴 사유</label>
             <div class="reason-option">
                 <input type="radio" name="reason" id="reason-1" />
