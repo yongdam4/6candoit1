@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 	
 	<!-- css -->
-	<link rel="stylesheet" href="../css/footercopy.css">
+	<link rel="stylesheet" href="../css/">
     <link rel="stylesheet" href="../css/globals.css">
     <link rel="stylesheet" href="../css/styleguide.css">
 
