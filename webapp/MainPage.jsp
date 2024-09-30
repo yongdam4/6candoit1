@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -34,12 +34,15 @@
             <div class="text-wrapper-4">카테고리</div>
           </div>
           <div class="navbar">
-            <div class="text-wrapper-5">이벤트</div>
-            <div class="text-wrapper-5">인기상품</div>
-            <div class="text-wrapper-5">럭키박스</div>
-            <div class="text-wrapper-5">문의</div>
-            <div class="text-wrapper-5">관리자</div>
-          </div>
+  			<div class="text-wrapper-5">이벤트</div>
+  			<div class="text-wrapper-5">인기상품</div>
+  			<div class="text-wrapper-5">럭키박스</div>
+  			<div class="text-wrapper-5">문의</div>
+  			<!-- 관리자 버튼에 링크 추가 -->
+  			<a href="admin.do">
+    			<div class="text-wrapper-5">관리자</div>
+  			</a>
+			</div>
         </div>
       </header>
       <div class="body-footer">
