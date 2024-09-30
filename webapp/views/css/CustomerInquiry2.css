@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.customer-management {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.head-button {
+    background-color: #edf8e8;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.head-button:hover {
+    background-color: #dceed4;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #edf8e8;
+    padding: 10px 0;
+}
+
+.text-wrapper {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 32px;
+    text-align: center;
+}
+
+.top-2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 50px 0 10px;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+}
+
+.text-wrapper-2 {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+}
+
+.bottom {
+    width: 50%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.input-cell input,
+.input-cell textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.product-table td {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .bottom button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

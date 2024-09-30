@@ -1,0 +1,119 @@
+@charset "UTF-8";
+.member-management {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.head-button {
+    background-color: #edf8e8;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 24px;
+    border: 1px solid #edf8e8;
+    padding: 10px;
+    width: 100%;
+}
+
+.head-button:hover {
+    background-color: #dceed4;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #edf8e8;
+    padding: 10px 0;
+}
+
+.text-wrapper {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 32px;
+    text-align: center;
+}
+
+.text-wrapper-2 {
+    font-weight: 700;
+    font-size: 32px;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.body {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.dropdown-toggle, .search-button {
+    width: 100px;
+}
+
+.form-control {
+    width: 500px;
+    min-width: 200px;
+}
+
+.bottom {
+    padding: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* 버튼을 오른쪽 정렬 */
+    margin-top: 10px; /* 표와 버튼 사이 간격 조정 */
+}
+
+.member-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text-wrapper {
+        font-size: 24px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}

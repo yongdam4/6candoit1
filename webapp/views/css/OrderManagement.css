@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.member-management {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.member-management .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.member-management .head-button {
+    background-color: #edf8e8;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 24px;
+    border: 1px solid #edf8e8;
+    padding: 10px;
+    width: 100%;
+}
+.member-management .head-button:hover {
+    background-color: #dceed4;
+}
+
+.member-management .menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #edf8e8;
+    padding: 10px 0;
+}
+
+.member-management .admin-page .text-wrapper {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.member-management .top-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 50px;
+    width: 100%;
+}
+
+.member-management .body {
+    flex: 1;
+    padding: 0px 20px 20px 20px;
+    background-color: #ffffff;
+}
+
+.member-management .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+.member-management .dropdown-toggle, .search-button {
+    width: 100px;
+}
+
+.member-management .form-control {
+    width: 500px;
+    min-width: 200px;
+}
+
+.member-management .bottom {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.member-management .member-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Flexbox를 사용해 가로로 정렬 */
+.member-management .order-state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.member-management .order-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.member-management .check-state, .total-order-amount {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.member-management .cancel-button {
+    margin-left: auto; /* 오른쪽으로 이동 */
+    width: 150px;
+    display: flex; /* 버튼을 중앙 정렬 */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+}
+
+@media (max-width: 768px) {
+    .member-management .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .member-management .text-wrapper {
+        font-size: 24px;
+    }
+
+    .member-management .form-control {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-management .search-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .member-management .form-control {
+        width: 100%;
+    }
+}

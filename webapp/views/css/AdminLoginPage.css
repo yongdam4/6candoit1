@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.admin-login-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.text-wrapper {
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 700;
+  color: #12690b;
+  font-size: 40px;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 230px;
+  width: 100%;
+}
+
+.div-wrapper {
+  padding: 10px;
+  width: 100%;
+}
+
+.div {
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 84px;
+  text-align: center;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  width: 100%;
+}
+
+.login-button {
+  font-size: 48px;
+  width: 200px;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .text-wrapper {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-wrapper {
+    font-size: 24px;
+  }
+}
