@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/AdminLoginPage.css">
   </head>
   <body>
+  <form action="login.me" method="post">
     <div class="admin-login-page">
       <header class="header">
         <div class="top">
@@ -30,5 +31,6 @@
         </div>
       </div>
     </div>
+    </form>
   </body>
 </html>
