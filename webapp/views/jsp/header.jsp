@@ -10,9 +10,9 @@
 <title>Insert title here</title>
 
 	<!-- css -->
-    <link rel="stylesheet" href="../css/header.css">    
-    <link rel="stylesheet" href="../css/styleguide.css">
-    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="<%=path%>/views/css/header.css">    
+    <link rel="stylesheet" href="<%=path %>/views/css/styleguide.css">
+    <link rel="stylesheet" href="<%=path %>/views/css/globals.css">
     
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +47,13 @@
     </div>
   </c:otherwise>
 
-  
 
  <div class="header-mid">
     <button class="home-button"><a href="">푸드피아</a></button>
 
       <div class="search-bar">
         <button type="submit" class="search-icon-blank">
-          <img class="search-icon" src="../img/img-search-icon.svg" />
+          <img class="search-icon" src="<%=path%>/views/img/img-search-icon.svg" />
         </button>      
         <input type="text" class="search-input-blank" placeholder="검색어를 입력하세요.">      
       </div>
@@ -68,7 +67,7 @@
   
         <button>
           <a href="">
-            <img src="../img/mypage-icon.svg">              
+            <img src="<%=path%>/views/img/mypage-icon.svg">              
           </a>              
         </button>
       </div>      
@@ -77,7 +76,7 @@
 
   <div class="menu">
     <div class="category-button">
-      <img class="img" src="../img/img-menu.svg "/>
+      <img class="img" src="<%=path%>/views/img/img-menu.svg">
       <div class="category">카테고리</div>
     </div>
     <div class="menu-list">

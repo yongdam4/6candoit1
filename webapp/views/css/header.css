@@ -84,8 +84,9 @@ input::placeholder {
   width: 50px;
   align-items: center;
   justify-content: center;  
-  gap: 40px;  
+  gap: 40px;
   flex-grow: 0;
+  margin-left: 10px;
   position: relative;
 }
 
@@ -125,9 +126,9 @@ input::placeholder {
   justify-content: center;
   gap: 15px;
   padding: 0 50px 0 16px;
-  background-color: #f2f4f8;
-  border-radius: 5px;
-  border: 1px solid #c1c7cd;
+  background-color: #dfe0e249;
+  border-radius: 50px;
+  border: none;
   flex-grow: 2;
 }
 
@@ -138,7 +139,7 @@ input::placeholder {
 
 .search-input-blank {
   font-weight: 400;
-  color: #c1c1c1;
+  color: #c1c1c14b;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -148,13 +149,19 @@ input::placeholder {
   border: none;
 }
 
+.search-input-blank input::placeholder{
+  color: #cacaca;
+}
+
+input
+
 /* 메뉴 섹션 */
 .menu {
   display: flex;
   height: 9vh;
   align-items: center;
   justify-content: center;
-  background-color: #edf8e8;
+  background: #edf8e8;
 }
 
 .menu-list {
@@ -165,8 +172,7 @@ input::placeholder {
 
 .menu-list :hover {
   color: #0b915d;
-  background: #51ac6c38;
-  height: 6vh;
+  background: #51ac6c38;  
   border-radius: 5px;
   width: 9vw;
 }
