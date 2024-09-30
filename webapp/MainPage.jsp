@@ -4,9 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/styleguide.css" />
-    <link rel="stylesheet" href="../css/MainPage.css" />
+    <link rel="stylesheet" href="views/css/globals.css" />
+    <link rel="stylesheet" href="views/css/styleguide.css" />
+    <link rel="stylesheet" href="views/css/MainPage.css" />
   </head>
   <body>
     <div class="main-page">
