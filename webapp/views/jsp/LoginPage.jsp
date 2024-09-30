@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="css/globals.css" />
-  <link rel="stylesheet" href="css/styleguide.css" />
-  <link rel="stylesheet" href="css/LoginPage.css" />
+  <link rel="stylesheet" href="../css/globals.css" />
+  <link rel="stylesheet" href="../css/styleguide.css" />
+  <link rel="stylesheet" href="../css/LoginPage.css" />
 </head>
 
 <body>
