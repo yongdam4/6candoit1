@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 	
 	<!-- css -->
-	<link rel="stylesheet" href="../css/">
-    <link rel="stylesheet" href="../css/globals.css">
-    <link rel="stylesheet" href="../css/styleguide.css">
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/views/css/footer.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/views/css/globals.css">    
 
 	<!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +17,8 @@
 
 </head>
 <body>
-	<div class="footer-top">
+    <div class="footer">
+        <div class="footer-top">
             <div class="company">
                 <div class="foodpia">푸드피아</div>
             </div>
@@ -32,9 +32,12 @@
                 <div class="JH">정주희</div>
                 <div class="SH">조석현</div>
             </div>
-        </div>
+         </div>
+    
         <div class="footer-bottom">
             <p class="url">CompanyName @ 202X All rights reserved.</p>
         </div>
+    </div>
+	
 </body>
 </html>

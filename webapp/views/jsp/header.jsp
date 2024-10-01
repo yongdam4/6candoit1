@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
-    	String path = request.getContextPath();
+    	String contextPath = request.getContextPath();
+    	application.setAttribute("contextPath", contextPath);
     %>
 <!DOCTYPE html>
 <html>
@@ -10,9 +11,9 @@
 <title>Insert title here</title>
 
 	<!-- css -->
-    <link rel="stylesheet" href="../css/header.css">    
-    <link rel="stylesheet" href="../css/styleguide.css">
-    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="<%=contextPath%>/views/css/header.css">    
+    <link rel="stylesheet" href="<%=contextPath %>/views/css/styleguide.css">
+    <link rel="stylesheet" href="<%=contextPath %>/views/css/globals.css">
     
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +48,13 @@
     </div>
   </c:otherwise>
 
-  
 
  <div class="header-mid">
     <button class="home-button"><a href="">푸드피아</a></button>
 
       <div class="search-bar">
         <button type="submit" class="search-icon-blank">
-          <img class="search-icon" src="../img/img-search-icon.svg" />
+          <img class="search-icon" src="<%=contextPath%>/views/img/img-search-icon.svg" />
         </button>      
         <input type="text" class="search-input-blank" placeholder="검색어를 입력하세요.">      
       </div>
@@ -62,13 +62,13 @@
       <div class="cart-mypage">
         <button class="shopping-cart-button">
           <a href="">
-            <img class="shopping-cart-icon" src="../img/cart.svg" />
+            <img class="shopping-cart-icon" src="<%=contextPath%>/views/img/cart.svg" />
           </a>          
         </button>
   
         <button>
           <a href="">
-            <img src="../img/mypage-icon.svg">              
+            <img src="<%=contextPath%>/views/img/mypage-icon.svg">              
           </a>              
         </button>
       </div>      
@@ -77,9 +77,10 @@
 
   <div class="menu">
     <div class="category-button">
-      <img class="img" src="../img/img-menu.svg "/>
+      <img class="img" src="<%=contextPath%>/views/img/img-menu.svg">
       <div class="category">카테고리</div>
     </div>
+    
     <div class="menu-list">
       <button class="event-btn"><a href="">이벤트</a></button>
       <button class="popular-btn"><a href="">인기상품</a></button>
