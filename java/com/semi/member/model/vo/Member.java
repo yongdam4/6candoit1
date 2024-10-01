@@ -162,8 +162,4 @@ public class Member {
 				+ ", deleteDate=" + deleteDate + ", delFlag=" + delFlag + "]";
 	}
 	
-<<<<<<< HEAD
-	
-=======
->>>>>>> 8ba5367a847e1c80c9dc8b13906f8e35471cd2ea
 }

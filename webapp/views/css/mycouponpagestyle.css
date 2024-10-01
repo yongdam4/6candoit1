@@ -1,0 +1,703 @@
+.my-coupon-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.my-coupon-page .header {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.my-coupon-page .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 150px; /* 너비가 클 때 패딩 유지 */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.my-coupon-page .home-button {
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-coupon-page .text-wrapper {
+  font-family: "Roboto-Regular", Helvetica;
+  color: #12690b;
+  font-size: 24px;
+  text-align: center;
+}
+
+.my-coupon-page .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f2f4f8;
+  padding: 5px;
+  border: 1px solid #c1c7cd;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 480px;
+  min-width: 200px;
+}
+
+.my-coupon-page .search-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.my-coupon-page .search-input-text {
+  margin-left: 10px;
+  flex: 1;
+  color: #c1c1c1;
+  font-size: 18px;
+}
+
+.my-coupon-page .cart-logout {
+  display: flex;
+  gap: 20px;
+}
+
+.my-coupon-page .shoppin-cart-button,
+.my-coupon-page .shoppin-cart-button-2,
+.my-coupon-page .logout-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.my-coupon-page .shopping-cart-icon,
+.my-coupon-page .my-page-icon,
+.my-coupon-page .login-icon {
+  width: 30px;
+  height: 30px;
+}
+  
+  .my-coupon-page .menu {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 8px 150px;
+    width: 100%;
+    background-color: #edf8e8;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-coupon-page .category-button {
+    display: flex;
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 50px;
+    align-items: center;
+    padding: 4px 16px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #12690b;
+    border: 1px solid;
+    border-color: #dadada;
+    backdrop-filter: blur(4px) brightness(100%);
+    -webkit-backdrop-filter: blur(4px) brightness(100%);
+  }
+  
+  .my-coupon-page .img {
+    flex: 1;
+    max-width: 50px;
+    flex-grow: 1;
+    max-height: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-coupon-page .text-wrapper-5 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+  
+  .my-coupon-page .div-wrapper-2 {
+    display: flex;
+    max-width: 130px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-coupon-page .text-wrapper-6 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  .my-coupon-page .body {
+    display: flex;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #f1f1f1;
+    transform: rotate(0.07deg);
+    justify-content: center;
+
+}
+
+.my-coupon-page .side {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.my-coupon-page .mypage-navbar {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 298px;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: transparent;
+    border-image: linear-gradient(
+        to bottom,
+        rgb(237, 248, 232),
+        rgba(201.94, 218.85, 254.5, 0.5) 80%,
+        rgba(201.91, 218.77, 254.75, 0.4) 85%,
+        rgba(201.89, 218.74, 254.88, 0.3) 87.5%,
+        rgba(201.88, 218.7, 255, 0.1) 90%
+    ) 1;
+}
+
+.my-coupon-page .view {
+    display: flex;
+    width: 162px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 12px;
+    position: absolute;
+    top: 215px;
+    left: 44px;
+    background-color: #f6f6f6;
+}
+
+.my-coupon-page .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.my-coupon-page .view-2 {
+    display: flex;
+    width: 54px;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 59px;
+    position: absolute;
+    top: 239px;
+    left: 94px;
+    background-color: #f6f6f6;
+}
+
+.my-coupon-page .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -3px;
+    margin-bottom: -1px;
+    margin-left: -51.5px;
+    margin-right: -51.5px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.my-coupon-page .overlap {
+    width: 226px;
+    height: 118px;
+    top: 95px;
+    position: absolute;
+    left: 10px;
+}
+
+.my-coupon-page .view-3 {
+    position: absolute;
+    width: 226px;
+    height: 41px;
+    top: 67px;
+    left: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #9b9b9b;
+}
+
+.my-coupon-page .text-wrapper-9 {
+    position: absolute;
+    height: 20px;
+    top: 10px;
+    left: 95px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.my-coupon-page .frame-wrapper {
+    position: absolute;
+    width: 220px;
+    height: 118px;
+    top: 0;
+    left: 3px;
+}
+
+.my-coupon-page .frame {
+    display: flex;
+    flex-direction: column;
+    width: 162px;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: 8px;
+    left: 31px;
+}
+
+.my-coupon-page .view-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #f6f6f6;
+}
+
+.my-coupon-page .view-5 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 18px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #f6f6f6;
+}
+
+.my-coupon-page .text-wrapper-10 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.my-coupon-page .overlap-group {
+    width: 225px;
+    height: 82px;
+    top: 3px;
+    position: absolute;
+    left: 10px;
+}
+
+.my-coupon-page .view-6 {
+    position: absolute;
+    width: 225px;
+    height: 68px;
+    top: 14px;
+    left: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #9b9b9b;
+}
+
+.my-coupon-page .text-wrapper-11 {
+    position: absolute;
+    height: 24px;
+    top: 24px;
+    left: 62px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.my-coupon-page .frame-2 {
+    position: absolute;
+    width: 225px;
+    height: 14px;
+    top: 0;
+    left: 0;
+    transform: rotate(-0.07deg);
+}
+
+.my-coupon-page .frame-3 {
+    position: absolute;
+    width: 225px;
+    height: 14px;
+    top: 265px;
+    left: 12px;
+    transform: rotate(-0.07deg);
+}
+
+.my-coupon-page .sesscsion-button {
+    position: relative;
+    width: 64px;
+    height: 19px;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color: #d6d6d6;
+}
+
+.my-coupon-page .text-wrapper-12 {
+    position: absolute;
+    height: 12px;
+    top: 3px;
+    left: 10px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #909090;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 12px;
+    white-space: nowrap;
+}
+
+.my-coupon-page .mid {
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  align-items: center;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  padding-bottom: 20px; /* 하단 여백 추가 */
+
+}
+
+.my-coupon-page .coupon-blank {
+  width: 100%;
+  height: 42px;
+  background-color: #d7efcf;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  transform: rotate(-0.07deg);
+  position: relative;
+
+}
+
+.my-coupon-page .text-wrapper-13 {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%); /* 중앙 정렬 */
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #386d39;
+  font-size: 28px;
+  text-align: center;
+  line-height: 42px;
+}
+
+.my-coupon-page .coupon-main {
+  flex: 1;
+  width: 100%;
+  background-color: #e8f0e5;
+  border-radius: 5px;
+  position: relative;
+  padding: 20px 0; /* 상하 패딩 추가 */
+}
+
+.my-coupon-page .coupon-list {
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 쿠폰 나열 */
+  width: 100%; /* 너비 조정 */
+  align-items: center; /* 쿠폰 가운데 정렬 */
+  margin-top: 20px; /* 위쪽 여백 추가 */
+  margin-left: 150px;
+}
+
+.my-coupon-page .coupon-group {
+  display: flex;
+  align-items: center; /* 세로 정렬 */
+  width: 786px; /* 고정 너비 */
+  margin-bottom: 10px; /* 쿠폰 그룹 간 간격 */
+}
+
+.my-coupon-page .coupon-box {
+  position: relative;
+  width: 108px; /* 쿠폰 이름 박스 너비 */
+  height: 67px; /* 쿠폰 이름 박스 높이 */
+  border-left: 1px solid #c1c1c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-coupon-page .coupon-box-2 {
+  position: relative;
+  width: 342px; /* 쿠폰 할인 박스 너비 */
+  height: 67px; /* 쿠폰 할인 박스 높이 */
+  border-right: 1px solid #000;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-coupon-page .luckybox-special {
+  background-color: #c2ffff;
+}
+
+.my-coupon-page .holiday-event-coupon {
+  background-color: #ffeaf4;
+}
+
+.my-coupon-page .new-member-coupon {
+  background-color: #fffce9;
+}
+
+.my-coupon-page .text-wrapper-14,
+.my-coupon-page .text-wrapper-15 {
+  font-family: "Orbit-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+
+.my-coupon-page .text-wrapper-14 {
+  font-size: 16px;
+  position: relative;
+}
+
+.my-coupon-page .text-wrapper-15 {
+  font-size: 16px;
+  position: relative;
+}
+
+.my-coupon-page .frame-4,
+.my-coupon-page .frame-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.my-coupon-page .frame-5 {
+  width: 107px; /* 신규회원 쿠폰 프레임 너비 */
+  height: 31px; /* 신규회원 쿠폰 프레임 높이 */
+}
+
+.my-coupon-page .coupon-inline-img {
+  position: absolute;
+  width: 67px;
+  height: 58px;
+  top: 506px; /* 필요시 조정 */
+  left: 832px; /* 필요시 조정 */
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  .my-coupon-page .footer {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #edf8e8;
+  }
+  
+  .my-coupon-page .top-2 {
+    justify-content: center;
+    gap: 20px;
+    padding: 7px 150px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .my-coupon-page .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 29px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-coupon-page .foodpia {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    white-space: nowrap;
+  }
+  
+  .my-coupon-page .ceo {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 31px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-coupon-page .text-wrapper-16 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+  }
+  
+  .my-coupon-page .worker {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    padding: 31px 17px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-coupon-page .bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 15px 30px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .my-coupon-page .url {
+    position: relative;
+    width: 268px;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+  }

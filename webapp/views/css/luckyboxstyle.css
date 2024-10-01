@@ -1,0 +1,506 @@
+.lucky-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .lucky-box .header {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+  }
+  
+  .lucky-box .top {
+    height: 75px;
+    gap: 45px;
+    padding: 15px 230px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .lucky-box .home-button {
+    display: flex;
+    min-width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .text-wrapper {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #12690b;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+  
+  .lucky-box .search-bar {
+    display: flex;
+    min-width: 480px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px 0px 0px 16px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #c1c7cd;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .search-icon {
+    max-width: 45px;
+    max-height: 45px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .search-input-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .div {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #c1c1c1;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  
+  .lucky-box .cart-logout {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+  }
+  
+  .lucky-box .shoppin-cart-button {
+    display: flex;
+    max-width: 130px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .lucky-box .shopping-cart-icon {
+    position: relative;
+    align-self: stretch;
+    max-width: 40px;
+    width: 40px;
+    max-height: 40px;
+  }
+  
+  .lucky-box .div-wrapper {
+    max-width: 200px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .text-wrapper-2 {
+    position: relative;
+    flex: 1;
+    height: 43px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .lucky-box .shoppin-cart-button-2 {
+    display: flex;
+    max-width: 130px;
+    width: 110px;
+    align-items: center;
+    padding: 0px 1px;
+    position: relative;
+    align-self: stretch;
+    border-radius: 100px;
+  }
+  
+  .lucky-box .my-page-icon {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    min-width: 30px;
+    max-width: 30px;
+    flex-grow: 1;
+    min-height: 30px;
+    max-height: 35px;
+  }
+  
+  .lucky-box .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .lucky-box .logout-button {
+    display: flex;
+    min-width: 120px;
+    max-width: 120px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .lucky-box .login-icon {
+    width: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .lucky-box .login-text {
+    display: flex;
+    max-width: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .lucky-box .text-wrapper-4 {
+    position: relative;
+    flex: 1;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .lucky-box .menu {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 8px 150px;
+    width: 100%;
+    background-color: #edf8e8;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .lucky-box .category-button {
+    display: flex;
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 50px;
+    align-items: center;
+    padding: 4px 16px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #12690b;
+    border: 1px solid;
+    border-color: #dadada;
+    backdrop-filter: blur(4px) brightness(100%);
+    -webkit-backdrop-filter: blur(4px) brightness(100%);
+  }
+  
+  .lucky-box .img {
+    flex: 1;
+    max-width: 50px;
+    flex-grow: 1;
+    max-height: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .lucky-box .text-wrapper-5 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+  
+  .lucky-box .div-wrapper-2 {
+    max-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .text-wrapper-6 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .lucky-box .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 500px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+  }
+  
+  .lucky-box .luckybox-function {
+    position: relative;
+    width: 488px;
+    height: 615px;
+  }
+  
+  .lucky-box .luckybox-blank {
+    display: flex;
+    flex-direction: column;
+    width: 689px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 7px 0px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .lucky-box .luckybox-guide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 214px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .lucky-box .p {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    margin-left: -20.5px;
+    margin-right: -20.5px;
+    font-family: "Nanum Pen-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .lucky-box .span {
+    line-height: 28.8px;
+  }
+  
+  .lucky-box .text-wrapper-7 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+  
+  .lucky-box .footer {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #edf8e8;
+  }
+  
+  .lucky-box .top-2 {
+    justify-content: center;
+    gap: 20px;
+    padding: 7px 150px;
+    flex: 1;
+    flex-grow: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .lucky-box .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 29px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .foodpia {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    white-space: nowrap;
+  }
+  
+  .lucky-box .ceo {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 31px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+  }
+  
+  .lucky-box .worker {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    padding: 31px 17px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .lucky-box .bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 15px 30px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .lucky-box .url {
+    position: relative;
+    width: 268px;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+  }
