@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%
-        String contextPath = request.getContextPath();
-    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +7,8 @@
 <title>Insert title here</title>
 	
 	<!-- css -->
-	<link rel="stylesheet" href="<%=contextPath%>/views/css/footer.css">
-    <link rel="stylesheet" href="<%=contextPath%>/views/css/globals.css">    
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/views/css/footer.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/views/css/globals.css">    
 
 	<!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
