@@ -35,8 +35,8 @@
           </div>
           <div class="navbar">
   			<div class="text-wrapper-5">이벤트</div>
-  			<div class="text-wrapper-5">인기상품</div>
-  			<div class="text-wrapper-5" onclick="luckybox.bo">럭키박스</div>
+  			<div class="text-wrapper-5" onclick="popularitems.bo">인기상품</div>
+  			<div class="text-wrapper-5" onclick="luckyboxshow.bo">럭키박스</div>
   			<div class="text-wrapper-5">문의</div>
   			<!-- 관리자 버튼에 링크 추가 -->
   			<a href="admin.do">

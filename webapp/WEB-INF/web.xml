@@ -8,12 +8,10 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
-<welcome-file-list>
+  </welcome-file-list>
   <welcome-file-list>
->>>>>>> 8ba5367a847e1c80c9dc8b13906f8e35471cd2ea
     <welcome-file>MainPage.html</welcome-file>
     <welcome-file>MainPage.jsp</welcome-file>
->>>>>>> b0a812f8b90e33bc1821ed973ea639486c568354
   </welcome-file-list>
   <servlet>
     <description></description>
@@ -24,5 +22,25 @@
   <servlet-mapping>
     <servlet-name>admin.do</servlet-name>
     <url-pattern>/admin.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>luckyboxshow.bo</display-name>
+    <servlet-name>luckyboxshow.bo</servlet-name>
+    <servlet-class>com.semi.luckybox.controller.LuckyBoxShowController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>luckyboxshow.bo</servlet-name>
+    <url-pattern>/luckyboxshow.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>popularitems.bo</display-name>
+    <servlet-name>popularitems.bo</servlet-name>
+    <servlet-class>com.semi.popularitemspage.controller.PopularItemsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>popularitems.bo</servlet-name>
+    <url-pattern>/popularitems.bo</url-pattern>
   </servlet-mapping>
 </web-app>
