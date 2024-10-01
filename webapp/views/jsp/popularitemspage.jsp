@@ -4,9 +4,9 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../global.css" />
-    <link rel="stylesheet" href="../css/popularitemspageguide.css" />
-    <link rel="stylesheet" href="../css/popularitemspagestyle.css" />
+    <link rel="stylesheet" href="views/css/global.css" />
+    <link rel="stylesheet" href="views/css/popularitemspageguide.css" />
+    <link rel="stylesheet" href="views/css/popularitemspagestyle.css" />
     <title>인기 상품</title>
 </head>
 <body>

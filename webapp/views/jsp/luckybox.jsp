@@ -4,9 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../global.css" />
-    <link rel="stylesheet" href="../css/luckyboxguide.css" />
-    <link rel="stylesheet" href="../css/luckyboxstyle.css" />
+    <link rel="stylesheet" href="views/css/global.css" />
+    <link rel="stylesheet" href="views/css/luckyboxguide.css" />
+    <link rel="stylesheet" href="views/css/luckyboxstyle.css" />
   </head>
   <body>
     <div class="lucky-box">
@@ -52,7 +52,7 @@
 
 
       <div class="body">
-        <img class="luckybox-function" src="img/img_luckybox-function.svg" onclick="">
+        <img class="luckybox-function" src="views/img/img_luckybox-function.svg" onclick="">
         <div class="luckybox-blank">
           <div class="luckybox-guide">
             <p class="p">
