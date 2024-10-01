@@ -6,13 +6,17 @@ import com.semi.member.model.dao.MemberDao;
 import com.semi.member.model.vo.Member;
 import com.semi.mybatis.common.template.Template;
 
-public class MemberServiceImpl implements MemberService{
-	
-	private MemberDao mDao = new MemberDao();
+public class MemberServiceImpl implements MemberService {
+    
+    private MemberDao mDao = new MemberDao();
 
-	@Override
-	public Member adminloginMember(Member m) {
-		
+    @Override
+    public Member loginMember(Member m) {
+//		Connection conn = getConnection();
+//		
+//		Member loginMember = new MemberDao().loginMember(conn, m);
+//		close(conn);
+//		return loginMember;
 		
 		SqlSession sqlSession = Template.getSqlSession();
 		Member loginUser = mDao.loginMember(sqlSession, m);
@@ -21,5 +25,4 @@ public class MemberServiceImpl implements MemberService{
 		
 		return loginUser;
 	}
-
 }

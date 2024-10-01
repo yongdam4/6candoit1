@@ -21,16 +21,6 @@ public class Member {
 	public Member() {
 		super();
 	}
-	
-	
-
-	public Member(String userId, String userPwd) {
-		super();
-		this.userId = userId;
-		this.userPwd = userPwd;
-	}
-
-
 
 	public Member(String userId, String userPwd, String userName, String gender, int age, String email, String phone,
 			String address, Date enrollDate, String grade, String admingrade, int userCoin, Date deleteDate,

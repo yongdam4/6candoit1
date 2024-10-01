@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%
+    String path = request.getContextPath();
+    %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,9 +42,9 @@
   			<div class="text-wrapper-5">럭키박스</div>
   			<div class="text-wrapper-5">문의</div>
   			<!-- 관리자 버튼에 링크 추가 -->
-  			<a href="admin.do">
-    			<div class="text-wrapper-5">관리자</div>
-  			</a>
+  			<a href="<%= path %>/views/jsp/AdminLoginPage.jsp">
+  			<div class="text-wrapper-5">관리자</div>
+			</a>
 			</div>
         </div>
       </header>

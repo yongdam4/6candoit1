@@ -4,8 +4,8 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/ProductManagement2.css" />
+    <link rel="stylesheet" href="/views/css/globals.css" />
+    <link rel="stylesheet" href="/views/css/ProductManagement2.css" />
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,9 @@
     </script>
   </head>
   <body>
+  
     <div class="customer-management">
+    <form action ="">
       <header class="header">
         <div class="admin-page">
           <div class="text-wrapper">관리자 페이지</div>
