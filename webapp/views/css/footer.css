@@ -1,25 +1,26 @@
 @charset "UTF-8";
+
+/* Body */
 body {
   display: flex;
   flex-direction: column;
   max-height: 150px;
-  width: 100vw;
-  align-items: center;
-  justify-content: flex-end;
+  width: 100vw;  
   background-color: #edf8e8;
 }
 
- .footer-top {
+/* Footer Top */
+.footer-top {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 7px 150px;
+  padding: 50px 150px 20px;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 20px;
 }
 
+/* Company, CEO, Worker Container */
 .company,
 .ceo,
 .worker {
@@ -30,6 +31,7 @@ body {
   flex: 1;
 }
 
+/* Text Styling */
 .CEO,
 .worker div {
   font-family: "Roboto-Regular", Helvetica;
@@ -47,6 +49,7 @@ body {
   font-size: 32px;
 }
 
+/* Adjusted Font Size and Spacing for CEO and Worker */
 .CEO,
 .worker div {
   font-size: 16px;
@@ -55,18 +58,20 @@ body {
   font-weight: 600;
 }
 
-.worker div{
-  padding-left: 20px;
-  padding-right: 20px;
+.worker div {
+  padding: 0 20px;
 }
-.footerbottom {
+
+/* Footer Bottom */
+.footer-bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   padding: 15px 30px;
   width: 100%;
 }
 
+/* URL Styling */
 .url {
   font-family: "Roboto-Regular", Helvetica;
   font-size: 16px;
