@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
-        String path = request.getContextPath();
+        String contextPath = request.getContextPath();
     %>
 <!DOCTYPE html>
 <html>
@@ -10,8 +10,8 @@
 <title>Insert title here</title>
 	
 	<!-- css -->
-	<link rel="stylesheet" href="<%=path%>/views/css/footer.css">
-    <link rel="stylesheet" href="<%=path%>/views/css/globals.css">    
+	<link rel="stylesheet" href="<%=contextPath%>/views/css/footer.css">
+    <link rel="stylesheet" href="<%=contextPath%>/views/css/globals.css">    
 
 	<!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,8 @@
 
 </head>
 <body>
-	<div class="footer-top">
+    <div class="footer">
+        <div class="footer-top">
             <div class="company">
                 <div class="foodpia">푸드피아</div>
             </div>
@@ -34,10 +35,12 @@
                 <div class="JH">정주희</div>
                 <div class="SH">조석현</div>
             </div>
-    </div>
+         </div>
     
-    <div class="footer-bottom">
-        <p class="url">CompanyName @ 202X All rights reserved.</p>
+        <div class="footer-bottom">
+            <p class="url">CompanyName @ 202X All rights reserved.</p>
+        </div>
     </div>
+	
 </body>
 </html>
