@@ -27,7 +27,7 @@
     <description></description>
     <display-name>luckyboxshow.bo</display-name>
     <servlet-name>luckyboxshow.bo</servlet-name>
-    <servlet-class>com.semi.luckybox.controller.LuckyBoxShowController</servlet-class>
+    <servlet-class>com.semi.product.controller.LuckyBoxShowController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>luckyboxshow.bo</servlet-name>
@@ -37,7 +37,7 @@
     <description></description>
     <display-name>popularitems.bo</display-name>
     <servlet-name>popularitems.bo</servlet-name>
-    <servlet-class>com.semi.popularitemspage.controller.PopularItemsController</servlet-class>
+    <servlet-class>com.semi.product.controller.PopularItemsController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>popularitems.bo</servlet-name>

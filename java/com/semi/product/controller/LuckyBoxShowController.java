@@ -1,4 +1,4 @@
-package com.semi.luckybox.controller;
+package com.semi.product.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
