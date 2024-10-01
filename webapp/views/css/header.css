@@ -101,11 +101,11 @@ input::placeholder {
   font-weight: 500;
   font-style: normal;
   color: #12690b;
-  font-size: 32px;
+  font-size: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15vw;
+  width: auto;
   flex-grow: 0;
 }
 
@@ -120,13 +120,13 @@ input::placeholder {
 /* 검색바 */
 .search-bar {
   display: flex;
-  width: 10vw;
+  width: auto;
   height: 50px;
+  background: #e2eee969;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  padding: 0 50px 0 16px;
-  background-color: #dfe0e249;
+  padding: 0 50px 0 16px;  
   border-radius: 50px;
   border: none;
   flex-grow: 2;
@@ -153,15 +153,17 @@ input::placeholder {
   color: #cacaca;
 }
 
-input
 
 /* 메뉴 섹션 */
 .menu {
   display: flex;
+  flex-direction: row;
   height: 9vh;
   align-items: center;
   justify-content: center;
   background: #edf8e8;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 
 .menu-list {
@@ -172,9 +174,14 @@ input
 
 .menu-list :hover {
   color: #0b915d;
-  background: #51ac6c38;  
+  background: #b3dabf;
   border-radius: 5px;
   width: 9vw;
+}
+
+.menu-list button { 
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .menu-list a {
@@ -188,6 +195,7 @@ input
 /* 카테고리 버튼 */
 .category-button {
   display: flex;
+  flex-direction: row;
   min-width: 150px;
   width: 180px;
   height: 50px;
@@ -203,8 +211,7 @@ input
 }
 
 .category-button img {
-  margin-left: 10px;
-  margin-right: 9px;
+  margin: 5 9 5 10;
   height: 3vw;
 }
 

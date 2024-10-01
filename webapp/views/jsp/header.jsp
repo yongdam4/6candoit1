@@ -61,7 +61,7 @@
       <div class="cart-mypage">
         <button class="shopping-cart-button">
           <a href="">
-            <img class="shopping-cart-icon" src="../img/cart.svg" />
+            <img class="shopping-cart-icon" src="<%=path%>/views/img/cart.svg" />
           </a>          
         </button>
   
@@ -79,6 +79,7 @@
       <img class="img" src="<%=path%>/views/img/img-menu.svg">
       <div class="category">카테고리</div>
     </div>
+    
     <div class="menu-list">
       <button class="event-btn"><a href="">이벤트</a></button>
       <button class="popular-btn"><a href="">인기상품</a></button>
