@@ -35,7 +35,9 @@
           </div>
           <div class="navbar">
   			<div class="text-wrapper-5">이벤트</div>
+  			<!-- 인기상품 버튼에 링크 추가 -->
   			<div class="text-wrapper-5" onclick="location.href='popularitems.bo'">인기상품</div>
+  			<!-- 럭키박스 버튼에 링크 추가 -->
   			<div class="text-wrapper-5" onclick="location.href='luckyboxshow.bo'">럭키박스</div>
   			<div class="text-wrapper-5">문의</div>
   			<!-- 관리자 버튼에 링크 추가 -->
