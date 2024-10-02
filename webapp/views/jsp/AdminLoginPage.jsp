@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<%=path %>/views/css/AdminLoginPage.css">
   </head>
   <body>
-    <form action="<%=path %>/admin.do" method="post">
+    <form action="admin.do" method="post">
       <div class="admin-login-page">
         <header class="header">
           <div class="top">
@@ -22,8 +22,8 @@
             <div class="div">관리자 로그인</div>
           </div>
           <div class="mid">
-            <input type="text" name="adminId" placeholder="관리자 아이디 입력" class="login-input">
-            <input type="password" name="adminPwd" placeholder="관리자 비밀번호 입력" class="login-input">
+            <input type="text" name="userId" placeholder="관리자 아이디 입력" class="login-input" required>
+            <input type="password" name="userPwd" placeholder="관리자 비밀번호 입력" class="login-input" required>
           </div>
           <div class="bottom">
             <input type="submit" value="로그인" class="login-button">

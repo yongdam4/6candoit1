@@ -12,42 +12,9 @@
     <link rel="stylesheet" href="views/css/MainPage.css" />
   </head>
   <body>
-    <div class="main-page">
-      <header class="header">
-        <div class="top">
-          <div class="home-button"><div class="text-wrapper">푸드피아</div></div>
-          <div class="search-bar">
-            <img class="search-icon" src="views/img/img-search-icon.svg" />
-            <div class="search-input-text"><div class="div">검색어를 입력하세요.</div></div>
-          </div>
-          <div class="cart-login">
-            <div class="shoppin-cart-button">
-              <img class="shopping-cart-icon" src="views/img/img-shopping-cart-icon.svg" />
-              <div class="shopping-cart-text"><div class="text-wrapper-2">장바구니</div></div>
-            </div>
-            <div class="login-button">
-              <img class="login-icon" src="views/img/img-login-icon.svg" />
-              <div class="login-text"><div class="text-wrapper-3">로그인</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="menu">
-          <div class="category-button">
-            <img class="img" src="views/img/img-menu.svg" />
-            <div class="text-wrapper-4">카테고리</div>
-          </div>
-          <div class="navbar">
-  			<div class="text-wrapper-5">이벤트</div>
-  			<div class="text-wrapper-5">인기상품</div>
-  			<div class="text-wrapper-5">럭키박스</div>
-  			<div class="text-wrapper-5">문의</div>
-  			<!-- 관리자 버튼에 링크 추가 -->
-  			<a href="<%= path %>/views/jsp/AdminLoginPage.jsp">
-  			<div class="text-wrapper-5">관리자</div>
-			</a>
-			</div>
-        </div>
-      </header>
+  
+  <%@ include file="/views/jsp/header.jsp" %>
+  
       <div class="body-footer">
         <img class="advertisement" src="views/img/img-advertisement.svg" />
         <div class="recommend">

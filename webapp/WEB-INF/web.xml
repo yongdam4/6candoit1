@@ -14,14 +14,4 @@
     <servlet-name>admin.do</servlet-name>
     <url-pattern>/admin.do</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>admin.bo</display-name>
-    <servlet-name>admin.bo</servlet-name>
-    <servlet-class>com.semi.admin.controller.AdminMemberController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>admin.bo</servlet-name>
-    <url-pattern>/admin.bo</url-pattern>
-  </servlet-mapping>
 </web-app>

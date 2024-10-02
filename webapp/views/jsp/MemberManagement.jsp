@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%
+    String path = request.getContextPath();
+    %>
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -23,7 +26,7 @@
   <body>
   
     <div class="customer-management">
-    <form action ="">
+    <form action="admin.do">
       <header class="header">
         <div class="admin-page">
           <div class="text-wrapper">관리자 페이지</div>
