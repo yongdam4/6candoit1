@@ -22,30 +22,30 @@ public class MemberLoginController extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	request.setCharacterEncoding("UTF-8");
+        request.setCharacterEncoding("UTF-8");
 		
-		Member m = new Member();
-		m.setUserId(request.getParameter("userId"));
-		m.setUserPwd(request.getParameter("userPwd"));
-		
-		String path = request.getParameter("path");
-		
-		MemberService memberService = new MemberServiceImpl(); 
-		Member loginUser = memberService.loginMember(m);
-		
-		System.out.println(loginUser);
-		
-		if(loginUser != null) {
-			request.getSession().setAttribute("loginUser", loginUser);
-			response.sendRedirect(request.getContextPath());
-		} else {
-			request.setAttribute("errorMsg", "로그인 실패");
-			request.getRequestDispatcher("views/jsp/AdminLoginPage.jsp").forward(request, response);
-		}
+        String adminId = request.getParameter("adminId");
+        String adminPwd = request.getParameter("adminPwd");
+
+        // 관리자 아이디와 비밀번호를 확인
+        if ("admin".equals(adminId) && "1234".equals(adminPwd)) {
+            Member m = new Member();
+            m.setUserId(adminId);
+            m.setUserPwd(adminPwd);
+
+            // 로그인 성공 시 세션에 사용자 정보 저장
+            request.getSession().setAttribute("loginUser", m);
+
+            // 로그인 성공 시 MemberManagement.jsp로 리다이렉트
+            response.sendRedirect(request.getContextPath() + "/views/jsp/MemberManagement.jsp");
+        } else {
+            // 로그인 실패 시 에러 메시지와 함께 AdminLoginPage.jsp로 포워딩
+            request.setAttribute("errorMsg", "로그인에 실패하였습니다.");
+            request.getRequestDispatcher("views/jsp/AdminLoginPage.jsp").forward(request, response);
+        }
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	// TODO Auto-generated method stub
-    	doGet(request, response);
+        doGet(request, response);
     }
 }
