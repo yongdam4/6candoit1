@@ -28,7 +28,6 @@
         </div>
         <div class="bottom">
           <input type="submit" value="로그인" class="login-button">
-          <a href="<%=path %>/MainPage.jsp" class="btn">메인 페이지로 가기</a>
         </div>
       </div>
     </div>

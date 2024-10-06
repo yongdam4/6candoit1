@@ -39,9 +39,9 @@ public class MemberLoginController extends HttpServlet {
             // 로그인 성공 시 MemberManagement.jsp로 리다이렉트
             response.sendRedirect(request.getContextPath() + "/views/jsp/MemberManagement.jsp");
         } else {
-            // 로그인 실패 시 에러 메시지와 함께 AdminLoginPage.jsp로 포워딩
-            request.setAttribute("errorMsg", "로그인에 실패하였습니다.");
-            request.getRequestDispatcher("views/jsp/AdminLoginPage.jsp").forward(request, response);
+            // alert() 메시지 생성 후 AdminLoginPage.jsp로 포워딩
+            response.setContentType("text/html; charset=UTF-8");
+            response.getWriter().println("<script>alert('로그인에 실패하였습니다.'); location.href='" + request.getContextPath() + "/views/jsp/AdminLoginPage.jsp';</script>");
         }
     }
 
