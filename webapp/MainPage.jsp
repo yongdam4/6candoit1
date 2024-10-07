@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%
+    String path = request.getContextPath();
+    %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +12,7 @@
     <link rel="stylesheet" href="views/css/MainPage.css" />
   </head>
   <body>
+<<<<<<< HEAD
     <div class="main-page">
       <header class="header">
         <div class="top">
@@ -47,6 +51,11 @@
 			</div>
         </div>
       </header>
+=======
+  
+  <%@ include file="/views/jsp/header.jsp" %>
+  
+>>>>>>> 8ae358aeb22c349695b8eb73be0d5d651ff26abe
       <div class="body-footer">
         <img class="advertisement" src="views/img/img-advertisement.svg" />
         <div class="recommend">

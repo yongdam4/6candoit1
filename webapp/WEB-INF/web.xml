@@ -15,13 +15,13 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>admin.do</display-name>
-    <servlet-name>admin.do</servlet-name>
-    <servlet-class>com.semi.member.controller.AdminMemberLoginController</servlet-class>
+    <display-name>adminLogin.do</display-name>
+    <servlet-name>adminLogin.do</servlet-name>
+    <servlet-class>com.semi.member.controller.MemberLoginController</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>admin.do</servlet-name>
-    <url-pattern>/admin.do</url-pattern>
+    <servlet-name>adminLogin.do</servlet-name>
+    <url-pattern>/adminLogin.do</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>

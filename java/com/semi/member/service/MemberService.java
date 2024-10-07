@@ -1,5 +1,7 @@
 package com.semi.member.service;
 
-public class MemberService {
+import com.semi.member.model.vo.Member;
 
+public interface MemberService {
+	public abstract Member loginMember(Member m);
 }

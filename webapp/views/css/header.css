@@ -101,7 +101,7 @@ input::placeholder {
   font-weight: 500;
   font-style: normal;
   color: #12690b;
-  font-size: 42px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,7 +139,7 @@ input::placeholder {
 
 .search-input-blank {
   font-weight: 400;
-  color: #c1c1c14b;
+  color: #575757;
   font-size: 20px;
   display: flex;
   align-items: center;

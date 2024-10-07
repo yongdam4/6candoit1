@@ -86,7 +86,8 @@
       <button class="popular-btn"><a href="">인기상품</a></button>
       <button class="luckybox-btn"><a href="">럭키박스</a></button>
       <button class="inquiry-btn"><a href="">문의</a></button>
-      <button class="admin-btn"><a href="">관리자</a></button>
+      <button class="admin-btn"><a href="views/jsp/AdminLoginPage.jsp" method="post">관리자
+  		</a></button>
     </div>    
   </div>
 
