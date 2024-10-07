@@ -43,4 +43,44 @@
     <servlet-name>popularitems.bo</servlet-name>
     <url-pattern>/popularitems.bo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>contactpage.bo</display-name>
+    <servlet-name>contactpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.ContactPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contactpage.bo</servlet-name>
+    <url-pattern>/contactpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>mypage.bo</display-name>
+    <servlet-name>mypage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.MyPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mypage.bo</servlet-name>
+    <url-pattern>/mypage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>shoppingcartpage.bo</display-name>
+    <servlet-name>shoppingcartpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.ShoppingcartPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shoppingcartpage.bo</servlet-name>
+    <url-pattern>/shoppingcartpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>productpage.bo</display-name>
+    <servlet-name>productpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.ProductPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productpage.bo</servlet-name>
+    <url-pattern>/productpage.bo</url-pattern>
+  </servlet-mapping>
 </web-app>

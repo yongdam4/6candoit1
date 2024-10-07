@@ -14,41 +14,8 @@ String path = request.getContextPath();
 </head>
 <body>
   <div class="contact-page">
-    <header class="header">
-      <div class="top">
-        <div class="home-button"><div class="text-wrapper">푸드피아</div></div>
-        <div class="search-bar">
-          <img class="search-icon" src="img/search-icon.svg" />
-          <div class="search-input-text"><div class="div">검색어를 입력하세요.</div></div>
-        </div>
-        <div class="cart-logout">
-          <div class="shoppin-cart-button">
-            <img class="shopping-cart-icon" src="img/shopping-cart-icon.svg" />
-            <div class="div-wrapper"><div class="text-wrapper-2">장바구니</div></div>
-          </div>
-          <div class="shoppin-cart-button-2">
-            <img class="my-page-icon" src="img/my-page-icon.svg" />
-            <div class="div-wrapper"><div class="text-wrapper-3">내 정보</div></div>
-          </div>
-          <div class="logout-button">
-            <img class="login-icon" src="img/login-icon.svg" />
-            <div class="login-text"><div class="text-wrapper-4">로그아웃</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="menu">
-        <div class="category-button">
-          <img class="img" src="img/menu.svg" />
-          <div class="text-wrapper-5">카테고리</div>
-        </div>
-        <div class="div-wrapper-2"><div class="text-wrapper-6">이벤트</div></div>
-        <div class="div-wrapper-2"><div class="text-wrapper-6">인기상품</div></div>
-        <div class="div-wrapper-2"><div class="text-wrapper-6">럭키박스</div></div>
-        <div class="div-wrapper-2"><div class="text-wrapper-6">문의</div></div>
-        <div class="div-wrapper-2"><div class="text-wrapper-6">관리자</div></div>
-      </div>
-    </header>
-
+    
+	<%@ include file="/views/jsp/header.jsp" %>
  
     <div class="body">
       <table class="contact-table">
@@ -91,26 +58,14 @@ String path = request.getContextPath();
         </tr>
         <tr>
           <td colspan="2" class="input">
-            <button class="inquiry-button">등록하기</button>
+			<button class="inquiry-button" onclick="alert('등록에 성공하었습니다.'); location.href='<%=path %>/MainPage.jsp';">등록하기</button>
           </td>
         </tr>
       </table>
     </div>
 
-    <footer class="footer">
-      <div class="top-2">
-        <div class="company"><div class="foodpia">푸드피아</div></div>
-        <div class="ceo"><div class="text-wrapper-15">대표자</div></div>
-        <div class="worker">
-          <div class="text-wrapper-15">전제민</div>
-          <div class="text-wrapper-15">김용담</div>
-          <div class="text-wrapper-15">이현선</div>
-          <div class="text-wrapper-15">정주희</div>
-          <div class="text-wrapper-15">조석현</div>
-        </div>
-      </div>
-      <div class="url-wrapper"><p class="url">CompanyName @ 202X All rights reserved.</p></div>
-    </footer>
+   	<%@ include file="/views/jsp/footer.jsp" %>
+   
   </div>
 </body>
 </html>

@@ -14,42 +14,12 @@ String path = request.getContextPath();
   </head>
   <body>
     <div class="payment-information">
-      <header class="header">
-        <div class="top">
-          <div class="home-button"><div class="text-wrapper" onclick="">푸드피아</div></div>
-          <div class="search-bar">
-            <img class="search-icon" src="img/img-search-bar.svg" alt="Search-bar SVG" />
-        <div class="search-input-text">
-                <input type="text" placeholder="검색어를 입력하세요.">
-        </div>
-          </div>
-          <div class="cart-logout">
-            <div class="shoppin-cart-button">
-              <img class="shopping-cart-icon" src="img/img-shopping-cart-icon.svg" />
-              <div class="div-wrapper"><div class="text-wrapper-2" onclick="">장바구니</div></div>
-            </div>
-            <div class="shoppin-cart-button-2">
-              <img class="my-page-icon" src="img/img-my-page-icon.svg" />
-              <div class="div-wrapper"><div class="text-wrapper-3" onclick="">내 정보</div></div>
-            </div>
-            <div class="logout-button">
-              <img class="login-icon" src="img/login-icon.svg" />
-              <div class="login-text"><div class="text-wrapper-4" onclick="">로그아웃</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="menu">
-          <div class="category-button">
-            <img class="img" src="img/menu.svg" />
-            <div class="text-wrapper-5" onclick="">카테고리</div>
-          </div>
-          <div class="div-wrapper-2"><div class="text-wrapper-6" onclick="">이벤트</div></div>
-          <div class="div-wrapper-2"><div class="text-wrapper-6" onclick="">인기상품</div></div>
-          <div class="div-wrapper-2"><div class="text-wrapper-6" onclick="">럭키박스</div></div>
-          <div class="div-wrapper-2"><div class="text-wrapper-6" onclick="">문의</div></div>
-          <div class="div-wrapper-2"><div class="text-wrapper-6" onclick="">관리자</div></div>
-        </div>
-      </header>
+  
+  		<%@ include file="/views/jsp/header.jsp" %>
+  
+  
+  
+  
       <div class="body">
         <div class="typography-row-wrapper">
           <div class="typography-row"><div class="header-2">결제 정보 입력</div></div>
@@ -94,20 +64,12 @@ String path = request.getContextPath();
         </div>
         <div class="payment-button"><div class="text-wrapper-17"><input type="button" value="결제하기">토스 결제창 연걸</div></div>
       </div>
-      <footer class="footer">
-        <div class="top-2">
-          <div class="company"><div class="foodpia">푸드피아</div></div>
-          <div class="ceo"><div class="text-wrapper-18">대표자</div></div>
-          <div class="worker">
-            <div class="text-wrapper-18">전제민</div>
-            <div class="text-wrapper-18">김용담</div>
-            <div class="text-wrapper-18">이현선</div>
-            <div class="text-wrapper-18">정주희</div>
-            <div class="text-wrapper-18">조석현</div>
-          </div>
-        </div>
-        <div class="bottom"><p class="url">CompanyName @ 202X All rights reserved.</p></div>
-      </footer>
+ 
+ 
+ 	<%@ include file="/views/jsp/footer.jsp" %>
+ 
+ 
+ 
     </div>
   </body>
 </html>

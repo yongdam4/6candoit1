@@ -26,16 +26,8 @@
   <body>
     <div class="member-management">
     <form action="">
-      <header class="header">
-        <div class="admin-page"><div class="text-wrapper">관리자 페이지</div></div>
-        <nav class="menu">
-          <button type="button" class="head-button" onClick="location.href='MemberManagement.jsp'">회원관리</button>
-          <button type="button" class="head-button" onClick="location.href='OrderManagement.jsp'">주문관리</button>
-          <button type="button" class="head-button" onClick="location.href='ProductManagement1.jsp'">상품관리</button>
-          <button type="button" class="head-button" onClick="location.href='CustomerInquiry1.jsp'">고객지원</button>
-          <button type="button" class="head-button" onClick="location.href='MainPage.jsp'">메인페이지</button>
-        </nav>
-      </header>
+
+		<%@ include file="/views/jsp/header.jsp" %>
 
       <div class="body">
         <div class="top-2"><div class="text-wrapper-2">주문관리</div></div>
@@ -99,6 +91,7 @@
           </table>
         </div>
       </div>
+      <%@ include file="/views/jsp/footer.jsp" %>
     </div>
   </body>
 </html>

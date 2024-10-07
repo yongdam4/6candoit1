@@ -14,28 +14,10 @@ String path = request.getContextPath();
 </head>
 <body>
     <div class="popular-items-page">
-        <header class="header">
-            <div class="top-3">
-                <div class="home-button">푸드피아</div>
-                <div class="search-bar">
-                    <img class="search-icon" src="img/search-icon.svg" alt="검색 아이콘" />
-                    <div class="search-input-text">검색어를 입력하세요.</div>
-                </div>
-                <div class="cart-logout">
-                    <div class="shoppin-cart-button">
-                        <img class="shopping-cart-icon" src="img/shopping-cart-icon.svg" alt="장바구니 아이콘" />
-                        <div class="div-wrapper">장바구니</div>
-                    </div>
-                    <div class="shoppin-cart-button-2">
-                        <img class="my-page-icon" src="img/my-page-icon.svg" alt="내 정보 아이콘" />
-                        <div class="div-wrapper">내 정보</div>
-                    </div>
-                    <div class="logout-button">
-                        <img class="login-icon" src="img/login-icon.svg" alt="로그아웃 아이콘" />
-                        <div class="login-text">로그아웃</div>
-                    </div>
-                </div>
-            </div>
+       
+       <%@ include file="/views/jsp/header.jsp" %>
+       
+       
             <div class="menu">
                 <div class="category-button">
                     <img class="img" src="img/menu.svg" alt="카테고리 아이콘" />
@@ -72,16 +54,8 @@ String path = request.getContextPath();
             </div>
         </div>
         
-
-        <footer class="footer">
-            <div class="top-2">
-                <div class="company">푸드피아</div>
-                <div class="ceo">대표자: 전제민, 김용담, 이현선, 정주희, 조석현</div>
-            </div>
-            <div class="bottom">
-                <p class="url">CompanyName @ 202X All rights reserved.</p>
-            </div>
-        </footer>
+		<%@ include file="/views/jsp/footer.jsp" %>
+      
     </div>
 </body>
 </html>
