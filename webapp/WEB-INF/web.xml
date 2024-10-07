@@ -8,10 +8,20 @@
     <description></description>
     <display-name>adminLogin.do</display-name>
     <servlet-name>adminLogin.do</servlet-name>
-    <servlet-class>com.semi.member.controller.MemberLoginController</servlet-class>
+    <servlet-class>com.semi.member.controller.AdminMemberLoginController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>adminLogin.do</servlet-name>
     <url-pattern>/adminLogin.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>memberdel.do</display-name>
+    <servlet-name>memberdel.do</servlet-name>
+    <servlet-class>com.semi.member.controller.AdminMemberManagement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>memberdel.do</servlet-name>
+    <url-pattern>/memberdel.do</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.member-management {
+.order-management {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #ffffff;
 }
 
-.member-management .header {
+.order-management .header { /* 수정 */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
     padding: 20px;
 }
 
-.member-management .head-button {
+.order-management .head-button { /* 수정 */
     background-color: #edf8e8;
     font-weight: 700;
     color: #12690b;
@@ -23,11 +23,11 @@
     padding: 10px;
     width: 100%;
 }
-.member-management .head-button:hover {
+.order-management .head-button:hover { /* 수정 */
     background-color: #dceed4;
 }
 
-.member-management .menu {
+.order-management .menu { /* 수정 */
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -35,7 +35,7 @@
     padding: 10px 0;
 }
 
-.member-management .admin-page .text-wrapper {
+.order-management .admin-page .text-wrapper { /* 수정 */
     font-family: "Roboto-Bold", Helvetica;
     font-weight: 700;
     color: #12690b;
@@ -44,7 +44,7 @@
     line-height: 1.5;
 }
 
-.member-management .top-2 {
+.order-management .top-2 { /* 수정 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,13 +54,13 @@
     width: 100%;
 }
 
-.member-management .body {
+.order-management .body { /* 수정 */
     flex: 1;
     padding: 0px 20px 20px 20px;
     background-color: #ffffff;
 }
 
-.member-management .search-bar {
+.order-management .search-bar { /* 수정 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,27 +69,27 @@
     background-color: #f1f1f1;
     border-radius: 5px;
 }
-.member-management .dropdown-toggle, .search-button {
+.order-management .dropdown-toggle, .search-button { /* 수정 */
     width: 100px;
 }
 
-.member-management .form-control {
+.order-management .form-control { /* 수정 */
     width: 500px;
     min-width: 200px;
 }
 
-.member-management .bottom {
+.order-management .bottom { /* 수정 */
     width: 100%;
     padding: 10px 0;
 }
 
-.member-management .member-table {
+.order-management .member-table { /* 수정 */
     width: 100%;
     margin-top: 20px;
 }
 
 /* Flexbox를 사용해 가로로 정렬 */
-.member-management .order-state {
+.order-management .order-state { /* 수정 */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +99,7 @@
     margin-bottom: 20px;
 }
 
-.member-management .order-info {
+.order-management .order-info { /* 수정 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,41 +107,15 @@
     width: 100%;
 }
 
-.member-management .check-state, .total-order-amount {
+.order-management .check-state, .total-order-amount { /* 수정 */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
 
-.member-management .cancel-button {
+.order-management .cancel-button { /* 수정 */
     margin-left: auto; /* 오른쪽으로 이동 */
     width: 150px;
     display: flex; /* 버튼을 중앙 정렬 */
     justify-content: flex-end; /* 오른쪽 정렬 */
-}
-
-@media (max-width: 768px) {
-    .member-management .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .member-management .text-wrapper {
-        font-size: 24px;
-    }
-
-    .member-management .form-control {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .member-management .search-bar {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .member-management .form-control {
-        width: 100%;
-    }
 }
