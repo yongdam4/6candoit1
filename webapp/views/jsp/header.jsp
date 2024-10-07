@@ -61,13 +61,13 @@
 
       <div class="cart-mypage">
         <button class="shopping-cart-button">
-          <a href="">
+          <a href="views/jsp/shoppingcartpage.jsp" method="post">
             <img class="shopping-cart-icon" src="<%=contextPath%>/views/img/cart.svg" />
           </a>          
         </button>
   
         <button>
-          <a href="">
+          <a href="views/jsp/mypage.jsp">
             <img src="<%=contextPath%>/views/img/mypage-icon.svg">              
           </a>              
         </button>
@@ -83,9 +83,9 @@
     
     <div class="menu-list">
       <button class="event-btn"><a href="">이벤트</a></button>
-      <button class="popular-btn"><a href="">인기상품</a></button>
-      <button class="luckybox-btn"><a href="">럭키박스</a></button>
-      <button class="inquiry-btn"><a href="">문의</a></button>
+      <button class="popular-btn"><a href="views/jsp/popularitemspage.jsp" method="post">인기상품</a></button>
+      <button class="luckybox-btn"><a href="views/jsp/luckybox.jsp" method="post">럭키박스</a></button>
+      <button class="inquiry-btn"><a href="views/jsp/ContactPage.jsp" method="post">문의</a></button>
       <button class="admin-btn"><a href="views/jsp/AdminLoginPage.jsp" method="post">관리자
   		</a></button>
     </div>    

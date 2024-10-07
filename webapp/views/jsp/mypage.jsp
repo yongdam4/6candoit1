@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+    String path = request.getContextPath();
+%>    
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../global.css" />
-    <link rel="stylesheet" href="../css/mypageguide.css" />
-    <link rel="stylesheet" href="../css/mypagestyle.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/global.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/mypageguide.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/mypagestyle.css" />
   </head>
   <body>
     <div class="my-page">
@@ -52,15 +55,19 @@
 
 
 
-
-      <div class="body">
+<div class="body">
         <!-- 통합된 사이드 메뉴 시작 -->
         <div class="side">
           <!-- '나의 계정' 섹션 -->
           <div class="menu-section">
             <div class="menu-title" style="border-bottom: 1px solid #000;">나의 계정</div>
-            <div class="menu-item"  style="border-bottom: 1px solid #000;">
-              개인정보 수정 및 정보<br />주문내역
+            <div class="menu-item">
+              개인정보 수정 및 정보
+            </div>
+            <div class="menu-item" style="border-bottom: 1px solid #000;">
+            	<a href="OrderPage.jsp" method="post">
+            		주문내역
+            	</a>
             </div>
           </div>
       
@@ -68,7 +75,14 @@
           <div class="menu-section">
             <div class="menu-title"  style="border-bottom: 1px solid #000;">혜택</div>
             <div class="menu-item">
-              등급 정보 및 혜택<br />쿠폰함
+            	<a href="MyGradePage.jsp" method="post">
+              		등급 정보 및 혜택
+              	</a>
+            </div>
+            <div classs="menu-item">
+            	<a href="mycouponpage.jsp" method="post">
+            		쿠폰함
+            	</a>
             </div>
           </div>
       
@@ -145,7 +159,6 @@
         </div>
         <!-- 내 정보 영역 끝 -->
       </div>
-      
 
 
 

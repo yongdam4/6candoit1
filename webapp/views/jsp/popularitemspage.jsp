@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="views/css/global.css" />
-    <link rel="stylesheet" href="views/css/popularitemspageguide.css" />
-    <link rel="stylesheet" href="views/css/popularitemspagestyle.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/global.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/popularitemspageguide.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/popularitemspagestyle.css" />
     <title>인기 상품</title>
 </head>
 <body>

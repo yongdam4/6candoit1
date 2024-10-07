@@ -1,13 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+%> 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/paymentinformationpagestyle.css" />
-    <link rel="stylesheet" href="../css/paymentinformationpageguide.css" />
-    <link rel="stylesheet" href="../global.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<%=path %>/views/css/paymentinformationpagestyle.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/paymentinformationpageguide.css" />
+    <link rel="stylesheet" href="<%=path %>/views/global.css">
     <title>Document</title>
   </head>
   <body>
@@ -78,10 +80,10 @@
             <div class="text-wrapper-14">할인쿠폰</div>
             <div class="coupon-choice-blank">
               <div class="text-wrapper-15">
-                선택 안됨 -불러오기
+               	
               </div>
                 <div class="coupon-choice-button">
-                <div class="text-wrapper-16"><input type="button" name="" id="" value="버튼" onclick=""></div>
+                <div class="text-wrapper-16"><button class="popular-btn"><a href="couponPage.jsp" method="post">선택하기</a></button></div>
               </div>
             </div>
           </div>
@@ -90,7 +92,7 @@
             <div class="text-wrapper-13">30,000원-불러오기</div>
           </div>
         </div>
-        <div class="payment-button"><div class="text-wrapper-17"><input type="button" value="결제하기"></div></div>
+        <div class="payment-button"><div class="text-wrapper-17"><input type="button" value="결제하기">토스 결제창 연걸</div></div>
       </div>
       <footer class="footer">
         <div class="top-2">
