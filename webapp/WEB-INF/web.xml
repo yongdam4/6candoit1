@@ -92,4 +92,54 @@
     <servlet-name>memberdel.do</servlet-name>
     <url-pattern>/memberdel.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>paymentinformationpage.bo</display-name>
+    <servlet-name>paymentinformationpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.PaymentInformationPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>paymentinformationpage.bo</servlet-name>
+    <url-pattern>/paymentinformationpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>couponpage.bo</display-name>
+    <servlet-name>couponpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.CouponPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>couponpage.bo</servlet-name>
+    <url-pattern>/couponpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>orderpage.bo</display-name>
+    <servlet-name>orderpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.OrderPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderpage.bo</servlet-name>
+    <url-pattern>/orderpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>mygradepage.bo</display-name>
+    <servlet-name>mygradepage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.MyGradePageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mygradepage.bo</servlet-name>
+    <url-pattern>/mygradepage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>mycouponpage.bo</display-name>
+    <servlet-name>mycouponpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.MyCouponPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mycouponpage.bo</servlet-name>
+    <url-pattern>/mycouponpage.bo</url-pattern>
+  </servlet-mapping>
 </web-app>

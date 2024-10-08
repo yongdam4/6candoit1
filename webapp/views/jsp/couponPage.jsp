@@ -75,7 +75,7 @@ String path = request.getContextPath();
             </div>
           </div>
         </div>
-        <button class="check-button"><a href="paymentinformationpage.jsp" method="post"><div class="text-wrapper-8">확인</div></a></button>
+        <button class="check-button"><a href="paymentinformationpage.bo"><div class="text-wrapper-8">확인</div></a></button>
       </div>
   
   	<%@ include file="/views/jsp/footer.jsp" %>
