@@ -32,20 +32,20 @@ String path = request.getContextPath();
 
 	<!-- 여기서 클래스명을 customer-management에서 member-management로 변경 -->
 	<div class="member-management">
-		<form action="admin.do">
+		<form action="<%=path %>/memberdel.do" method="post">
 			<header class="header">
 				<div class="admin-page">
 					<div class="text-wrapper">관리자 페이지</div>
 				</div>
 				<nav class="menu">
 					<button type="button" class="head-button"
-						onClick="location.href='MemberManagement.jsp'">회원관리</button>
+						onClick="location.href='memberdel.do'">회원관리</button>
 					<button type="button" class="head-button"
-						onClick="location.href='OrderManagement.jsp'">주문관리</button>
+						onClick="location.href='ordermem.do">주문관리</button>
 					<button type="button" class="head-button"
-						onClick="location.href='ProductManagement1.jsp'">상품관리</button>
+						onClick="location.href='productmem.do'">상품관리</button>
 					<button type="button" class="head-button"
-						onClick="location.href='CustomerInquiry1.jsp'">고객지원</button>
+						onClick="location.href='customer.do'">고객지원</button>
 					<button type="button" class="head-button"
 						onClick="location.href='MainPage.jsp'">메인페이지</button>
 				</nav>
@@ -112,7 +112,7 @@ String path = request.getContextPath();
 								type="checkbox" name="memberId" value="<%=member.getUserId()%>"></td>
 						</tr>
 						<%
-							}
+						}
 						} else {
 						%>
 						<tr>
@@ -121,6 +121,7 @@ String path = request.getContextPath();
 						<%
 						}
 						%>
+
 					</tbody>
 				</table>
 			</div>

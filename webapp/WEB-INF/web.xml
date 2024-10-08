@@ -8,7 +8,7 @@
     <description></description>
     <display-name>adminLogin.do</display-name>
     <servlet-name>adminLogin.do</servlet-name>
-    <servlet-class>com.semi.member.controller.AdminMemberLoginController</servlet-class>
+    <servlet-class>com.semi.admin.controller.AdminMemberLoginController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>adminLogin.do</servlet-name>
@@ -18,7 +18,7 @@
     <description></description>
     <display-name>memberdel.do</display-name>
     <servlet-name>memberdel.do</servlet-name>
-    <servlet-class>com.semi.member.controller.AdminMemberManagement</servlet-class>
+    <servlet-class>com.semi.admin.controller.AdminMemberManagementController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>memberdel.do</servlet-name>

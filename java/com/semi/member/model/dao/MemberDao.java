@@ -8,11 +8,15 @@ public class MemberDao {
 	public Member loginMember(SqlSession sqlSession, Member m) {
 		System.out.println(m);
 	    Member loginUser = sqlSession.selectOne("memberMapper.loginMember", m);
+	    sqlSession.close();
 	    System.out.println("로그인 사용자 정보: " + loginUser); // 디버깅용
 	    return loginUser;
 	}
 	public List<Member> selectAllMembers(SqlSession sqlSession) {
-        return sqlSession.selectList("memberMapper.selectAllMembers");
+		List<Member> list = sqlSession.selectList("memberMapper.selectAllMembers");
+		System.out.println(list);
+		sqlSession.close();
+        return list;
     }
 	
 	
