@@ -24,7 +24,7 @@
     </script>
   </head>
   <body>
-    <div class="member-management">
+    <div class="order-management">
     <form action="">
 
 		<%@ include file="/views/jsp/header.jsp" %>
@@ -64,7 +64,6 @@
           <table class="table table-striped table-bordered member-table">
             <thead>
               <tr>
-                <th></th>
                 <th>주문일</th>
                 <th>주문번호</th>
                 <th>주문상품</th>
@@ -73,11 +72,11 @@
                 <th>주문자</th>
                 <th>배송상태</th>
                 <th>결제방법</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style="text-align: center;"><input style='zoom:1.3;' type="checkbox"></td>
                 <td>2024-09-05</td>
                 <td>20240905154763</td>
                 <td>완숙 토마토 950g(봉)</td>
@@ -86,6 +85,7 @@
                 <td>jjhim1234</td>
                 <td>배송준비중</td>
                 <td>토스페이</td>
+                <td style="text-align: center;"><input style='zoom:1.3;' type="checkbox"></td>
               </tr>
             </tbody>
           </table>

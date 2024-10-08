@@ -14,10 +14,10 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class MemberLoginController
  */
-public class MemberLoginController extends HttpServlet {
+public class AdminMemberLoginController extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    public MemberLoginController() {
+    public AdminMemberLoginController() {
         super();
     }
 

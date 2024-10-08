@@ -1,74 +1,129 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%
-    String path = request.getContextPath();
-    %>
+	pageEncoding="UTF-8"%>
+<%@ page import="java.util.List"%>
+<%@ page import="com.semi.member.model.vo.Member"%>
+<%
+String path = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="<%=path %>/views/css/globals.css"> 
-    <link rel="stylesheet" href="<%=path %>/views/css/MemberManagement.css">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="<%=path%>/views/css/globals.css">
+<link rel="stylesheet" href="<%=path%>/views/css/MemberManagement.css">
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
 
-    <!-- Custom JavaScript -->
-    <script>
-      function changeDropdownText(selectedText) {
-        document.getElementById("dropdownMenuButton1").innerText = selectedText;
-      }
-    </script>
-  </head>
-  <body>
-  
-    <div class="customer-management">
-   	<form action="admin.do">
-      <header class="header">
-        <div class="admin-page">
-          <div class="text-wrapper">관리자 페이지</div>
-        </div>
-        <nav class="menu">
-          <button type="button" class="head-button" onClick="location.href='MemberManagement.jsp'">회원관리</button>
-          <button type="button" class="head-button" onClick="location.href='OrderManagement.jsp'">주문관리</button>
-          <button type="button" class="head-button" onClick="location.href='ProductManagement1.jsp'">상품관리</button>
-          <button type="button" class="head-button" onClick="location.href='CustomerInquiry1.jsp'">고객지원</button>
-          <button type="button" class="head-button" onClick="location.href='MainPage.jsp'">메인페이지</button>
-        </nav>
-      </header>
+<!-- Bootstrap JavaScript -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-      <div class="body">
-        <div class="top-2">
-          <div class="text-wrapper-2">고객문의</div>
-        </div>
+<!-- Custom JavaScript -->
+<script>
+	function changeDropdownText(selectedText) {
+		document.getElementById("dropdownMenuButton1").innerText = selectedText;
+	}
+</script>
+</head>
+<body>
 
-        <div class="bottom">
-          <table class="table table-striped table-bordered product-table">
-            <tbody>
-              <tr>
-                <td class="text-center">제목</td>
-                <td class="input-cell"><input type="text" value="대충 욕하는 글의 제목"></td>
-              </tr>
-              <tr>
-                <td class="text-center">문의 내용</td>
-                <td class="input-cell"><input type="text" value="대충 욕하는 글"></td>
-              </tr>
-              <tr>
-                <td class="text-center" style="vertical-align: middle;">답변 내용</td>
-                <td class="input-cell"><textarea style="width: 100%; height: 200px;"></textarea></td>
-              </tr>
-              <tr>
-                <td colspan="2" class="text-end">
-                  <button class="btn btn-success">답변작성</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </body>
+	<!-- 여기서 클래스명을 customer-management에서 member-management로 변경 -->
+	<div class="member-management">
+		<form action="admin.do">
+			<header class="header">
+				<div class="admin-page">
+					<div class="text-wrapper">관리자 페이지</div>
+				</div>
+				<nav class="menu">
+					<button type="button" class="head-button"
+						onClick="location.href='MemberManagement.jsp'">회원관리</button>
+					<button type="button" class="head-button"
+						onClick="location.href='OrderManagement.jsp'">주문관리</button>
+					<button type="button" class="head-button"
+						onClick="location.href='ProductManagement1.jsp'">상품관리</button>
+					<button type="button" class="head-button"
+						onClick="location.href='CustomerInquiry1.jsp'">고객지원</button>
+					<button type="button" class="head-button"
+						onClick="location.href='MainPage.jsp'">메인페이지</button>
+				</nav>
+			</header>
+
+			<div class="body">
+				<div class="top-2">
+					<div class="text-wrapper-2">회원관리</div>
+				</div>
+				<div class="search-bar-container">
+					<div class="search-bar">
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button"
+								id="dropdownMenuButton1" data-bs-toggle="dropdown"
+								aria-expanded="false">종류</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#"
+									onclick="changeDropdownText('회원명')">회원명</a></li>
+								<li><a class="dropdown-item" href="#"
+									onclick="changeDropdownText('아이디')">아이디</a></li>
+							</ul>
+						</div>
+						<input class="search-input-text form-control" type="text"
+							placeholder="검색어를 입력하세요" />
+						<button type="button" class="btn btn-secondary search-button">검색</button>
+					</div>
+				</div>
+
+				<!-- 검색창 바깥에 취소하기 버튼 배치 -->
+				<div class="cancel-button">
+					<button type="button" class="btn btn-danger">삭제하기</button>
+				</div>
+
+
+
+				<table class="table table-striped table-bordered member-table">
+					<thead>
+						<tr>
+							<th>회원명</th>
+							<th>아이디</th>
+							<th>회원등급</th>
+							<th>전화번호</th>
+							<th>email</th>
+							<th>가입일</th>
+							<th>탈퇴여부</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<%
+						List<Member> memberList = (List<Member>) request.getAttribute("memberList");
+						if (memberList != null && !memberList.isEmpty()) {
+							for (Member member : memberList) {
+						%>
+						<tr>
+							<td><%=member.getUserName()%></td>
+							<td><%=member.getUserId()%></td>
+							<td><%=member.getGrade()%></td>
+							<td><%=member.getPhone()%></td>
+							<td><%=member.getEmail()%></td>
+							<td><%=member.getEnrollDate()%></td>
+							<td><%=member.getDelFlag()%></td>
+							<td style="text-align: center;"><input style='zoom: 1.3;'
+								type="checkbox" name="memberId" value="<%=member.getUserId()%>"></td>
+						</tr>
+						<%
+							}
+						} else {
+						%>
+						<tr>
+							<td colspan="8">회원 정보가 없습니다.</td>
+						</tr>
+						<%
+						}
+						%>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</body>
 </html>
