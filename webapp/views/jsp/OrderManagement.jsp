@@ -24,7 +24,7 @@
     </script>
   </head>
   <body>
-    <div class="member-management">
+    <div class="order-management">
     <form action="">
       <header class="header">
         <div class="admin-page"><div class="text-wrapper">관리자 페이지</div></div>
@@ -33,7 +33,7 @@
           <button type="button" class="head-button" onClick="location.href='OrderManagement.jsp'">주문관리</button>
           <button type="button" class="head-button" onClick="location.href='ProductManagement1.jsp'">상품관리</button>
           <button type="button" class="head-button" onClick="location.href='CustomerInquiry1.jsp'">고객지원</button>
-          <button type="button" class="head-button" onClick="location.href='MainPage.jsp'">메인페이지</button>
+          <button type="button" class="head-button" onClick="location.href='../../MainPage.jsp'">메인페이지</button>
         </nav>
       </header>
 
@@ -72,7 +72,6 @@
           <table class="table table-striped table-bordered member-table">
             <thead>
               <tr>
-                <th></th>
                 <th>주문일</th>
                 <th>주문번호</th>
                 <th>주문상품</th>
@@ -81,11 +80,11 @@
                 <th>주문자</th>
                 <th>배송상태</th>
                 <th>결제방법</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style="text-align: center;"><input style='zoom:1.3;' type="checkbox"></td>
                 <td>2024-09-05</td>
                 <td>20240905154763</td>
                 <td>완숙 토마토 950g(봉)</td>
@@ -94,6 +93,7 @@
                 <td>jjhim1234</td>
                 <td>배송준비중</td>
                 <td>토스페이</td>
+                <td style="text-align: center;"><input style='zoom:1.3;' type="checkbox"></td>
               </tr>
             </tbody>
           </table>

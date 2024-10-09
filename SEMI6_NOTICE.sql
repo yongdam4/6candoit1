@@ -151,7 +151,7 @@ ALTER TABLE COUPON_MAPPING ADD CONSTRAINT MEMBER_NN_PWD FOREIGN KEY(COUPON_ID) R
 
 -- 임시 멤버데이터추가
 INSERT INTO MEMBER
-VALUES ('admin', '1234', '관리자', 'F', '2000/12/12', 'admin@kh.or.kr', '010-1111-2222', '2022-02-10', 'N', null, 'MASTER', '서울시 강남구 역삼동', '관리자', null);
+VALUES ('admin', '1234', '관리자', 'F', '2000/12/12', 'admin@kh.or.kr', '010-1111-2222', '2022-02-10', 'Y', null, 'MASTER', '서울시 강남구 역삼동', '관리자', null);
  
 INSERT INTO MEMBER
 VALUES ('user01', 'pass01', '홍길동', 'F', '2000/01/05', 'user01@kh.or.kr', '010-3333-2222', '2023-01-10', 'N', null, 'GOLD', '서울시 양천구 목동', null, 3);

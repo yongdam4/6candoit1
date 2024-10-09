@@ -161,7 +161,6 @@ public class Member {
 				+ ", enrollDate=" + enrollDate + ", grade=" + grade + ", admingrade=" + admingrade + ", userCoin="
 				+ userCoin + ", deleteDate=" + deleteDate + ", delFlag=" + delFlag + "]";
 	}
-
 	
 	
 }
