@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>SemiProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
   <welcome-file-list>
     <welcome-file>MainPage.html</welcome-file>
     <welcome-file>MainPage.jsp</welcome-file>
@@ -16,6 +25,65 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>luckyboxshow.bo</display-name>
+    <servlet-name>luckyboxshow.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.LuckyBoxShowController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>luckyboxshow.bo</servlet-name>
+    <url-pattern>/luckyboxshow.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>popularitems.bo</display-name>
+    <servlet-name>popularitems.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.PopularItemsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>popularitems.bo</servlet-name>
+    <url-pattern>/popularitems.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>contactpage.bo</display-name>
+    <servlet-name>contactpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.ContactPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contactpage.bo</servlet-name>
+    <url-pattern>/contactpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>mypage.bo</display-name>
+    <servlet-name>mypage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.MyPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mypage.bo</servlet-name>
+    <url-pattern>/mypage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>shoppingcartpage.bo</display-name>
+    <servlet-name>shoppingcartpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.ShoppingcartPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shoppingcartpage.bo</servlet-name>
+    <url-pattern>/shoppingcartpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>productpage.bo</display-name>
+    <servlet-name>productpage.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.ProductPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productpage.bo</servlet-name>
+    <url-pattern>/productpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <display-name>memberdel.do</display-name>
     <servlet-name>memberdel.do</servlet-name>
     <servlet-class>com.semi.admin.controller.AdminMemberManagementController</servlet-class>

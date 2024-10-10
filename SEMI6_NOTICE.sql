@@ -149,6 +149,17 @@ ALTER TABLE COUPON_MAPPING ADD CONSTRAINT MEMBER_UQ_ID3 FOREIGN KEY(USER_ID) REF
 ALTER TABLE COUPON_MAPPING ADD CONSTRAINT MEMBER_NN_PWD FOREIGN KEY(COUPON_ID) REFERENCES COUPON(COUPON_ID);
 
 
+<<<<<<< HEAD
+-- ÀÓ½Ã ¸â¹öµ¥ÀÌÅÍÃß°¡
+INSERT INTO MEMBER
+VALUES ('admin', '1234', '°ü¸®ÀÚ', 'F', 21, 'admin@kh.or.kr', '010-1111-2222', '2022-02-10', 'N', null, 'MASTER', '¼­¿ï½Ã °­³²±¸ ¿ª»ïµ¿', '°ü¸®ÀÚ', null);
+
+INSERT INTO MEMBER
+VALUES ('user01', 'pass01', 'È«±æµ¿', 'F', 25, 'user01@kh.or.kr', '010-3333-2222', '2023-01-10', 'N', null, 'GOLD', '¼­¿ï½Ã ¾çÃµ±¸ ¸ñµ¿', null, 3);
+
+INSERT INTO MEMBER
+VALUES ('user02', 'pass02', '±è°³¶Ë', 'M', 23, 'user02@kh.or.kr', '010-5555-7777', '2023-02-16', 'N', null, 'DIAMOND', '°æ±âµµ ½ÃÈï½Ã Á¤¿Õµ¿', null, 5);
+=======
 -- ìž„ì‹œ ë©¤ë²„ë°ì´í„°ì¶”ê°€
 INSERT INTO MEMBER
 VALUES ('admin', '1234', 'ê´€ë¦¬ìž', 'F', '2000/12/12', 'admin@kh.or.kr', '010-1111-2222', '2022-02-10', 'Y', null, 'MASTER', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì—­ì‚¼ë™', 'ê´€ë¦¬ìž', null);
@@ -159,4 +170,10 @@ VALUES ('user01', 'pass01', 'í™ê¸¸ë™', 'F', '2000/01/05', 'user01@kh.or.kr', '
 INSERT INTO MEMBER
 VALUES ('user02', 'pass02', 'ê¹€ê°œë˜¥', 'M', '2001/05/19', 'user02@kh.or.kr', '010-5555-7777', '2023-02-16', 'N', null, 'DIAMOND', 'ê²½ê¸°ë„ ì‹œí¥ì‹œ ì •ì™•ë™', null, 5);
 
+<<<<<<< HEAD
+INSERT INTO MEMBER
+VALUES ('user02', 'pass02', 'ê¹€ê°œë˜¥', 'M', 23, 'user02@kh.or.kr', '010-5555-7777', '2023-02-16', 'N', null, 'DIAMOND', 'ê²½ê¸°ë„ ì‹œí¥ì‹œ ì •ì™•ë™', null, 5);
+>>>>>>> 8ba5367a847e1c80c9dc8b13906f8e35471cd2ea
+=======
 COMMIT;
+>>>>>>> 8ae358aeb22c349695b8eb73be0d5d651ff26abe

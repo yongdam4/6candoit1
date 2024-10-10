@@ -21,8 +21,10 @@
           <div class="today-tiems"><div class="text-wrapper-6">🎉 오늘의 특가 🎉</div></div>
           <div class="div-2">
             <div class="tamato">
-              <img class="image" src="views/img/img-image-3.png" />
-              <div class="element">완숙 토마토 950g<br />(봉)<br />10,990원</div>
+            <a href="productpage.bo">
+              <img class="image" src="views/img/img-image-3.png"/>
+              </a>
+              <div class="element" >완숙 토마토 950g<br />(봉)<br />10,990원</div>
             </div>
             <div class="broccoli">
               <img class="image-2" src="views/img/img-image-2.png" />
