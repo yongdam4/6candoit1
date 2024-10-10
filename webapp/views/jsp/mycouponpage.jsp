@@ -21,10 +21,14 @@ String path = request.getContextPath();
         <div class="side">
             <div class="mypage-navbar">
                 <div class="view">
-                    <div class="text-wrapper-7" onclick="">등급 정보 및 혜택</div>
+                    <div class="text-wrapper-7"><a href="mygradepage.bo">
+            		등급 정보 및 혜택
+            	</a></div>
                 </div>
                 <div class="view-2">
-                    <div class="text-wrapper-8" onclick="">쿠폰함</div>
+                    <div class="text-wrapper-8"><a href="mycouponpage.bo">
+            		쿠폰함
+            	</a></div>
                 </div>
                 <div class="overlap">
                     <div class="view-3">
@@ -33,10 +37,14 @@ String path = request.getContextPath();
                     <div class="frame-wrapper">
                         <div class="frame">
                             <div class="view-4">
-                                <div class="text-wrapper-7" onclick="">개인정보 수정 및 정보</div>
+                                <div class="text-wrapper-7"><a href="mypage.bo">
+            		개인정보 수정 및 정보
+            	</a></div>
                             </div>
                             <div class="view-5">
-                                <div class="text-wrapper-10" onclick="">주문 내역</div>
+                                <div class="text-wrapper-10"><a href="orderpage.bo">
+            		주문 내역
+            	</a></div>
                             </div>
                         </div>
                     </div>

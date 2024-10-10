@@ -19,13 +19,13 @@
 
        <div class="body">
         <div class="product-infom">
-          <img class="melon" src="img/melon-1.png" />
+          <img class="melon" src="views/img/img-image-3.png" />
           <div class="product-inform">
-            <div class="frame"><div class="text-wrapper-7">멜론(한국산)</div></div>
-            <div class="frame-2"><div class="text-wrapper-8">메론(한국산)/농심 , 850g</div></div>
+            <div class="frame"><div class="text-wrapper-7">완숙 토마토</div></div>
+            <div class="frame-2"><div class="text-wrapper-8">완숙 토마토/자연산, 950g</div></div>
             <div class="frame-3"><div class="text-wrapper-9">수량 : 3</div></div>
-            <div class="frame-4"><div class="text-wrapper-10">가격: 16,800</div></div>
-            <div class="frame-5"><div class="text-wrapper-11">총가격: 16,800</div></div>
+            <div class="frame-4"><div class="text-wrapper-10">가격: 10,990원</div></div>
+            <div class="frame-5"><div class="text-wrapper-11">총가격: 32,970원</div></div>
             <div class="add-button">
 
               <button class="typography-row" onclick="location.href='<%=path %>/MainPage.jsp'"><div class="header-2" >장바구니 담기</div></button>
@@ -35,8 +35,8 @@
           </div>
         </div>
         <div class="product-explaination">
-          <div class="text-wrapper-12">달고 맛있는 메론!</div>
-          <p class="p">고창에서 나고 자란 국산 메론입니다.</p>
+          <div class="text-wrapper-12">새콤 달달한 완숙 토마토!</div>
+          <p class="p">화천에서 나고 자란 국산 토마토입니다.</p>
         </div>
         <div class="inquiry-list">
           <div class="table">

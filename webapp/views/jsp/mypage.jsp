@@ -31,7 +31,9 @@
           <div class="menu-section">
             <div class="menu-title" style="border-bottom: 1px solid #000;">나의 계정</div>
             <div class="menu-item">
-              개인정보 수정 및 정보
+             <a href="mypage.bo">
+             개인정보 수정 및 정보
+             </a>
             </div>
             <div class="menu-item" style="border-bottom: 1px solid #000;">
             	<a href="orderpage.bo">

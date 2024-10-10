@@ -55,6 +55,8 @@
 
 .image{
   flex-direction: column;
+  width: 255px;
+  height: 255px;
 }
 
 .product {
