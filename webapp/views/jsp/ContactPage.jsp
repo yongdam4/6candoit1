@@ -65,27 +65,6 @@ String path = request.getContextPath();
     </table>
   </form>
     </div>
-    
-    <script>
-  document.getElementById("inquiryForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // 기본 폼 제출 방지
-
-    // 입력된 데이터 가져오기
-    const title = document.querySelector('input[name="title"]').value;
-    const author = document.querySelector('input[name="author"]').value;
-    const inquiryType = document.querySelector('input[name="inquiry-type"]:checked').value;
-    const content = document.querySelector('textarea[name="content"]').value;
-    const secret = document.querySelector('input[name="secret"]').checked;
-
-    // 서버로 전송할 데이터를 객체 형태로 준비
-    const formData = {
-      title: title,
-      author: author,
-      inquiryType: inquiryType,
-      content: content,
-      secret: secret
-    };
-    </script>
 
    	<%@ include file="/views/jsp/footer.jsp" %>
    

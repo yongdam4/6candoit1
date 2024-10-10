@@ -32,8 +32,8 @@ public class ContactPageController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ContactPageService cService = new ContactPageServiceImpl();
 		
-		int ucNo = Integer.parseInt(request.getParameter("ucNo"));
-		int list = cService.selectList(ucNo);
+//		int ucNo = Integer.parseInt(request.getParameter("ucNo"));
+//		int list = cService.selectList(ucNo);
 		
 		
 		

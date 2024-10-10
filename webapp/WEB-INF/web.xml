@@ -47,7 +47,7 @@
     <description></description>
     <display-name>contactpage.bo</display-name>
     <servlet-name>contactpage.bo</servlet-name>
-    <servlet-class>com.semi.product.controller.ContactPageController</servlet-class>
+    <servlet-class>com.semi.board.controller.ContactPageController</servlet-class> 
   </servlet>
   <servlet-mapping>
     <servlet-name>contactpage.bo</servlet-name>
