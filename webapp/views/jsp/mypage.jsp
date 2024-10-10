@@ -34,7 +34,7 @@
               개인정보 수정 및 정보
             </div>
             <div class="menu-item" style="border-bottom: 1px solid #000;">
-            	<a href="OrderPage.jsp" method="post">
+            	<a href="orderpage.bo">
             		주문내역
             	</a>
             </div>
@@ -44,12 +44,12 @@
           <div class="menu-section">
             <div class="menu-title"  style="border-bottom: 1px solid #000;">혜택</div>
             <div class="menu-item">
-            	<a href="MyGradePage.jsp" method="post">
+            	<a href="mygradepage.bo">
               		등급 정보 및 혜택
               	</a>
             </div>
             <div classs="menu-item">
-            	<a href="mycouponpage.jsp" method="post">
+            	<a href="mycouponpage.bo">
             		쿠폰함
             	</a>
             </div>

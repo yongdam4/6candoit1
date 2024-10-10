@@ -117,7 +117,7 @@ String path = request.getContextPath();
                 <div class="div-wrapper-4"><div class="text-wrapper-16">10,800원</div></div>
               </div>
             </div>
-            <div class="buy-button"><div class="text-wrapper-18"><button class="popular-btn"><a href="paymentinformationpage.jsp" method="post">구매하기</a></button></div></div>
+            <div class="buy-button"><div class="text-wrapper-18"><button class="popular-btn"><a href="paymentinformationpage.bo">구매하기</a></button></div></div>
           </div>
         </div>
       </div>
