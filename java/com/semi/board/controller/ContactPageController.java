@@ -1,10 +1,11 @@
-package com.semi.product.controller;
+package com.semi.board.controller;
 
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.ArrayList;
 
-import com.semi.product.service.ProductService;
-import com.semi.product.service.ProductServiceImpl;
+import com.semi.board.model.vo.Board;
+import com.semi.board.service.ContactPageService;
+import com.semi.board.service.ContactPageServiceImpl;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -29,6 +30,13 @@ public class ContactPageController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ContactPageService cService = new ContactPageServiceImpl();
+		
+		int ucNo = Integer.parseInt(request.getParameter("ucNo"));
+		int list = cService.selectList(ucNo);
+		
+		
+		
 		request.getRequestDispatcher("views/jsp/ContactPage.jsp").forward(request, response);
 		
 		
