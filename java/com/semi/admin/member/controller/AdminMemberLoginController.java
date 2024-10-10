@@ -1,4 +1,4 @@
-package com.semi.admin.controller;
+package com.semi.admin.member.controller;
 
 import java.io.IOException;
 
