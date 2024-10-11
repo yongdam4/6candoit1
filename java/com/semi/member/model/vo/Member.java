@@ -7,7 +7,7 @@ public class Member {
 	private String userPwd;
 	private String userName;
 	private String gender;
-	private String birthday; // 생일 필드 추가
+	private String birthday;
 	private String email;
 	private String phone;
 	private String address;
@@ -161,7 +161,6 @@ public class Member {
 				+ ", enrollDate=" + enrollDate + ", grade=" + grade + ", admingrade=" + admingrade + ", userCoin="
 				+ userCoin + ", deleteDate=" + deleteDate + ", delFlag=" + delFlag + "]";
 	}
-
 	
 	
 }

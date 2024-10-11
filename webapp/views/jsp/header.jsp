@@ -87,6 +87,7 @@
       <button class="luckybox-btn"><a href="luckyboxshow.bo">럭키박스</a></button>
       <button class="inquiry-btn"><a href="contactpage.bo">문의</a></button>
       <button class="admin-btn"><a href="views/jsp/AdminLoginPage.jsp" method="post">관리자
+
   		</a></button>
     </div>    
   </div>
