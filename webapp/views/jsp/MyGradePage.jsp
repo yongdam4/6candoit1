@@ -59,7 +59,7 @@
                   <div class="frame-2"><div class="text-wrapper-19">다이아 등급 혜택 내용</div></div>
                 </div>
               </div>
-              <img class="picture" src="img/picture.svg" />
+              <img class="picture" src="<%=contextPath%>/views/img/pepicons-print-seedling.svg"" />
             </div>
           </div>
         </div>

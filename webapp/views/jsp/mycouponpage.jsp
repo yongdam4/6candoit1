@@ -95,7 +95,7 @@ String path = request.getContextPath();
                       </div>
                   </div>
               </div>
-              <img class="coupon-inline-img" src="img/coupon-inline-img.svg" />
+              <img class="coupon-inline-img" src="<%=contextPath%>/views/img/pepicons-print-seedling.svg" />
           </div>
       </div>
       

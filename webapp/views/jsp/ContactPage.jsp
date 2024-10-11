@@ -18,7 +18,7 @@ String path = request.getContextPath();
 	<%@ include file="/views/jsp/header.jsp" %>
  
     <div class="body">
-       <form id="inquiryForm" action="<%=path %>/MainPage.jsp" method="POST">
+       <form id="inquiryForm" action="insertContact.bo">
     <table class="contact-table">
       <tr>
         <td colspan="2" class="text-blank-wrapper">
@@ -28,27 +28,29 @@ String path = request.getContextPath();
       <tr>
         <td class="label">제&nbsp;&nbsp;목</td>
         <td class="input">
-          <input type="text" class="input-field" name="title" placeholder="제목을 입력하세요" required>
+          <input type="text" class="input-field" name="ucTitle" value="${ucTitle}" placeholder="제목을 입력하세요" required>
         </td>
       </tr>
       <tr>
         <td class="label">작성자</td>
         <td class="input">
-          <input type="text" class="input-field" name="author" placeholder="작성자 이름" required>
+          <input type="text" class="input-field" name="userId" value="${userId}" placeholder="작성자 이름" required>
         </td>
       </tr>
       <tr>
+      <!--  
         <td class="label">문의종류</td>
         <td class="input">
-          <label><input type="radio" name="inquiry-type" value="배송" required> 배송</label>
-          <label><input type="radio" name="inquiry-type" value="취소/반품/교환"> 취소/반품/교환</label>
-          <label><input type="radio" name="inquiry-type" value="주문/결제"> 주문/결제</label>
+          <label><input type="radio" name="inquiry" value="delivery"> 배송</label>
+          <label><input type="radio" name="inquiry" value="change"> 취소/반품/교환</label>
+          <label><input type="radio" name="inquiry" value="order"> 주문/결제</label>
         </td>
+        -->
       </tr>
       <tr>
         <td class="label">내&nbsp;&nbsp;용</td>
         <td class="input">
-          <textarea class="textarea-field" name="content" placeholder="문의 내용을 입력하세요" required></textarea>
+          <textarea class="textarea-field" name="askDeatil" value="${askDeatil}" placeholder="문의 내용을 입력하세요" required></textarea>
         </td>
       </tr>
       <tr>

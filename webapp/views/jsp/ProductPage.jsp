@@ -42,23 +42,23 @@
           <div class="table">
             <div class="top-2">
               <div class="frame-6"><div class="text-wrapper-13">번호</div></div>
-              <div class="frame-7"><div class="text-wrapper-14">문의종류</div></div>
+              <div class="frame-7"><div class="text-wrapper-14">상품코드</div></div>
               <div class="frame-8"><div class="text-wrapper-14">제목</div></div>
               <div class="frame-9"><div class="text-wrapper-15">작성자</div></div>
               <div class="frame-10"><div class="text-wrapper-16">작성일</div></div>
             </div>
             <div class="mid">
-              <div class="inquiry-number"><div class="text-wrapper-17">1</div></div>
-              <div class="inquiry-type"><div class="text-wrapper-18">배송</div></div>
-              <div class="inquiry-title"><div class="text-wrapper-19">아 배송 개느리네 진짜</div></div>
-              <div class="inquiry-author"><div class="text-wrapper-20">jjm****</div></div>
-              <div class="inquiry-creation"><div class="text-wrapper-21">2024-09-05</div></div>
+              <div class="inquiry-number"><div class="text-wrapper-17">${c.ucNo}</div></div>
+              <div class="inquiry-type"><div class="text-wrapper-18">${c.productCode}</div></div>
+              <div class="inquiry-title"><div class="text-wrapper-19">${c.usTitle}</div></div>
+              <div class="inquiry-author"><div class="text-wrapper-20">${c.userId}</div></div>
+              <div class="inquiry-creation"><div class="text-wrapper-21">${c.writeDate}</div></div>
             </div>
             <div class="bottom"></div>
           </div>
         </div>
 
-       <div class="inquiry-button"><button class="real-button" onclick="location.href='<%=path %>/views/jsp/ContactPage.jsp'"><div class="text-wrapper-22">문의하기</div></button></div>
+       <div class="inquiry-button"><button class="real-button" onclick="location.href='contactpage.bo'"><div class="text-wrapper-22">문의하기</div></button></div>
  	</div>
  	</div>
  

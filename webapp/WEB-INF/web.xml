@@ -47,7 +47,7 @@
     <description></description>
     <display-name>contactpage.bo</display-name>
     <servlet-name>contactpage.bo</servlet-name>
-    <servlet-class>com.semi.board.controller.ContactPageController</servlet-class> 
+    <servlet-class>com.semi.board.controller.ContactPageController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>contactpage.bo</servlet-name>
@@ -141,5 +141,15 @@
   <servlet-mapping>
     <servlet-name>mycouponpage.bo</servlet-name>
     <url-pattern>/mycouponpage.bo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>insertContact.bo</display-name>
+    <servlet-name>insertContact.bo</servlet-name>
+    <servlet-class>com.semi.board.controller.InsertContactController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertContact.bo</servlet-name>
+    <url-pattern>/insertContact.bo</url-pattern>
   </servlet-mapping>
 </web-app>
