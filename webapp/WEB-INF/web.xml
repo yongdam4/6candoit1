@@ -94,7 +94,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-<<<<<<< HEAD
     <display-name>insert.me</display-name>
     <servlet-name>insert.me</servlet-name>
     <servlet-class>com.semi.member.controller.MemberInsertController</servlet-class>
@@ -142,7 +141,9 @@
   <servlet-mapping>
     <servlet-name>checkId.me</servlet-name>
     <url-pattern>/checkId.me</url-pattern>
-=======
+     </servlet-mapping>
+     <servlet>
+    <description></description>
     <display-name>paymentinformationpage.bo</display-name>
     <servlet-name>paymentinformationpage.bo</servlet-name>
     <servlet-class>com.semi.product.controller.PaymentInformationPageController</servlet-class>
@@ -309,6 +310,5 @@
   <servlet-mapping>
     <servlet-name>productsearch.do</servlet-name>
     <url-pattern>/productsearch.do</url-pattern>
->>>>>>> a6e39b25da0e763a0dfb9dbaf3efaaeca171bd5e
   </servlet-mapping>
 </web-app>

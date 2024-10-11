@@ -49,11 +49,7 @@
 
 
  <div class="header-mid">
-<<<<<<< HEAD
-    <button class="home-button"><a href="${pageContext.request.contextPath}/MainPage.jsp">푸드피아</a></button>
-=======
-    <button class="home-button"><a href="<%=contextPath %>/MainPage.jsp">푸드피아</a></button>
->>>>>>> a6e39b25da0e763a0dfb9dbaf3efaaeca171bd5e
+    <button class="home-button"><a href="${pageContext.request.contextPath}/index.jsp">푸드피아</a></button>
 
       <div class="search-bar">
         <button type="submit" class="search-icon-blank">

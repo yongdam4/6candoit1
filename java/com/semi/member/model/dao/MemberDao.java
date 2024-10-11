@@ -18,7 +18,6 @@ public class MemberDao {
 		sqlSession.close();
         return list;
     }
-<<<<<<< HEAD
 	
 	public int insertMember(SqlSession sqlSession, Member m) {
 		sqlSession.insert("memberMapper.insertMember", m);
@@ -35,7 +34,7 @@ public class MemberDao {
 		
 		return sqlSession.selectOne("memberMapper.checkId", userId);		
 	}
-=======
+	
 	// 회원명으로 검색
     public List<Member> searchMembersByName(SqlSession sqlSession, String name) {
         return sqlSession.selectList("memberMapper.searchMembersByName", name);
@@ -54,6 +53,5 @@ public class MemberDao {
     public void deleteMember(SqlSession sqlSession, String memberId) {
         sqlSession.delete("memberMapper.deleteMember", memberId);
     }
->>>>>>> a6e39b25da0e763a0dfb9dbaf3efaaeca171bd5e
 	
 }
