@@ -17,7 +17,7 @@
     <description></description>
     <display-name>adminLogin.do</display-name>
     <servlet-name>adminLogin.do</servlet-name>
-    <servlet-class>com.semi.member.controller.AdminMemberLoginController</servlet-class>
+    <servlet-class>com.semi.admin.member.controller.AdminMemberLoginController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>adminLogin.do</servlet-name>
@@ -86,7 +86,7 @@
   <servlet>
     <display-name>memberdel.do</display-name>
     <servlet-name>memberdel.do</servlet-name>
-    <servlet-class>com.semi.member.controller.AdminMemberManagement</servlet-class>
+    <servlet-class>com.semi.admin.member.controller.AdminMemberManagementController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>memberdel.do</servlet-name>
@@ -151,5 +151,54 @@
   <servlet-mapping>
     <servlet-name>toss.bo</servlet-name>
     <url-pattern>/toss.bo</url-pattern>
+    </servlet-mapping>
+  <servlet>
+    <display-name>searchbar.do</display-name>
+    <servlet-name>searchbar.do</servlet-name>
+    <servlet-class>com.semi.admin.member.controller.AdminMemberSearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchbar.do</servlet-name>
+    <url-pattern>/searchbar.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>change.do</display-name>
+    <servlet-name>change.do</servlet-name>
+    <servlet-class>com.semi.admin.member.controller.AdminMemberDeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>change.do</servlet-name>
+    <url-pattern>/change.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ordermem.do</display-name>
+    <servlet-name>ordermem.do</servlet-name>
+    <servlet-class>com.semi.admin.order.controller.AdminOrderManagementController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ordermem.do</servlet-name>
+    <url-pattern>/ordermem.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>productmem.do</display-name>
+    <servlet-name>productmem.do</servlet-name>
+    <servlet-class>com.semi.admin.product.controller.AdminProductManagementController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productmem.do</servlet-name>
+    <url-pattern>/productmem.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>customer.do</display-name>
+    <servlet-name>customer.do</servlet-name>
+    <servlet-class>com.semi.admin.customer.controller.AdminCustomerBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>customer.do</servlet-name>
+    <url-pattern>/customer.do</url-pattern>
   </servlet-mapping>
 </web-app>
