@@ -24,4 +24,54 @@
     <servlet-name>memberdel.do</servlet-name>
     <url-pattern>/memberdel.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>insert.me</display-name>
+    <servlet-name>insert.me</servlet-name>
+    <servlet-class>com.semi.member.controller.MemberInsertController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insert.me</servlet-name>
+    <url-pattern>/insert.me</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>signup.me</display-name>
+    <servlet-name>signup.me</servlet-name>
+    <servlet-class>com.semi.member.controller.MemberSignupController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signup.me</servlet-name>
+    <url-pattern>/signup.me</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>logout.me</display-name>
+    <servlet-name>logout.me</servlet-name>
+    <servlet-class>com.semi.member.controller.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logout.me</servlet-name>
+    <url-pattern>/logout.me</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>delete.me</display-name>
+    <servlet-name>delete.me</servlet-name>
+    <servlet-class>com.semi.member.controller.MemberDeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete.me</servlet-name>
+    <url-pattern>/delete.me</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>checkId.me</display-name>
+    <servlet-name>checkId.me</servlet-name>
+    <servlet-class>com.semi.member.controller.AjaxCheckController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkId.me</servlet-name>
+    <url-pattern>/checkId.me</url-pattern>
+  </servlet-mapping>
 </web-app>

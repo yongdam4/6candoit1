@@ -22,6 +22,21 @@ public class Member {
 		super();
 	}
 
+	public Member(String userId, String userPwd, String userName, String gender,  String email,
+			String address, String phone, String birthday) {
+		super();
+		this.userId = userId;
+		this.userPwd = userPwd;
+		this.userName = userName;
+		this.gender = gender;
+		this.email = email;
+		this.address = address;				
+		this.phone = phone;
+		this.birthday = birthday;		
+	}
+
+
+
 	public Member(String userId, String userPwd, String userName, String gender, String birthday, String email,
 			String phone, String address, Date enrollDate, String grade, String admingrade, int userCoin,
 			Date deleteDate, String delFlag) {
