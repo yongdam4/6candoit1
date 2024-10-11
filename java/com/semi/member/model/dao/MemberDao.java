@@ -18,6 +18,10 @@ public class MemberDao {
 		sqlSession.close();
         return list;
     }
+	public int insertMember(SqlSession sqlSession, Member m) {		
+		sqlSession.insert("memberMapper.insertMember", m);
+		return 0;
+	}
 	
 	
 }

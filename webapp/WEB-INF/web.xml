@@ -24,4 +24,34 @@
     <servlet-name>memberdel.do</servlet-name>
     <url-pattern>/memberdel.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>insert.me</display-name>
+    <servlet-name>insert.me</servlet-name>
+    <servlet-class>com.semi.member.controller.MemberInsertController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insert.me</servlet-name>
+    <url-pattern>/insert.me</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>signup.me</display-name>
+    <servlet-name>signup.me</servlet-name>
+    <servlet-class>com.semi.member.controller.SignupController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signup.me</servlet-name>
+    <url-pattern>/signup.me</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>logout.me</display-name>
+    <servlet-name>logout.me</servlet-name>
+    <servlet-class>com.semi.member.controller.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logout.me</servlet-name>
+    <url-pattern>/logout.me</url-pattern>
+  </servlet-mapping>
 </web-app>

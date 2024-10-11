@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%
     String path = request.getContextPath();
     %>
@@ -79,24 +80,9 @@
               <div class="element-7">대구식 수제 납작만두<br />6,480원</div>
             </div>
           </div>
-        </div>
-        <footer class="footer">
-          <div class="top-2">
-            <div class="company"><div class="text-wrapper-8">푸드피아</div></div>
-            <div class="ceo"><div class="text-wrapper-9">대표자</div></div>
-            <div class="employee">
-              <div class="frame">
-                <div class="text-wrapper-9">전제민</div>
-                <div class="text-wrapper-9">김용담</div>
-                <div class="text-wrapper-9">이현선</div>
-                <div class="text-wrapper-9">정주희</div>
-                <div class="text-wrapper-9">조석현</div>
-              </div>
-            </div>
-          </div>
-          <div class="url"><p class="text-wrapper-10">CompanyName @ 202X All rights reserved.</p></div>
-        </footer>
+        </div>        
       </div>
     </div>
+    <%@ include file="/views/jsp/footer.jsp" %>
   </body>
 </html>
