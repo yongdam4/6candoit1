@@ -7,7 +7,7 @@ public class Member {
 	private String userPwd;
 	private String userName;
 	private String gender;
-	private int age;
+	private String birthday;
 	private String email;
 	private String phone;
 	private String address;
@@ -22,15 +22,15 @@ public class Member {
 		super();
 	}
 
-	public Member(String userId, String userPwd, String userName, String gender, int age, String email, String phone,
-			String address, Date enrollDate, String grade, String admingrade, int userCoin, Date deleteDate,
-			String delFlag) {
+	public Member(String userId, String userPwd, String userName, String gender, String birthday, String email,
+			String phone, String address, Date enrollDate, String grade, String admingrade, int userCoin,
+			Date deleteDate, String delFlag) {
 		super();
 		this.userId = userId;
 		this.userPwd = userPwd;
 		this.userName = userName;
 		this.gender = gender;
-		this.age = age;
+		this.birthday = birthday;
 		this.email = email;
 		this.phone = phone;
 		this.address = address;
@@ -74,12 +74,12 @@ public class Member {
 		this.gender = gender;
 	}
 
-	public int getAge() {
-		return age;
+	public String getBirthday() {
+		return birthday;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
 	}
 
 	public String getEmail() {
@@ -157,9 +157,10 @@ public class Member {
 	@Override
 	public String toString() {
 		return "Member [userId=" + userId + ", userPwd=" + userPwd + ", userName=" + userName + ", gender=" + gender
-				+ ", age=" + age + ", email=" + email + ", phone=" + phone + ", address=" + address + ", enrollDate="
-				+ enrollDate + ", grade=" + grade + ", admingrade=" + admingrade + ", userCoin=" + userCoin
-				+ ", deleteDate=" + deleteDate + ", delFlag=" + delFlag + "]";
+				+ ", birthday=" + birthday + ", email=" + email + ", phone=" + phone + ", address=" + address
+				+ ", enrollDate=" + enrollDate + ", grade=" + grade + ", admingrade=" + admingrade + ", userCoin="
+				+ userCoin + ", deleteDate=" + deleteDate + ", delFlag=" + delFlag + "]";
 	}
+	
 	
 }

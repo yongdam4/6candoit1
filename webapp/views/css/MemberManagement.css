@@ -61,20 +61,42 @@
     background-color: #ffffff;
 }
 
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
 .search-bar {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     padding: 10px;
     background-color: #f1f1f1;
     border-radius: 5px;
+    width: 700px;
 }
 
-.member-management .form-control {
-    width: 500px;
+.form-control {
+    width: 600px;
     min-width: 200px;
 }
+
+.cancel-button {
+    /* 취소하기 버튼은 검색창 아래에 위치 */
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    width: 100%; /* 버튼이 검색창 넓이에 맞도록 */
+}
+
+.dropdown-toggle, .search-button {
+    width: 100px;
+}
+
 
 .bottom {
     width: 100%;
@@ -97,7 +119,7 @@
     }
 
     .member-management .form-control {
-        width: 100%;
+        width: 100%;  /* 반응형에서 화면에 맞게 확장 */
     }
 }
 
@@ -108,6 +130,6 @@
     }
 
     .member-management .form-control {
-        width: 100%;
+        width: 100%;  /* 모바일에서도 적절한 크기로 */
     }
 }

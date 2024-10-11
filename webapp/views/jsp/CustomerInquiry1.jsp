@@ -1,11 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+    String path = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/CustomerInquiry1.css" />
+    <link rel="stylesheet" href="<%=path %>/views/css/globals.css"> 
+    <link rel="stylesheet" href="<%=path %>/views/css/CustomerInquiry1.css">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +25,20 @@
   </head>
   <body>
     <div class="member-management">
+    <form action="">
       <header class="header">
         <div class="text-wrapper">관리자 페이지</div>
         <nav class="menu">
-          <button class="head-button">회원관리</button>
-          <button class="head-button">주문관리</button>
-          <button class="head-button">상품관리</button>
-          <button class="head-button">고객지원</button>
+          <button type="button" class="head-button"
+						onClick="location.href='memberdel.do'">회원관리</button>
+					<button type="button" class="head-button"
+						onClick="location.href='ordermem.do'">주문관리</button>
+					<button type="button" class="head-button"
+						onClick="location.href='productmem.do'">상품관리</button>
+					<button type="button" class="head-button"
+						onClick="location.href='customer.do'">고객지원</button>
+					<button type="button" class="head-button"
+						onClick="location.href='MainPage.jsp'">메인페이지</button>
         </nav>
       </header>
 

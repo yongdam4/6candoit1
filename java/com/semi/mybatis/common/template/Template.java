@@ -16,8 +16,9 @@ public class Template {
 		
 		//SqlSession생성하기 위해서는 -> SqlSessionFactory객체 필요
 		//SqlSessionFactory생성하기위해서는 -> SqlSessionFactoryFactoryBuilder필요
-		
+
 		String resource = "/mybatis-config.xml";
+		System.out.println("마이바티스 연결 성공");
 		
 		try {
 			InputStream inputStream = Resources.getResourceAsStream(resource);
