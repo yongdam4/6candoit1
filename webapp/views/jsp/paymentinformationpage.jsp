@@ -63,7 +63,7 @@ String path = request.getContextPath();
             <div class="text-wrapper-13">30,000원-불러오기</div>
           </div>
         </div>
-        <div class="payment-button"><div class="text-wrapper-17"><input type="button" value="결제하기">토스 결제창 연걸</div></div>
+        <div class="payment-button"><div class="text-wrapper-17"><a href="toss.bo">토스 결제창 연걸</a></div></div>
         </form>
       </div>
  

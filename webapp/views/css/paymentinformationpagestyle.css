@@ -6,7 +6,7 @@
 .payment-information {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 120vh;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -382,7 +382,7 @@
     justify-content: space-between;
     position: relative;
     align-self: stretch;
-    width: 100%;
+    width: 800px;
     background-color: #ffffff;
   }
   
@@ -614,7 +614,7 @@
   
   .payment-information .text-wrapper-13 {
     position: relative;
-    width: 84px;
+    width: 100px;
     height: 28px;
     font-family: "Roboto-Regular", Helvetica;
     font-weight: 400;
@@ -714,7 +714,7 @@
     font-family: "Roboto-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 0;
     line-height: 26.4px;

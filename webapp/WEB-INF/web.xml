@@ -142,4 +142,14 @@
     <servlet-name>mycouponpage.bo</servlet-name>
     <url-pattern>/mycouponpage.bo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>toss.bo</display-name>
+    <servlet-name>toss.bo</servlet-name>
+    <servlet-class>com.semi.product.controller.TossMainPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>toss.bo</servlet-name>
+    <url-pattern>/toss.bo</url-pattern>
+  </servlet-mapping>
 </web-app>
