@@ -24,8 +24,8 @@
     </script>
   </head>
   <body>
+  <form action="">
     <div class="product-management">
-    <form action="">
       <header class="header">
         <div class="admin-page">
           <div class="text-wrapper">관리자 페이지</div>
@@ -40,7 +40,7 @@
 					<button type="button" class="head-button"
 						onClick="location.href='customer.do'">고객지원</button>
 					<button type="button" class="head-button"
-						onClick="location.href='MainPage.jsp'">메인페이지</button>
+						onClick="location.href='index.jsp'">메인페이지</button>
         </nav>
       </header>
 

@@ -10,8 +10,8 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <welcome-file-list>
-    <welcome-file>MainPage.html</welcome-file>
-    <welcome-file>MainPage.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <description></description>
@@ -203,6 +203,7 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+<<<<<<< HEAD
     <display-name>luckyboxcount.me</display-name>
     <servlet-name>luckyboxcount.me</servlet-name>
     <servlet-class>com.semi.member.controller.LuckyBoxCount</servlet-class>
@@ -210,5 +211,44 @@
   <servlet-mapping>
     <servlet-name>luckyboxcount.me</servlet-name>
     <url-pattern>/luckyboxcount.me</url-pattern>
+=======
+    <display-name>productadd.do</display-name>
+    <servlet-name>productadd.do</servlet-name>
+    <servlet-class>com.semi.admin.product.controller.AdminProductAddController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productadd.do</servlet-name>
+    <url-pattern>/productadd.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>reply.do</display-name>
+    <servlet-name>reply.do</servlet-name>
+    <servlet-class>com.semi.admin.customer.controller.AdminCustomerReplyController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reply.do</servlet-name>
+    <url-pattern>/reply.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ordersearch.do</display-name>
+    <servlet-name>ordersearch.do</servlet-name>
+    <servlet-class>com.semi.admin.order.controller.AdminOrderSearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ordersearch.do</servlet-name>
+    <url-pattern>/ordersearch.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>productsearch.do</display-name>
+    <servlet-name>productsearch.do</servlet-name>
+    <servlet-class>com.semi.admin.product.controller.AdminProductSearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productsearch.do</servlet-name>
+    <url-pattern>/productsearch.do</url-pattern>
+>>>>>>> 2b354c79c1fbfa98682f66c02f377035d25672e2
   </servlet-mapping>
 </web-app>

@@ -47,7 +47,7 @@ String path = request.getContextPath();
 					<button type="button" class="head-button"
 						onClick="location.href='customer.do'">고객지원</button>
 					<button type="button" class="head-button"
-						onClick="location.href='MainPage.jsp'">메인페이지</button>
+						onClick="location.href='index.jsp'">메인페이지</button>
 				</nav>
 			</header>
 		</form>
@@ -61,10 +61,10 @@ String path = request.getContextPath();
 					<div class="search-bar">
 						<div class="dropdown">
 							<input type="hidden" name="searchType" id="searchType"
-								value="회원명">
+								value="회원검색">
 							<button class="btn btn-secondary dropdown-toggle" type="button"
 								id="dropdownMenuButton1" data-bs-toggle="dropdown"
-								aria-expanded="false">회원명</button>
+								aria-expanded="false">종류</button>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 								<li><a class="dropdown-item" href="#"
 									onclick="setSearchType('회원명')">회원명</a></li>
