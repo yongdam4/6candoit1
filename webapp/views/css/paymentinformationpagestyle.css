@@ -1,0 +1,837 @@
+.popular-items-page{
+  max-width: 1200px;
+  max-height: 1000px;
+}
+
+.payment-information {
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .header {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+    position: relative;
+    flex: 1;
+  }
+  
+  .payment-information .top {
+    align-items: center;
+    gap: 45px;
+    padding: 15px 230px;
+    flex: 1;
+    flex-grow: 1;
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .payment-information .home-button {
+    display: flex;
+    min-width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .text-wrapper {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #12690b;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+  
+  .payment-information .search-bar {
+    display: flex;
+    min-width: 480px;
+    gap: 15px;
+    padding: 0px 0px 0px 16px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #c1c7cd;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .search-icon {
+    max-width: 45px;
+    max-height: 45px;
+    align-items: left;
+    position: relative;
+    justify-content: left;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .search-input-text {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #c1c7cd;
+
+  }
+  
+  .payment-information .div {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #c1c1c1;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  
+  .payment-information .cart-logout {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .shoppin-cart-button {
+    display: flex;
+    max-width: 130px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .payment-information .shopping-cart-icon {
+    position: relative;
+    align-self: stretch;
+    max-width: 40px;
+    width: 40px;
+    max-height: 40px;
+  }
+  
+  .payment-information .div-wrapper {
+    max-width: 200px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .text-wrapper-2 {
+    position: relative;
+    flex: 1;
+    height: 43px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .payment-information .shoppin-cart-button-2 {
+    display: flex;
+    max-width: 130px;
+    width: 110px;
+    align-items: center;
+    padding: 0px 1px;
+    position: relative;
+    align-self: stretch;
+    border-radius: 100px;
+  }
+  
+  .payment-information .my-page-icon {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    min-width: 30px;
+    max-width: 30px;
+    flex-grow: 1;
+    min-height: 30px;
+    max-height: 35px;
+  }
+  
+  .payment-information .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .payment-information .logout-button {
+    display: flex;
+    min-width: 120px;
+    max-width: 120px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .payment-information .login-icon {
+    width: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .payment-information .login-text {
+    display: flex;
+    max-width: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .payment-information .text-wrapper-4 {
+    position: relative;
+    flex: 1;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    line-height: 17.6px;
+  }
+  
+  .payment-information .menu {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 8px 150px;
+    width: 100%;
+    background-color: #edf8e8;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .payment-information .category-button {
+    display: flex;
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 50px;
+    align-items: center;
+    padding: 4px 16px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #12690b;
+    border: 1px solid;
+    border-color: #dadada;
+    backdrop-filter: blur(4px) brightness(100%);
+    -webkit-backdrop-filter: blur(4px) brightness(100%);
+  }
+  
+  .payment-information .img {
+    flex: 1;
+    max-width: 50px;
+    flex-grow: 1;
+    max-height: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .payment-information .text-wrapper-5 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+  
+  .payment-information .div-wrapper-2 {
+    max-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .text-wrapper-6 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .payment-information .body {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 36px;
+    position: relative;
+    flex: 1;
+    align-self: center;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .typography-row-wrapper {
+    flex-direction: column;
+    height: 72px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .payment-information .typography-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--coolgray-10);
+  }
+  
+  .payment-information .header-2 {
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--coolgray-90);
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 35.2px;
+    position: relative;
+    flex: 1;
+  }
+  
+  .payment-information .mid {
+    flex-direction: column;
+    height: 495px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 800px;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 11px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .text-wrapper-7 {
+    position: relative;
+    width: 50px;
+    height: 33px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+  
+  .payment-information .name-text {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #aeaeae;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 11px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .text-wrapper-8 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #0000001a;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    white-space: nowrap;
+  }
+  
+  .payment-information .phone {
+    padding: 3px 6px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .text-wrapper-9 {
+    position: relative;
+    width: 101px;
+    height: 33px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+  
+  .payment-information .phone-text {
+    height: 32px;
+    padding: 3px 11px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #aeaeae;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .address {
+    height: 40px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .text-wrapper-10 {
+    position: absolute;
+    width: 67px;
+    height: 33px;
+    top: 10px;
+    left: 6px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+  
+  .payment-information .address-text {
+    height: 32px;
+    padding: 3px 11px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #aeaeae;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .payment-product {
+    flex-direction: column;
+    height: 72px;
+    gap: 1px;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .payment-information .view {
+    padding: 5px 14px;
+    flex: 0 0 auto;
+    background-color: #ddffdc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .payment-information .p {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 17.6px;
+    white-space: nowrap;
+  }
+  
+  .payment-information .view-2 {
+    justify-content: space-around;
+    padding: 0px 14px;
+    flex: 1;
+    flex-grow: 1;
+    background-color: #fafdff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .payment-information .text-wrapper-11 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .payment-information .div-2 {
+    padding: 3px 11px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .payment-information .text-wrapper-12 {
+    position: relative;
+    width: 125px;
+    height: 33px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  .payment-information .text-wrapper-13 {
+    position: relative;
+    width: 100px;
+    height: 28px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  .payment-information .text-wrapper-14 {
+    position: relative;
+    width: 125px;
+    height: 33px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  .payment-information .coupon-choice-blank {
+    width: 214px;
+    justify-content: space-between;
+    padding: 5px 6px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .payment-information .text-wrapper-15 {
+    position: relative;
+    align-self: stretch;
+    width: 81px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  .payment-information .coupon-choice-button {
+    max-width: 100px;
+    width: 100px;
+    justify-content: center;
+    gap: 10px;
+    padding: 3px 11px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #0000001a;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .payment-information .text-wrapper-16 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+  
+  .payment-information .payment-button {
+    width: 120px;
+    justify-content: center;
+    gap: 10px;
+    padding: 3px 11px;
+    flex: 0 0 auto;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #0000001a;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .payment-information .text-wrapper-17 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    white-space: nowrap;
+  }
+  
+  .payment-information .footer {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #edf8e8;
+  }
+  
+  .payment-information .top-2 {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 7px 150px;
+    flex: 1;
+    flex-grow: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #d9d9d9;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .payment-information .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 29px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .foodpia {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    white-space: nowrap;
+  }
+  
+  .payment-information .ceo {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 31px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .text-wrapper-18 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+  }
+  
+  .payment-information .worker {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    padding: 31px 17px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .payment-information .bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 15px 30px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .payment-information .url {
+    position: relative;
+    width: 268px;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+  }

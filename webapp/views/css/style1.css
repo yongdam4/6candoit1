@@ -1,0 +1,970 @@
+.my-grade-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: flex-start;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .my-grade-page .header {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    max-height: 150px;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+  }
+  
+  .my-grade-page .top {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 15px 230px;
+    flex: 1;
+    flex-grow: 1;
+    background-color: #ffffff;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .my-grade-page .home-button {
+    display: flex;
+    min-width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .text-wrapper {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #12690b;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+  
+  .my-grade-page .search-bar {
+    display: flex;
+    min-width: 480px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px 0px 0px 16px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #c1c7cd;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .search-icon {
+    max-width: 45px;
+    max-height: 45px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .search-input-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .div {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #c1c1c1;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  
+  .my-grade-page .cart-logout {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+  }
+  
+  .my-grade-page .shoppin-cart-button {
+    display: flex;
+    max-width: 130px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .my-grade-page .shopping-cart-icon {
+    position: relative;
+    align-self: stretch;
+    max-width: 40px;
+    width: 40px;
+    max-height: 40px;
+  }
+  
+  .my-grade-page .div-wrapper {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .text-wrapper-2 {
+    position: relative;
+    flex: 1;
+    height: 43px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .my-grade-page .shoppin-cart-button-2 {
+    display: flex;
+    max-width: 130px;
+    width: 110px;
+    align-items: center;
+    padding: 0px 1px;
+    position: relative;
+    align-self: stretch;
+    border-radius: 100px;
+  }
+  
+  .my-grade-page .my-page-icon {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    min-width: 30px;
+    max-width: 30px;
+    flex-grow: 1;
+    min-height: 30px;
+    max-height: 35px;
+  }
+  
+  .my-grade-page .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .my-grade-page .logout-button {
+    display: flex;
+    min-width: 120px;
+    max-width: 120px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .my-grade-page .login-icon {
+    width: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-grade-page .login-text {
+    display: flex;
+    max-width: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-grade-page .text-wrapper-4 {
+    position: relative;
+    flex: 1;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .my-grade-page .menu {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 8px 150px;
+    width: 100%;
+    background-color: #edf8e8;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-grade-page .category-button {
+    display: flex;
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 50px;
+    align-items: center;
+    padding: 4px 16px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #12690b;
+    border: 1px solid;
+    border-color: #dadada;
+    backdrop-filter: blur(4px) brightness(100%);
+    -webkit-backdrop-filter: blur(4px) brightness(100%);
+  }
+  
+  .my-grade-page .img {
+    flex: 1;
+    max-width: 50px;
+    flex-grow: 1;
+    max-height: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-grade-page .text-wrapper-5 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+  
+  .my-grade-page .div-wrapper-2 {
+    display: flex;
+    max-width: 130px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .text-wrapper-6 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .my-grade-page .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 61px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #f1f1f1;
+    transform: rotate(0.07deg);
+  }
+  
+  .my-grade-page .mypage-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    background-color: #f1f1f1;
+    overflow: hidden;
+  }
+  
+  .my-grade-page .navbar {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 298px;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: transparent;
+    border-image: linear-gradient(
+        to bottom,
+        rgb(237, 248, 232),
+        rgba(201.94, 218.85, 254.5, 0.5) 80%,
+        rgba(201.91, 218.77, 254.75, 0.4) 85%,
+        rgba(201.89, 218.74, 254.88, 0.3) 87.5%,
+        rgba(201.88, 218.7, 255, 0.1) 90%
+      )
+      1;
+  }
+  
+  .my-grade-page .view {
+    display: flex;
+    width: 162px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 12px;
+    position: absolute;
+    top: 215px;
+    left: 44px;
+    background-color: #f6f6f6;
+  }
+  
+  .my-grade-page .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .view-2 {
+    display: flex;
+    width: 54px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 59px;
+    position: absolute;
+    top: 239px;
+    left: 94px;
+    background-color: #f6f6f6;
+    margin-left: -24px;
+    margin-top: 7px;
+  }
+  
+  .my-grade-page .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -3px;
+    margin-bottom: -1px;
+    margin-left: -51.5px;
+    margin-right: -51.5px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .overlap-group {
+    position: absolute;
+    width: 226px;
+    height: 118px;
+    top: 95px;
+    left: 10px;
+  }
+  
+  .my-grade-page .view-3 {
+    position: absolute;
+    width: 226px;
+    height: 41px;
+    top: 67px;
+    left: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #9b9b9b;
+  }
+  
+  .my-grade-page .text-wrapper-9 {
+    position: absolute;
+    height: 20px;
+    top: 10px;
+    left: 95px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .my-account-list-wrapper {
+    position: absolute;
+    width: 220px;
+    height: 118px;
+    top: 0;
+    left: 3px;
+  }
+  
+  .my-grade-page .my-account-list {
+    display: flex;
+    flex-direction: column;
+    width: 162px;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: 8px;
+    left: 31px;
+  }
+  
+  .my-grade-page .view-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #f6f6f6;
+  }
+  
+  .my-grade-page .view-5 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 18px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #f6f6f6;
+  }
+  
+  .my-grade-page .text-wrapper-10 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .view-6 {
+    position: absolute;
+    width: 225px;
+    height: 68px;
+    top: 17px;
+    left: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #9b9b9b;
+  }
+  
+  .my-grade-page .text-wrapper-11 {
+    position: absolute;
+    height: 24px;
+    top: 24px;
+    left: 62px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .view-7 {
+    position: relative;
+    width: 64px;
+    height: 40px;
+    border-radius: 2px;
+    
+    
+  }
+  
+  .my-grade-page .text-wrapper-12 {
+    position: absolute;
+    height: 12px;
+    top: 3px;
+    left: 10px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #909090;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 12px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .mid {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    background-color: #f1f1f1;
+    overflow: hidden;
+  }
+  
+  .my-grade-page .top-2 {
+    height: 42px;
+    background-color: #d7efcf;
+    border-radius: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #00000080;
+    transform: rotate(-0.07deg);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .my-grade-page .text-wrapper-13 {
+    position: absolute;
+    height: 28px;
+    top: 7px;
+    left: 337px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #386d39;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .block {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #e8f0e5;
+    border-radius: 5px;
+    transform: rotate(-0.07deg);
+  }
+  
+  .my-grade-page .overlap-group-2 {
+    position: relative;
+    width: 866px;
+    height: 539px;
+    top: 25px;
+    left: 33px;
+  }
+  
+  .my-grade-page .mygrade-blank {
+    position: absolute;
+    width: 730px;
+    height: 30px;
+    top: 474px;
+    left: 63px;
+    background-color: #ffffff;
+    border-radius: 80px 0px 0px 80px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #000000;
+  }
+  
+  .my-grade-page .p {
+    position: absolute;
+    height: 16px;
+    top: 6px;
+    left: 257px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .span {
+    color: #000000;
+    letter-spacing: -0.38px;
+  }
+  
+  .my-grade-page .text-wrapper-14 {
+    color: #c2eeff;
+    letter-spacing: -0.38px;
+  }
+  
+  .my-grade-page .view-8 {
+    position: absolute;
+    width: 841px;
+    height: 516px;
+    top: 0;
+    left: 0;
+  }
+  
+  .my-grade-page .view-9 {
+    position: absolute;
+    width: 175px;
+    height: 141px;
+    top: 163px;
+    left: 63px;
+    background-color: #ffd59b;
+    border-radius: 80px 0px 0px 80px;
+  }
+  
+  .my-grade-page .text-wrapper-15 {
+    position: absolute;
+    height: 16px;
+    top: 59px;
+    left: 53px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .view-10 {
+    position: absolute;
+    width: 175px;
+    height: 143px;
+    top: 8px;
+    left: 63px;
+    background-color: #c2eeff;
+    border-radius: 80px 0px 0px 80px;
+  }
+  
+  .my-grade-page .text-wrapper-16 {
+    position: absolute;
+    height: 16px;
+    top: 60px;
+    left: 46px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .view-11 {
+    position: absolute;
+    width: 175px;
+    height: 143px;
+    top: 314px;
+    left: 63px;
+    background-color: #c8ada4;
+    border-radius: 80px 0px 0px 80px;
+  }
+  
+  .my-grade-page .frame-wrapper {
+    position: absolute;
+    width: 555px;
+    height: 140px;
+    top: 317px;
+    left: 238px;
+    background-color: #ffffff;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #000000;
+  }
+  
+  .my-grade-page .frame {
+    position: relative;
+    width: 107px;
+    height: 31px;
+    top: 15px;
+    left: 95px;
+  }
+  
+  .my-grade-page .text-wrapper-17 {
+    position: absolute;
+    height: 16px;
+    top: -1px;
+    left: -73px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .view-12 {
+    position: absolute;
+    width: 555px;
+    height: 141px;
+    top: 163px;
+    left: 238px;
+    background-color: #f3f3f3;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #000000;
+  }
+  
+  .my-grade-page .frame-2 {
+    position: relative;
+    width: 116px;
+    height: 36px;
+    top: 14px;
+    left: 91px;
+  }
+  
+  .my-grade-page .text-wrapper-18 {
+    position: absolute;
+    height: 16px;
+    top: -9px;
+    left: -66px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .view-13 {
+    position: absolute;
+    width: 555px;
+    height: 143px;
+    top: 8px;
+    left: 238px;
+    background-color: #ffffff;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #000000;
+  }
+  
+  .my-grade-page .text-wrapper-19 {
+    position: absolute;
+    height: 16px;
+    top: -1px;
+    left: -66px;
+    font-family: "Orbit-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -2.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .picture {
+    position: absolute;
+    width: 67px;
+    height: 58px;
+    top: 481px;
+    left: 799px;
+  }
+  
+  .my-grade-page .footer {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #edf8e8;
+  }
+  
+  .my-grade-page .top-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 7px 150px;
+    flex: 1;
+    flex-grow: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #d9d9d9;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .my-grade-page .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 29px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .foodpia {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .ceo {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 31px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .text-wrapper-20 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+  }
+  
+  .my-grade-page .worker {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    padding: 31px 17px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-grade-page .bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 15px 30px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .my-grade-page .url {
+    position: relative;
+    width: 268px;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+  }
+
+  .real-button{
+    border-color: #f6f6f6;
+  }

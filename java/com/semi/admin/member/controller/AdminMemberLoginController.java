@@ -1,4 +1,4 @@
-package com.semi.admin.controller;
+package com.semi.admin.member.controller;
 
 import java.io.IOException;
 
@@ -17,6 +17,8 @@ import jakarta.servlet.http.HttpServletResponse;
 public class AdminMemberLoginController extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
+    private MemberService memberService = new MemberServiceImpl();
+    
     public AdminMemberLoginController() {
         super();
     }
@@ -28,7 +30,6 @@ public class AdminMemberLoginController extends HttpServlet {
         m.setUserId(request.getParameter("adminId"));
         m.setUserPwd(request.getParameter("adminPwd"));
 
-        MemberService memberService = new MemberServiceImpl();
         Member loginUser = memberService.loginMember(m);
 
         // 로그인 성공 시 사용자 정보를 세션에 저장하고 MemberManagement.jsp로 리다이렉트

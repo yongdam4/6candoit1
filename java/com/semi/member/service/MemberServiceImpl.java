@@ -27,6 +27,7 @@ public class MemberServiceImpl implements MemberService {
         return memberList;
     }
 
+<<<<<<< HEAD
 	@Override
 	public int insertMember(Member m) {
 		SqlSession sqlSession = Template.getSqlSession();
@@ -55,4 +56,41 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 	
+=======
+    // 회원명 검색
+    @Override
+    public List<Member> searchMembersByName(String name) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> searchResults = mDao.searchMembersByName(sqlSession, name);
+        sqlSession.close();
+        return searchResults;
+    }
+
+    // 아이디 검색
+    @Override
+    public List<Member> searchMembersById(String id) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> searchResults = mDao.searchMembersById(sqlSession, id);
+        sqlSession.close();
+        return searchResults;
+    }
+
+    //회원등급
+	@Override
+	public List<Member> searchMembersByGrade(String grade) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> searchResults = mDao.searchMembersByGrade(sqlSession, grade);
+        sqlSession.close();
+        return searchResults;
+    }
+	
+	@Override
+	public void deleteMember(String memberId) {
+	    SqlSession sqlSession = Template.getSqlSession();
+	    mDao.deleteMember(sqlSession, memberId);
+	    sqlSession.commit();  // 삭제 후 커밋
+	    sqlSession.close();
+	}
+
+>>>>>>> a6e39b25da0e763a0dfb9dbaf3efaaeca171bd5e
 }
