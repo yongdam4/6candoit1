@@ -18,6 +18,7 @@ public class AdminMemberSearchController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     
     private MemberService memberService = new MemberServiceImpl();
+    
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
      // 검색 조건과 검색어 가져오기

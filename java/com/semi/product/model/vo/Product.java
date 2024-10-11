@@ -6,25 +6,26 @@ public class Product {
 	private String productCode;
 	private int categoryCode;
 	private String productName;
-	private int price;
+	private int productPrice;
 	private String productDescription;
-	private int number;
+	private int productQuantity;
 	
 	public Product() {
 		super();
 	}
 
-	public Product(String productCode, int categoryCode, String productName, int price, String productDescription,
-			int number) {
+	public Product(String productCode, int categoryCode, String productName, int productPrice,
+			String productdescription, int productQuantity) {
 		super();
 		this.productCode = productCode;
 		this.categoryCode = categoryCode;
 		this.productName = productName;
-		this.price = price;
-		this.productDescription = productDescription;
-		this.number = number;
+		this.productPrice = productPrice;
+		this.productDescription = productdescription;
+		this.productQuantity = productQuantity;
 	}
 
+	
 	public String getProductCode() {
 		return productCode;
 	}
@@ -49,35 +50,36 @@ public class Product {
 		this.productName = productName;
 	}
 
-	public int getPrice() {
-		return price;
+	public int getProductPrice() {
+		return productPrice;
 	}
 
-	public void setPrice(int price) {
-		this.price = price;
+	public void setProductPrice(int productPrice) {
+		this.productPrice = productPrice;
 	}
 
-	public String getProductDescription() {
+	public String getProductdescription() {
 		return productDescription;
 	}
 
-	public void setProductDescription(String productDescription) {
-		this.productDescription = productDescription;
+	public void setProductdescription(String productdescription) {
+		this.productDescription = productdescription;
 	}
 
-	public int getNumber() {
-		return number;
+	public int getProductQuantity() {
+		return productQuantity;
 	}
 
-	public void setNumber(int number) {
-		this.number = number;
+	public void setProductQuantity(int productQuantity) {
+		this.productQuantity = productQuantity;
 	}
 
 	@Override
 	public String toString() {
 		return "Product [productCode=" + productCode + ", categoryCode=" + categoryCode + ", productName=" + productName
-				+ ", price=" + price + ", productDescription=" + productDescription + ", number=" + number + "]";
+				+ ", productPrice=" + productPrice + ", productdescription=" + productDescription + ", productQuantity="
+				+ productQuantity + "]";
 	}
-	
+
 	
 }

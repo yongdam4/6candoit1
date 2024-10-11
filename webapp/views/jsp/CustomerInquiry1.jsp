@@ -38,7 +38,7 @@
 					<button type="button" class="head-button"
 						onClick="location.href='customer.do'">고객지원</button>
 					<button type="button" class="head-button"
-						onClick="location.href='MainPage.jsp'">메인페이지</button>
+						onClick="location.href='index.jsp'">메인페이지</button>
         </nav>
       </header>
 
@@ -79,7 +79,8 @@
             </tbody>
           </table>
           <div class="button-container">
-            <button type="button" class="btn btn-primary">답변작성</button>
+            <button type="button" class="btn btn-primary"
+            onClick="location.href='reply.do'">답변작성</button>
           </div>
         </div>
       </div>

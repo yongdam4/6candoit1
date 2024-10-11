@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
   <welcome-file-list>
-    <welcome-file>MainPage.html</welcome-file>
-    <welcome-file>MainPage.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <description></description>
@@ -73,5 +73,45 @@
   <servlet-mapping>
     <servlet-name>customer.do</servlet-name>
     <url-pattern>/customer.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>productadd.do</display-name>
+    <servlet-name>productadd.do</servlet-name>
+    <servlet-class>com.semi.admin.product.controller.AdminProductAddController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productadd.do</servlet-name>
+    <url-pattern>/productadd.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>reply.do</display-name>
+    <servlet-name>reply.do</servlet-name>
+    <servlet-class>com.semi.admin.customer.controller.AdminCustomerReplyController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reply.do</servlet-name>
+    <url-pattern>/reply.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ordersearch.do</display-name>
+    <servlet-name>ordersearch.do</servlet-name>
+    <servlet-class>com.semi.admin.order.controller.AdminOrderSearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ordersearch.do</servlet-name>
+    <url-pattern>/ordersearch.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>productsearch.do</display-name>
+    <servlet-name>productsearch.do</servlet-name>
+    <servlet-class>com.semi.admin.product.controller.AdminProductSearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productsearch.do</servlet-name>
+    <url-pattern>/productsearch.do</url-pattern>
   </servlet-mapping>
 </web-app>
