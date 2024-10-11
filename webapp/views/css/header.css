@@ -28,6 +28,7 @@ input::placeholder {
 /* 로그인, 회원가입 섹션 */
 .login-signup {
   position: absolute;
+  top: 0;
   margin-top: 5px;  
   right: 17%;
   display: flex;  
