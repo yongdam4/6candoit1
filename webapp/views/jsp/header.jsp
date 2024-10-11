@@ -86,7 +86,12 @@
       <button class="popular-btn"><a href="popularitems.bo">인기상품</a></button>
       <button class="luckybox-btn"><a href="luckyboxshow.bo">럭키박스</a></button>
       <button class="inquiry-btn"><a href="contactpage.bo">문의</a></button>
+<<<<<<< HEAD
       <button class="admin-btn"><a href="<%=contextPath%>/views/jsp/AdminLoginPage.jsp">관리자
+=======
+      <button class="admin-btn"><a href="views/jsp/AdminLoginPage.jsp" method="post">관리자
+
+>>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
   		</a></button>
     </div>    
   </div>

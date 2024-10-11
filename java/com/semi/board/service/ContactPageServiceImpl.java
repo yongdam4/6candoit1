@@ -1,5 +1,8 @@
 package com.semi.board.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import org.apache.ibatis.session.SqlSession;
 
 import com.semi.board.model.dao.ContactPageDao;
@@ -11,9 +14,23 @@ public class ContactPageServiceImpl implements ContactPageService{
 	private ContactPageDao cDao = new ContactPageDao();
 
 	@Override
-	public int selectList(int ucNo) {
+	public Board selectList(int ucNo) {
 		SqlSession sqlSession = Template.getSqlSession();
-		int list = cDao.selectList(sqlSession, ucNo);
+		Board result = cDao.selectList(sqlSession, ucNo);
+		
+		return result;
+	}
+
+	@Override
+	public int insertContactList(HashMap<String, String> map) {
+		SqlSession sqlSession = Template.getSqlSession();
+		int list = cDao.insertContactList(sqlSession, map);
+		
+		if(list > 0) {
+			sqlSession.commit();
+		} else {
+			sqlSession.rollback();
+		}
 		
 		sqlSession.close();
 		return list;

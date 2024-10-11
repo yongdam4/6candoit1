@@ -19,11 +19,6 @@
 
 
 
-
-
-
-
-
 <div class="body">
         <!-- 통합된 사이드 메뉴 시작 -->
         <div class="side">
@@ -76,20 +71,20 @@
             <div class="myinformation-list">
               <!-- 성명 -->
               <div class="info-item">
-                <div class="info-title">성명<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">성명 :</div>
+                <div class="info-content">${mem.userName}</div>
               </div>
       
               <!-- 아이디 -->
               <div class="info-item">
-                <div class="info-title">아이디<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">아이디 :</div>
+                <div class="info-content">${mem.userId}</div>
               </div>
       
               <!-- 비밀번호 -->
               <div class="info-item">
-                <div class="info-title">비밀번호<input type="text"></div>
-                <div class="frame-wrapper">
+                <div class="info-title">비밀번호 :</div>
+                <div class="frame-wrapper">${mem.userPwd}
                   <div class="change-password">
                     비밀번호 변경하기
                   </div>
@@ -98,32 +93,32 @@
       
               <!-- 주소 -->
               <div class="info-item">
-                <div class="info-title">주소 <input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">주소 :</div>
+                <div class="info-content">${mem.address}</div>
               </div>
       
               <!-- 전화번호 -->
               <div class="info-item">
-                <div class="info-title">전화번호 <input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">전화번호 :</div>
+                <div class="info-content">${mem.phone}</div>
               </div>
       
               <!-- 이메일 -->
               <div class="info-item">
-                <div class="info-title">이메일<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">이메일 :</div>
+                <div class="info-content">${mem.email}</div>
               </div>
       
               <!-- 회원등급 -->
               <div class="info-item">
-                <div class="info-title">회원등급<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">회원등급 :</div>
+                <div class="info-content">${mem.grade}</div>
               </div>
       
               <!-- 성별 -->
               <div class="info-item">
-                <div class="info-title">성별<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">성별 :</div>
+                <div class="info-content">${mem.gender}</div>
               </div>
             </div>
           </div>

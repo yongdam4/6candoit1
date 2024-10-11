@@ -7,7 +7,7 @@ public class Board {
 	private String userId;
 	private String productCode;
 	private String ucTitle;
-	private Date writeDAte;
+	private Date writeDate;
 	private String askDeatil;
 	private String askComment;
 	
@@ -15,17 +15,19 @@ public class Board {
 		super();
 	}
 
-	public Board(int ucNo, String userId, String productCode, String ucTitle, Date writeDAte, String askDeatil,
+	public Board(int ucNo, String userId, String productCode, String ucTitle, Date writeDate, String askDeatil,
 			String askComment) {
 		super();
 		this.ucNo = ucNo;
 		this.userId = userId;
 		this.productCode = productCode;
 		this.ucTitle = ucTitle;
-		this.writeDAte = writeDAte;
+		this.writeDate = writeDate;
 		this.askDeatil = askDeatil;
 		this.askComment = askComment;
 	}
+	
+
 
 	public int getUcNo() {
 		return ucNo;
@@ -59,12 +61,12 @@ public class Board {
 		this.ucTitle = ucTitle;
 	}
 
-	public Date getWriteDAte() {
-		return writeDAte;
+	public Date getWriteDate() {
+		return writeDate;
 	}
 
-	public void setWriteDAte(Date writeDAte) {
-		this.writeDAte = writeDAte;
+	public void setWriteDAte(Date writeDate) {
+		this.writeDate = writeDate;
 	}
 
 	public String getAskDeatil() {
@@ -86,7 +88,7 @@ public class Board {
 	@Override
 	public String toString() {
 		return "Board [ucNo=" + ucNo + ", userId=" + userId + ", productCode=" + productCode + ", ucTitle=" + ucTitle
-				+ ", writeDAte=" + writeDAte + ", askDeatil=" + askDeatil + ", askComment=" + askComment + "]";
+				+ ", writeDate=" + writeDate + ", askDeatil=" + askDeatil + ", askComment=" + askComment + "]";
 	}
 
 }
