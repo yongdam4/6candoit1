@@ -1,4 +1,4 @@
-package com.semi.product.controller;
+package com.semi.member.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,15 +8,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class TossMainPage
+ * Servlet implementation class LuckyBoxCount
  */
-public class TossMainPage extends HttpServlet {
+public class LuckyBoxCount extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public TossMainPage() {
+    public LuckyBoxCount() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -25,7 +25,8 @@ public class TossMainPage extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("views/jsp/tossmain.jsp").forward(request, response);
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**

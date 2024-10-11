@@ -21,6 +21,15 @@ public class Member {
 	public Member() {
 		super();
 	}
+	
+	
+
+	public Member(int userCoin) {
+		super();
+		this.userCoin = userCoin;
+	}
+
+
 
 	public Member(String userId, String userPwd, String userName, String gender, String birthday, String email,
 			String phone, String address, Date enrollDate, String grade, String admingrade, int userCoin,

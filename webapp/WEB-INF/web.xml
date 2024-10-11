@@ -151,7 +151,7 @@
   <servlet-mapping>
     <servlet-name>toss.bo</servlet-name>
     <url-pattern>/toss.bo</url-pattern>
-    </servlet-mapping>
+  </servlet-mapping>
   <servlet>
     <display-name>searchbar.do</display-name>
     <servlet-name>searchbar.do</servlet-name>
@@ -200,5 +200,15 @@
   <servlet-mapping>
     <servlet-name>customer.do</servlet-name>
     <url-pattern>/customer.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>luckyboxcount.me</display-name>
+    <servlet-name>luckyboxcount.me</servlet-name>
+    <servlet-class>com.semi.member.controller.LuckyBoxCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>luckyboxcount.me</servlet-name>
+    <url-pattern>/luckyboxcount.me</url-pattern>
   </servlet-mapping>
 </web-app>
