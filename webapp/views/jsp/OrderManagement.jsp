@@ -17,30 +17,12 @@ String path = request.getContextPath();
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 
-<<<<<<< HEAD
-<!-- Bootstrap JavaScript -->
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-=======
-<<<<<<< HEAD
-    <!-- Custom JavaScript -->
-    <script>
-      function changeDropdownText(selectedText) {
-        document.getElementById("dropdownMenuButton1").innerText = selectedText;
-      }
-    </script>
-  </head>
-  <body>
-    <div class="order-management">
-    <form action="">
 
-		<%@ include file="/views/jsp/header.jsp" %>
-=======
 <!-- Bootstrap JavaScript -->
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
->>>>>>> 2b354c79c1fbfa98682f66c02f377035d25672e2
->>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
 
 <!-- Custom JavaScript -->
 <script>
@@ -102,45 +84,6 @@ String path = request.getContextPath();
 					document.getElementById("dropdownMenuButton1").innerText = type;
 				}
 			</script>
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <table class="table table-striped table-bordered member-table">
-            <thead>
-              <tr>
-                <th>주문일</th>
-                <th>주문번호</th>
-                <th>주문상품</th>
-                <th>수량</th>
-                <th>결제금액</th>
-                <th>주문자</th>
-                <th>배송상태</th>
-                <th>결제방법</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2024-09-05</td>
-                <td>20240905154763</td>
-                <td>완숙 토마토 950g(봉)</td>
-                <td>1개</td>
-                <td>10,990원</td>
-                <td>jjhim1234</td>
-                <td>배송준비중</td>
-                <td>토스페이</td>
-                <td style="text-align: center;"><input style='zoom:1.3;' type="checkbox"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <%@ include file="/views/jsp/footer.jsp" %>
-    </div>
-  </body>
-=======
->>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
 			<div class="bottom">
 				<div class="order-state">
 					<div class="order-info">
@@ -204,8 +147,4 @@ String path = request.getContextPath();
 		</div>
 	</div>
 </body>
-<<<<<<< HEAD
-=======
->>>>>>> 2b354c79c1fbfa98682f66c02f377035d25672e2
->>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
 </html>
