@@ -1,15 +1,7 @@
 package com.semi.product.service;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 import com.semi.product.model.dao.ProductDao;
 
-public class ProductServiceImpl implements ProductService{
-
-	private ProductDao pDao = new ProductDao();
-=======
-=======
->>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -45,9 +37,4 @@ public class ProductServiceImpl implements ProductService{
         sqlSession.close();
         return searchResults;
 	}
-<<<<<<< HEAD
-
->>>>>>> 2b354c79c1fbfa98682f66c02f377035d25672e2
-=======
->>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
 }

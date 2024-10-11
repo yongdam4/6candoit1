@@ -144,7 +144,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-<<<<<<< HEAD
     <display-name>toss.bo</display-name>
     <servlet-name>toss.bo</servlet-name>
     <servlet-class>com.semi.product.controller.TossMainPage</servlet-class>
@@ -154,7 +153,6 @@
     <url-pattern>/toss.bo</url-pattern>
   </servlet-mapping>
   <servlet>
-=======
     <display-name>insertContact.bo</display-name>
     <servlet-name>insertContact.bo</servlet-name>
     <servlet-class>com.semi.board.controller.InsertContactController</servlet-class>
@@ -165,7 +163,6 @@
     </servlet-mapping>
     <servlet>
     <description></description>
->>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
     <display-name>searchbar.do</display-name>
     <servlet-name>searchbar.do</servlet-name>
     <servlet-class>com.semi.admin.member.controller.AdminMemberSearchController</servlet-class>
@@ -216,7 +213,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-<<<<<<< HEAD
     <display-name>luckyboxcount.me</display-name>
     <servlet-name>luckyboxcount.me</servlet-name>
     <servlet-class>com.semi.member.controller.LuckyBoxCount</servlet-class>
@@ -224,7 +220,9 @@
   <servlet-mapping>
     <servlet-name>luckyboxcount.me</servlet-name>
     <url-pattern>/luckyboxcount.me</url-pattern>
-=======
+    </servlet-mapping>
+    <servlet>
+    <description></description>
     <display-name>productadd.do</display-name>
     <servlet-name>productadd.do</servlet-name>
     <servlet-class>com.semi.admin.product.controller.AdminProductAddController</servlet-class>
@@ -262,9 +260,5 @@
   <servlet-mapping>
     <servlet-name>productsearch.do</servlet-name>
     <url-pattern>/productsearch.do</url-pattern>
-<<<<<<< HEAD
->>>>>>> 2b354c79c1fbfa98682f66c02f377035d25672e2
-=======
->>>>>>> 56e217be98fb6e47b06bc9b5f0b908d5b5e12e8f
   </servlet-mapping>
 </web-app>

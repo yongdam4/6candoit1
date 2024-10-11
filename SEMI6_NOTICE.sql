@@ -279,8 +279,6 @@ VALUES (
     'PAY05'
 );
 
-<<<<<<< HEAD
+
 COMMIT;
-=======
-COMMIT;
->>>>>>> 2b354c79c1fbfa98682f66c02f377035d25672e2
+
