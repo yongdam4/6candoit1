@@ -23,9 +23,9 @@ String path = request.getContextPath();
         <div class="body-2">
           <div class="cart-product-list">
             <div class="product">
-              <img class="melon" src="img/melon-2.png" />
+              <img class="melon" src="views/img/img-image-3.png" />
               <div class="product-inform">
-                <div class="text-wrapper-8">메론(한국산)/농심</div>
+                <div class="text-wrapper-8">완숙 토마토/자연산</div>
                 <div class="frame">
                   <div class="flexcontainer">
                     <p class="text">
@@ -42,8 +42,8 @@ String path = request.getContextPath();
                     <p class="text">
                       <span class="span"
                         >중량/
-                        용량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;850g /
-                        1박스 당 3개</span
+                        용량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;950g /
+                        1박스 당 8개</span
                       >
                     </p>
                   </div>
@@ -56,13 +56,13 @@ String path = request.getContextPath();
                   </div>
                 </div>
                 <div class="price">
-                  <div class="text-wrapper-12">53%</div>
-                  <div class="text-wrapper-13">12,000원</div>
+                  <div class="text-wrapper-12">10%</div>
+                  <div class="text-wrapper-13">9,890원</div>
                 </div>
               </div>
             </div>
             <div class="product">
-              <img class="melon" src="img/melon-2.png" />
+              <img class="melon" src="views/img/img-melon-1.png" />
               <div class="product-inform">
                 <div class="text-wrapper-8">메론(한국산)/농심</div>
                 <div class="frame">
@@ -95,7 +95,7 @@ String path = request.getContextPath();
                   </div>
                 </div>
                 <div class="price">
-                  <div class="text-wrapper-12">53%</div>
+                  <div class="text-wrapper-12">10%</div>
                   <div class="text-wrapper-13">12,000원</div>
                 </div>
               </div>
@@ -106,18 +106,18 @@ String path = request.getContextPath();
               <div class="payment-amount-text"><div class="text-wrapper-14">결제금액</div></div>
               <div class="div-3">
                 <div class="div-wrapper-3"><div class="text-wrapper-15">상품금액</div></div>
-                <div class="div-wrapper-4"><div class="text-wrapper-16">12,000원</div></div>
+                <div class="div-wrapper-4"><div class="text-wrapper-16">24,190원</div></div>
               </div>
               <div class="div-3">
                 <div class="div-wrapper-3"><div class="text-wrapper-15">상품할인금액</div></div>
-                <div class="div-wrapper-4"><div class="text-wrapper-17">1,200원</div></div>
+                <div class="div-wrapper-4"><div class="text-wrapper-17">2,300원</div></div>
               </div>
               <div class="div-3">
                 <div class="div-wrapper-3"><div class="text-wrapper-15">결제예정금액</div></div>
-                <div class="div-wrapper-4"><div class="text-wrapper-16">10,800원</div></div>
+                <div class="div-wrapper-4"><div class="text-wrapper-16">21,890</div></div>
               </div>
             </div>
-            <div class="buy-button"><div class="text-wrapper-18"><button class="popular-btn"><a href="paymentinformationpage.jsp" method="post">구매하기</a></button></div></div>
+            <div class="buy-button"><div class="text-wrapper-18"><button class="popular-btn"><a href="paymentinformationpage.bo">구매하기</a></button></div></div>
           </div>
         </div>
       </div>

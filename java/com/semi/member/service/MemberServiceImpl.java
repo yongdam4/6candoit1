@@ -26,4 +26,66 @@ public class MemberServiceImpl implements MemberService {
         sqlSession.close();
         return memberList;
     }
+
+	@Override
+	public int insertMember(Member m) {
+		SqlSession sqlSession = Template.getSqlSession();
+		int result = mDao.insertMember(sqlSession, m);
+		
+		if(result > 0) {
+			sqlSession.commit();
+		} else {
+			sqlSession.rollback();
+		}
+		
+		sqlSession.close();
+		return result;
+	}
+
+	@Override
+	public int deleteMember(Member m) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public int idCheck(String userId) {
+		SqlSession sqlSession = Template.getSqlSession();
+		int result = mDao.idCheck(sqlSession, userId);
+		return result;
+	}
+	
+    // 회원명 검색
+    @Override
+    public List<Member> searchMembersByName(String name) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> searchResults = mDao.searchMembersByName(sqlSession, name);
+        sqlSession.close();
+        return searchResults;
+    }
+
+    // 아이디 검색
+    @Override
+    public List<Member> searchMembersById(String id) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> searchResults = mDao.searchMembersById(sqlSession, id);
+        sqlSession.close();
+        return searchResults;
+    }
+
+    //회원등급
+	@Override
+	public List<Member> searchMembersByGrade(String grade) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> searchResults = mDao.searchMembersByGrade(sqlSession, grade);
+        sqlSession.close();
+        return searchResults;
+    }
+	
+	@Override
+	public void deleteMember(String memberId) {
+	    SqlSession sqlSession = Template.getSqlSession();
+	    mDao.deleteMember(sqlSession, memberId);
+	    sqlSession.commit();  // 삭제 후 커밋
+	    sqlSession.close();
+	}
 }

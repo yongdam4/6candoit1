@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%
     	String contextPath = request.getContextPath();
-    	application.setAttribute("contextPath", contextPath);
+    	application.setAttribute("contextPath", contextPath);     
     %>
 <!DOCTYPE html>
 <html>
@@ -11,9 +12,9 @@
 <title>Insert title here</title>
 
 	<!-- css -->
-    <link rel="stylesheet" href="<%=contextPath%>/views/css/header.css">    
-    <link rel="stylesheet" href="<%=contextPath %>/views/css/styleguide.css">
-    <link rel="stylesheet" href="<%=contextPath %>/views/css/globals.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/views/css/header.css">    
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/views/css/styleguide.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/views/css/globals.css">
     
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,35 +23,33 @@
     
 </head>
 <body>
+  
+  <c:choose>
+    <c:when test="${not empty loginUser}">
+      <div class="user-info">
+        <div class="user-welcome">${loginUser.userName}님 환영합니다.</div>
+        <button><a href="<%=contextPath %>/logout.me">로그아웃</a></button>
+      </div>
+    </c:when>
 
-  <!-- 비로그인 상태-->
-  <c:when test="${not empty loginUser}">
-    <div class="user-info">
-      <div class="user-welcome">${loginUser.userName}님 환영합니다.</div>
-      <button><a href="">로그아웃</a></button>
-    </div>
-  </c:when>
+    <c:otherwise>
+      <div class="login-signup">
+        <button class="login-button">
+          <a href="<%=contextPath %>/login">로그인</a>      
+        </button>
 
-  <!-- 로그인 상태-->
-  <c:otherwise>
-    <div class="login-signup">
-      <button class="login-button">
-        <a href="">
-          로그인
-        </a>      
-      </button>
-
-      <button class="signup-button">
-        <a href="">
-          회원가입
-        </a>      
-      </button>
-    </div>
-  </c:otherwise>
+        <button class="signup-button">
+          <a href="<%=contextPath %>/signup.me">회원가입</a>      
+        </button>
+      </div>
+    </c:otherwise>
+  </c:choose>
+  
+  
 
 
  <div class="header-mid">
-    <button class="home-button"><a href="<%=contextPath %>/MainPage.jsp">푸드피아</a></button>
+    <button class="home-button"><a href="${pageContext.request.contextPath}/index.jsp">푸드피아</a></button>
 
       <div class="search-bar">
         <button type="submit" class="search-icon-blank">
@@ -86,7 +85,12 @@
       <button class="popular-btn"><a href="popularitems.bo">인기상품</a></button>
       <button class="luckybox-btn"><a href="luckyboxshow.bo">럭키박스</a></button>
       <button class="inquiry-btn"><a href="contactpage.bo">문의</a></button>
+<<<<<<< HEAD
       <button class="admin-btn"><a href="views/jsp/AdminLoginPage.jsp" method="post">관리자
+=======
+      <button class="admin-btn"><a href="<%=contextPath%>/views/jsp/AdminLoginPage.jsp">관리자
+
+>>>>>>> 23cd2019e4dc9ecd424b9e2cf55d91cd0b935837
   		</a></button>
     </div>    
   </div>

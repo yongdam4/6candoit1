@@ -21,6 +21,7 @@ String path = request.getContextPath();
   
   
       <div class="body">
+     <form action="/your-server-endpoint" method="POST">
         <div class="typography-row-wrapper">
           <div class="typography-row"><div class="header-2">결제 정보 입력</div></div>
         </div>
@@ -53,7 +54,7 @@ String path = request.getContextPath();
                	
               </div>
                 <div class="coupon-choice-button">
-                <div class="text-wrapper-16"><button class="popular-btn"><a href="couponPage.jsp" method="post">선택하기</a></button></div>
+                <div class="text-wrapper-16"><button class="popular-btn"><a href="couponpage.bo">선택하기</a></button></div>
               </div>
             </div>
           </div>
@@ -62,7 +63,8 @@ String path = request.getContextPath();
             <div class="text-wrapper-13">30,000원-불러오기</div>
           </div>
         </div>
-        <div class="payment-button"><div class="text-wrapper-17"><input type="button" value="결제하기">토스 결제창 연걸</div></div>
+        <div class="payment-button"><div class="text-wrapper-17"><a href="paymentinformationpage.bo">토스 결제창 연걸</a></div></div>
+        </form>
       </div>
  
  

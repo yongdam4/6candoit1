@@ -19,11 +19,6 @@
 
 
 
-
-
-
-
-
 <div class="body">
         <!-- 통합된 사이드 메뉴 시작 -->
         <div class="side">
@@ -31,10 +26,12 @@
           <div class="menu-section">
             <div class="menu-title" style="border-bottom: 1px solid #000;">나의 계정</div>
             <div class="menu-item">
-              개인정보 수정 및 정보
+             <a href="mypage.bo">
+             개인정보 수정 및 정보
+             </a>
             </div>
             <div class="menu-item" style="border-bottom: 1px solid #000;">
-            	<a href="OrderPage.jsp" method="post">
+            	<a href="orderpage.bo">
             		주문내역
             	</a>
             </div>
@@ -44,12 +41,12 @@
           <div class="menu-section">
             <div class="menu-title"  style="border-bottom: 1px solid #000;">혜택</div>
             <div class="menu-item">
-            	<a href="MyGradePage.jsp" method="post">
+            	<a href="mygradepage.bo">
               		등급 정보 및 혜택
               	</a>
             </div>
             <div classs="menu-item">
-            	<a href="mycouponpage.jsp" method="post">
+            	<a href="mycouponpage.bo">
             		쿠폰함
             	</a>
             </div>
@@ -74,20 +71,20 @@
             <div class="myinformation-list">
               <!-- 성명 -->
               <div class="info-item">
-                <div class="info-title">성명<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">성명 :</div>
+                <div class="info-content">${mem.userName}</div>
               </div>
       
               <!-- 아이디 -->
               <div class="info-item">
-                <div class="info-title">아이디<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">아이디 :</div>
+                <div class="info-content">${mem.userId}</div>
               </div>
       
               <!-- 비밀번호 -->
               <div class="info-item">
-                <div class="info-title">비밀번호<input type="text"></div>
-                <div class="frame-wrapper">
+                <div class="info-title">비밀번호 :</div>
+                <div class="frame-wrapper">${mem.userPwd}
                   <div class="change-password">
                     비밀번호 변경하기
                   </div>
@@ -96,32 +93,32 @@
       
               <!-- 주소 -->
               <div class="info-item">
-                <div class="info-title">주소 <input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">주소 :</div>
+                <div class="info-content">${mem.address}</div>
               </div>
       
               <!-- 전화번호 -->
               <div class="info-item">
-                <div class="info-title">전화번호 <input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">전화번호 :</div>
+                <div class="info-content">${mem.phone}</div>
               </div>
       
               <!-- 이메일 -->
               <div class="info-item">
-                <div class="info-title">이메일<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">이메일 :</div>
+                <div class="info-content">${mem.email}</div>
               </div>
       
               <!-- 회원등급 -->
               <div class="info-item">
-                <div class="info-title">회원등급<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">회원등급 :</div>
+                <div class="info-content">${mem.grade}</div>
               </div>
       
               <!-- 성별 -->
               <div class="info-item">
-                <div class="info-title">성별<input type="text"></div>
-                <div class="info-content"></div>
+                <div class="info-title">성별 :</div>
+                <div class="info-content">${mem.gender}</div>
               </div>
             </div>
           </div>
