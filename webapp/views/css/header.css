@@ -29,6 +29,7 @@ input::placeholder {
 .login-signup {
   position: absolute;
   top: 0;
+  margin-top: 5px;  
   right: 17%;
   display: flex;  
   gap: 20px;
@@ -42,7 +43,12 @@ input::placeholder {
 
 .login-button {
   border-right: 2px solid #b3b3b3;
-  padding-right: 10px;
+  padding-right: 15px;
+  font-size: 12px;
+}
+
+.signup-button{
+  font-size: 12px;
 }
 
 .user-info{
@@ -50,8 +56,8 @@ input::placeholder {
   top: 0;
   right: 17%;
   display: flex;
-  gap: 10px;
-  font-size: 14px;
+  gap: 10px;  
+  margin-top: 10px;
 }
 
 .user-welcome{
@@ -61,13 +67,13 @@ input::placeholder {
 
 .user-info a{
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   color: #838282;
   font-weight: 700;
 }
 
 /* 헤더 중간 부분 */
-.header-mid {
+.header-mid {  
   display: flex;
   height: 75px;
   align-items: center;

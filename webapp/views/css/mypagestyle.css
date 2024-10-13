@@ -1,0 +1,618 @@
+.my-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: flex-start;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .my-page .header {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    max-height: 150px;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+  }
+  
+  .my-page .top {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 15px 230px;
+    flex: 1;
+    flex-grow: 1;
+    background-color: #ffffff;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .my-page .home-button {
+    display: flex;
+    min-width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .text-wrapper {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #12690b;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+  
+  .my-page .search-bar {
+    display: flex;
+    min-width: 480px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px 0px 0px 16px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #c1c7cd;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .search-icon {
+    max-width: 45px;
+    max-height: 45px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .search-input-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .div {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #c1c1c1;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  
+  .my-page .cart-logout {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+  }
+  
+  .my-page .shoppin-cart-button {
+    display: flex;
+    max-width: 130px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .my-page .shopping-cart-icon {
+    position: relative;
+    align-self: stretch;
+    max-width: 40px;
+    width: 40px;
+    max-height: 40px;
+  }
+  
+  .my-page .div-wrapper {
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .text-wrapper-2 {
+    position: relative;
+    flex: 1;
+    height: 43px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .my-page .shoppin-cart-button-2 {
+    display: flex;
+    max-width: 130px;
+    width: 110px;
+    align-items: center;
+    padding: 0px 1px;
+    position: relative;
+    align-self: stretch;
+    border-radius: 100px;
+  }
+  
+  .my-page .my-page-icon {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    min-width: 30px;
+    max-width: 30px;
+    flex-grow: 1;
+    min-height: 30px;
+    max-height: 35px;
+  }
+  
+  .my-page .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .my-page .logout-button {
+    display: flex;
+    min-width: 120px;
+    max-width: 120px;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 100px;
+  }
+  
+  .my-page .login-icon {
+    width: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-page .login-text {
+    display: flex;
+    max-width: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-page .text-wrapper-4 {
+    position: relative;
+    flex: 1;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.6px;
+  }
+  
+  .my-page .menu {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 8px 150px;
+    width: 100%;
+    background-color: #edf8e8;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-page .category-button {
+    display: flex;
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 50px;
+    align-items: center;
+    padding: 4px 16px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #12690b;
+    border: 1px solid;
+    border-color: #dadada;
+    backdrop-filter: blur(4px) brightness(100%);
+    -webkit-backdrop-filter: blur(4px) brightness(100%);
+  }
+  
+  .my-page .img {
+    flex: 1;
+    max-width: 50px;
+    flex-grow: 1;
+    max-height: 45px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .my-page .text-wrapper-5 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+  
+  .my-page .div-wrapper-2 {
+    max-width: 130px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .text-wrapper-6 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #12690b;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .body {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 80px 50px; /* 좌우 패딩을 100px에서 80px로 줄임 */
+    width: 100%;
+    background-color: #f1f1f1;
+    position: relative;
+  }
+  
+  
+  .side {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1; /* 배경색을 흰색 상자와 일치시키기 위해 변경 */
+    height: 70vh; /* 사이드 메뉴의 높이를 화면 전체로 설정 */
+  }
+  
+  .menu-section {
+    width: 100%;
+    background-color: #ffffff; /* 흰색 상자 배경 */
+    padding: 10px; /* 상자 안쪽 여백 */
+
+  }
+  
+  .menu-title {
+    font-family: "Orbit-Regular", Helvetica;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    padding: 10px
+  }
+  
+  .menu-item {
+    font-family: "Orbit-Regular", Helvetica;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+
+  }
+
+  
+  
+  /* 회원 탈퇴 버튼을 푸터 바로 위로 수정 */
+  .secession-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%; /* 전체 너비 사용 */
+    border-radius: 10px;
+    margin-top: auto; /* 남은 공간을 차지하여 푸터 바로 위로 이동 */
+  }
+  
+  .secession-button .menu-item {
+    padding: 10px 20px;
+    border: 1px solid #c1c7cd;
+    border-radius: 10px;
+    background-color: #efefef;
+  }
+  
+  .side-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .myinformation-blank {
+    display: flex;
+    justify-content: center;
+    padding: 9px 165px;
+    background-color: #d8efcf;
+    width: 100%;
+  }
+  
+  .myinformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* 패딩을 늘려서 높이를 증가시킴 */
+    background-color: #e9f0e5;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .myinformation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
+  
+  .info-title {
+    font-family: "Orbit-Regular", Helvetica;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .info-content {
+    flex-grow: 1;
+  }
+  
+  .frame-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .change-password {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    background-color: #efefef;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    font-family: "Orbit-Regular", Helvetica;
+    font-size: 16px;
+    color: #000;
+  }
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .my-page .footer {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #edf8e8;
+  }
+  
+  .my-page .top-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 7px 150px;
+    flex: 1;
+    flex-grow: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #d9d9d9;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .my-page .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 29px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .foodpia {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    white-space: nowrap;
+  }
+  
+  .my-page .ceo {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 31px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .text-wrapper-12 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+  }
+  
+  .my-page .worker {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    padding: 31px 17px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  
+  .my-page .url-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 15px 30px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .my-page .url {
+    position: relative;
+    width: 268px;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--x-6);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+  }

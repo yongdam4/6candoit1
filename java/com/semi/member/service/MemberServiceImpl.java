@@ -27,6 +27,33 @@ public class MemberServiceImpl implements MemberService {
         return memberList;
     }
 
+	@Override
+	public int insertMember(Member m) {
+		SqlSession sqlSession = Template.getSqlSession();
+		int result = mDao.insertMember(sqlSession, m);
+		
+		if(result > 0) {
+			sqlSession.commit();
+		} else {
+			sqlSession.rollback();
+		}
+		
+		sqlSession.close();
+		return result;
+	}
+
+	@Override
+	public int deleteMember(Member m) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public int idCheck(String userId) {
+		SqlSession sqlSession = Template.getSqlSession();
+		int result = mDao.idCheck(sqlSession, userId);
+		return result;
+	}
+	
     // 회원명 검색
     @Override
     public List<Member> searchMembersByName(String name) {
@@ -61,5 +88,4 @@ public class MemberServiceImpl implements MemberService {
 	    sqlSession.commit();  // 삭제 후 커밋
 	    sqlSession.close();
 	}
-
 }

@@ -22,17 +22,17 @@ public class AdminOrderManagementController extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+    	
     	List<Order> orderList = orderService.getAllOrders();
         
         //디버깅테스트용
-//        if (memberList != null) {
-//            System.out.println("조회된 회원 수: " + memberList.size()); //회원수출력
-//            for (Member member : memberList) {
-//                System.out.println("회원 정보: " + member); //정보출력
+//        if (orderList != null) {
+//            System.out.println("조회된 회원 수: " + orderList.size()); //회원수출력
+//            for (Order order : orderList) {
+//                System.out.println("주문 정보: " + order); //정보출력
 //            }
 //        } else {
-//            System.out.println("회원 목록이 없습니다.");
+//            System.out.println("주문 목록이 없습니다.");
 //        }
 
         request.setAttribute("orderList", orderList);
