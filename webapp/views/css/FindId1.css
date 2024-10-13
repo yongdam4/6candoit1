@@ -1,586 +1,107 @@
-html,
-body {
-    margin: 0;
-    height: 100%;
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
-.find-id {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: #ffffff;
+.find-Id-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: calc(91vh - 225px);
+   width: 100%;
+   padding: 20px;
+   box-sizing: border-box;
 }
 
-.find-id .header {
-    display: flex;
-    flex-direction: column;
-    max-height: 150px;
-    align-items: flex-start;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    width: 100%;
-    flex-grow: 1;
-    background-color: #ffffff;
+.find-Id-text {
+   height: 20%;
+   /* 부모인 login-form의 20%를 차지하도록 설정 */
+   position: relative;
+   display: flex;
+   align-items: center;
+   /* 세로 가운데 정렬 */
+   justify-content: center;
+   /* 가로 가운데 정렬 */
+   font-family: "Roboto-Regular", Helvetica;
+   font-weight: 400;
+   color: #000000;
+   font-size: 48px;
+   text-align: center;
+   letter-spacing: 0;
+   white-space: nowrap;
+   margin-bottom: 20px; /* 제목과 입력 필드 사이 간격 추가 */
 }
 
-.find-id .top {
-    display: flex;
-    height: 75px;
-    align-items: center;
-    gap: 50px;
-    padding: 15px 230px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    background-color: #ffffff;
+.mid {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   width: 100%;
+   height: auto; /* 필요한 만큼의 높이를 차지 */
+   flex-grow: 1;
+   margin-bottom: 20px; /* mid와 bottom 사이에 20px 여백 추가 */
 }
 
-.find-id .home-button {
-    display: flex;
-    max-width: 150px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
+
+
+.name-function, .phone-function {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
 }
 
-.find-id .text-wrapper {
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #12690b;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 26.4px;
-}
-
-.find-id .search-bar {
-    display: flex;
-    max-width: 550px;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 0px 50px 0px 16px;
-    background-color: #f2f4f8;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: #c1c7cd;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-}
-
-.find-id .search-icon {
-    max-width: 45px;
-    max-height: 45px;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-}
-
-.find-id .div-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-}
-
-.find-id .div {
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #c1c1c1;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-}
-
-.find-id .cart-login {
-    display: flex;
-    min-width: 250px;
-    max-width: 250px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-    background-color: #ffffff;
-}
-
-.find-id .shoppin-cart-button {
-    display: flex;
-    max-width: 150px;
-    align-items: center;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-    border-radius: 100px;
-}
-
-.find-id .shopping-cart-icon {
-    max-width: 40px;
-    width: 40px;
-    max-height: 40px;
-    position: relative;
-    align-self: stretch;
-}
-
-.find-id .shopping-cart-text {
-    display: flex;
-    max-width: 200px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex: 1;
-    flex-grow: 1;
-    position: relative;
-    align-self: stretch;
-}
-
-.find-id .text-wrapper-2 {
-    position: relative;
-    flex: 1;
-    height: 43px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 17.6px;
-}
-
-.find-id .login-button {
-    display: flex;
-    max-width: 120px;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    flex-grow: 1;
-    border-radius: 100px;
-    position: relative;
-    align-self: stretch;
-}
-
-.find-id .login-icon {
-    width: 45px;
-    position: relative;
-    align-self: stretch;
-}
-
-.find-id .login-text {
-    display: flex;
-    max-width: 60px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex: 1;
-    flex-grow: 1;
-    position: relative;
-    align-self: stretch;
-}
-
-.find-id .text-wrapper-3 {
-    position: relative;
-    flex: 1;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 17.6px;
-}
-
-.find-id .menu {
-    display: flex;
-    height: 75px;
-    align-items: center;
-    gap: 50px;
-    padding: 8px 150px;
-    width: 100%;
-    background-color: #edf8e8;
-    position: relative;
-    align-self: stretch;
-}
-
-.find-id .category-button {
-    display: flex;
-    min-width: 150px;
-    max-width: 200px;
-    max-height: 50px;
-    align-items: center;
-    padding: 4px 16px;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-    background-color: #12690b;
-    border: 1px solid;
-    border-color: #dadada;
-    backdrop-filter: blur(4px) brightness(100%);
-    -webkit-backdrop-filter: blur(4px) brightness(100%);
-}
-
-.find-id .img {
-    flex: 1;
-    max-width: 50px;
-    flex-grow: 1;
-    max-height: 45px;
-    position: relative;
-    align-self: stretch;
-}
-
-.find-id .text-wrapper-4 {
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Roboto-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 2px;
-    line-height: 20px;
-}
-
-.find-id .div-wrapper-2 {
-    display: flex;
-    max-width: 130px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-}
-
-.find-id .text-wrapper-5 {
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Roboto-Bold", Helvetica;
-    font-weight: 700;
-    color: #12690b;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 16px;
-}
-
-.find-id .body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    height: calc(100vh - 300px);
-    /* 150px씩 상하 여백을 뺀 높이 */
-    padding: 50px 900px 50px;
-
-}
-
-.find-id .find-Id-form {
-    display: flex;
-    flex-direction: column;
-    /* 세로 방향으로 정렬 */
-    align-items: center;
-    /* 가로 중앙 정렬 */
-    justify-content: center;
-    /* 세로 중앙 정렬 */
-    width: 100%;
-    /* 폼의 너비를 고정 */
-    height: 70%;
-    padding: 30px;
-    gap: 15px;
-    border-radius: 10px;
-
-}
-
-.find-id .find-Id-text {
-    background-color: #f2f4f8;
-    width: 100%;
-    height: 25%;
-    font-family: "Roboto-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 40px;
-    text-align: center;
-    display: flex;
-    /* Flexbox 사용 */
-    align-items: center;
-    /* 세로 중앙 정렬 */
-    justify-content: center;
-    /* 가로 중앙 정렬 */
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.find-id .mid {
-
-    width: 90%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-}
-
-.find-id .name-function,
-.find-id .phone-function {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-    /* 각 섹션이 50%씩 차지하도록 설정 */
-
-}
-
-.find-id .name-blank,
-.find-id .phone-blank {
-
-    display: flex;
-    align-items: center;
-    /* 세로 중앙 정렬 */
-    justify-content: flex-start;
-    /* 가로는 왼쪽 정렬 */
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    font-size: 24px;
-    color: #000000;
-    height: 50%;
-    /* 부모 높이의 절반을 차지 */
-    padding-left: 5px;
-    /* 레이블과 입력 필드 사이의 간격 */
-}
-
-input::placeholder {
-    font-size: 20px;
+.name-blank, .phone-blank {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   font-family: "Roboto-Regular", Helvetica;
+   font-weight: 400;
+   font-size: 24px;
+   color: #000000;
+   padding-left: 5px;
 }
 
 .input-field {
-    width: 100%;
-    height: 50%;
-    /* 입력 필드도 부모 높이의 절반을 차지 */
-    padding: 20px;
-    font-size: 28px;
-    border: 1px solid #9b9b9b;
-    border-radius: 10px;
-    box-sizing: border-box;
+   width: 100%;
+   padding: 20px;
+   font-size: 28px;
+   border: 1px solid #9b9b9b;
+   border-radius: 10px;
+   box-sizing: border-box;
 }
-
-.input-field:focus {
-    outline: none;
-    border-color: #12690b;
+.bottom {
+   display: flex;
+   justify-content: center;
+   height : 20%;
 }
-
-.find-id .find-button {
-    width: 100%;
-    height: 20%;
-    padding: 20px;
-    font-size: 24px;
-    color: white;
-    background-color: black;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    font-size: 48px;
-}
-
-
-
-.find-id .footer {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 150px;
-    background-color: #edf8e8;
-}
-
-.find-id .top-2 {
-    position: absolute;
-    width: 1440px;
-    height: 98px;
-    top: 1px;
-    left: 0;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-color: #d9d9d9;
-}
-
-.find-id .company {
-    position: absolute;
-    width: 425px;
-    height: 84px;
-    top: 7px;
-    left: 150px;
-}
-
-.find-id .foodpia {
-    position: absolute;
-    height: 26px;
-    top: 28px;
-    left: 0;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: 26.4px;
-    white-space: nowrap;
-}
-
-.find-id .ceo {
-    position: absolute;
-    width: 250px;
-    height: 84px;
-    top: 7px;
-    left: 595px;
-}
-
-.find-id .CEO {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 0;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .worker {
-    position: absolute;
-    width: 425px;
-    height: 84px;
-    top: 7px;
-    left: 865px;
-}
-
-.find-id .JM {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 19px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .YD {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 105px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .HS {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 191px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .JH {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 277px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .SH {
-    position: absolute;
-    height: 22px;
-    top: 30px;
-    left: 363px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 22.4px;
-    white-space: nowrap;
-}
-
-.find-id .URL-wrapper {
-    position: absolute;
-    width: 1440px;
-    height: 50px;
-    top: 99px;
-    left: 0;
-}
-
-.find-id .URL {
-    position: absolute;
-    height: 20px;
-    top: 14px;
-    left: 30px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: var(--x-6);
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 19.6px;
-    white-space: nowrap;
+.find-button {
+   width: 70%;
+   /* 입력창과 동일한 너비로 설정 */
+   height: 100%;
+   display: flex;
+   /* 플렉스박스를 사용하여 정렬 */
+   align-items: center;
+   /* 세로 가운데 정렬 */
+   justify-content: center;
+   /* 가로 가운데 정렬 */
+   background-color: #000000;
+   color: #ffffff;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   text-align: center;
+   transition: background-color 0.3s ease;
+   margin: 0 auto;
+   /* 버튼을 가운데로 정렬 */
+   padding: 20px;
+   /* 패딩을 추가하여 버튼 크기를 적절히 조절 */
+   font-size: 48px;
+   /* 글씨 크기를 48px로 유지 */
 }
