@@ -12,9 +12,9 @@ public class MemberServiceImpl implements MemberService {
     private MemberDao mDao = new MemberDao();
 
     @Override
-    public Member loginMember(Member m) {
+    public Member adminloginMember(Member m) {
         SqlSession sqlSession = Template.getSqlSession();
-        Member loginUser = mDao.loginMember(sqlSession, m);
+        Member loginUser = mDao.adminloginMember(sqlSession, m);
         sqlSession.close();
         return loginUser;
     }
@@ -44,11 +44,6 @@ public class MemberServiceImpl implements MemberService {
 		return result;
 	}
 
-	@Override
-	public int deleteMember(Member m) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	
 	@Override
 	public int idCheck(String userId) {
@@ -60,9 +55,9 @@ public class MemberServiceImpl implements MemberService {
 	
     // 회원명 검색
     @Override
-    public List<Member> searchMembersByName(String name) {
+    public List<Member> adminsearchMembersByName(String name) {
         SqlSession sqlSession = Template.getSqlSession();
-        List<Member> searchResults = mDao.searchMembersByName(sqlSession, name);
+        List<Member> searchResults = mDao.adminsearchMembersByName(sqlSession, name);
         sqlSession.close();
         return searchResults;
     }
@@ -85,12 +80,35 @@ public class MemberServiceImpl implements MemberService {
         return searchResults;
     }
 	
+	
 	@Override
-	public void deleteMember(String memberId) {
-	    SqlSession sqlSession = Template.getSqlSession();
-	    mDao.deleteMember(sqlSession, memberId);
-	    sqlSession.commit();  // 삭제 후 커밋
-	    sqlSession.close();
+    public Member loginMember(Member m) {
+        SqlSession sqlSession = Template.getSqlSession();
+        Member loginUser = mDao.loginMember(sqlSession, m);
+        sqlSession.close();
+        return loginUser;
+    }
+
+    @Override
+    public List<Member> searchMembersByName(String name) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> membersByName = mDao.findMembersByName(sqlSession, name);
+        sqlSession.close();
+        return membersByName;
+    }
+
+    @Override
+    public List<Member> searchMembersByPhone(String phone) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> membersByPhone = mDao.findMembersByPhone(sqlSession, phone);
+        sqlSession.close();
+        return membersByPhone;
+    }
+
+	@Override
+	public int deleteMember(Member m) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

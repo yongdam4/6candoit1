@@ -30,7 +30,7 @@ public class AdminMemberLoginController extends HttpServlet {
         m.setUserId(request.getParameter("adminId"));
         m.setUserPwd(request.getParameter("adminPwd"));
 
-        Member loginUser = memberService.loginMember(m);
+        Member loginUser = memberService.adminloginMember(m);
 
         // 로그인 성공 시 사용자 정보를 세션에 저장하고 MemberManagement.jsp로 리다이렉트
         if (loginUser != null && loginUser.getUserId().equals(m.getUserId()) && loginUser.getUserPwd().equals(m.getUserPwd())) {

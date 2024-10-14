@@ -310,16 +310,26 @@
 }
 
 .main-page .recommend {
-  flex-direction: column;
-  height: 1100px;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4개씩 한 줄에 배치 */
+  gap: 30px; /* 각 아이템 사이 간격 */
+  justify-content: center; /* 가운데 정렬 */
   padding: 0px 200px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  align-self: stretch;
   width: 100%;
 }
+
+.main-page .tamato,
+.main-page .broccoli,
+.main-page .tteokbokki,
+.main-page .tokyo-banana,
+.main-page .mille-feuille-nabe {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 내부 아이템을 가운데 정렬 */
+  text-align: center; /* 텍스트도 가운데 정렬 */
+  max-width: 230px;
+}
+
 
 .main-page .today-tiems {
   display: flex;

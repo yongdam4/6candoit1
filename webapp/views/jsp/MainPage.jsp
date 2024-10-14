@@ -82,7 +82,12 @@
               <div class="element-7">대구식 수제 납작만두<br />6,480원</div>
             </div>
           </div>
+<<<<<<< HEAD
         </div>        
+=======
+        </div>
+        <%@ include file="/views/jsp/footer.jsp" %>
+>>>>>>> 3d220014bc2f811661a403b2856a3329f27bdfc2
       </div>
     </div>
     <%@ include file="/views/jsp/footer.jsp" %>
