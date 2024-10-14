@@ -28,7 +28,6 @@
 
 </head>
 <body>
-<<<<<<< HEAD
   
  <%
     if (session.getAttribute("alertMsg") != null) {
@@ -41,16 +40,6 @@
 	        session.removeAttribute("alertMsg");
 	    }
 	%>
-  <c:choose>
-    <c:when test="${not empty loginUser}">
-      <div class="user-info">
-        <div class="user-welcome">${loginUser.userName}님 환영합니다.</div>
-        <button><a href="<%=contextPath %>/logout.me">로그아웃</a></button>
-      </div>
-    </c:when>
-=======
->>>>>>> 3d220014bc2f811661a403b2856a3329f27bdfc2
-
 	<c:choose>
 		<c:when test="${not empty loginUser}">
 			<div class="user-info">
@@ -77,7 +66,6 @@
 	</c:choose>
 
 
-<<<<<<< HEAD
  <div class="header-mid">
 
     <button class="home-button"><a href="${pageContext.request.contextPath}/index.jsp">푸드피아</a></button>
@@ -103,39 +91,6 @@
         </button>
       </div>      
   </div>
-=======
->>>>>>> 3d220014bc2f811661a403b2856a3329f27bdfc2
-
-
-	<div class="header-mid">
-		<button class="home-button">
-			<a href="${pageContext.request.contextPath}/index.jsp">푸드피아</a>
-		</button>
-
-		<div class="search-bar">
-			<button type="submit" class="search-icon-blank">
-				<img class="search-icon"
-					src="<%=contextPath%>/views/img/img-search-icon.svg" />
-			</button>
-			<input type="text" class="search-input-blank"
-				placeholder="검색어를 입력하세요.">
-		</div>
-
-		<div class="cart-mypage">
-			<button class="shopping-cart-button">
-				<a href="shoppingcartpage.bo"> <img class="shopping-cart-icon"
-					src="<%=contextPath%>/views/img/cart.svg" />
-				</a>
-			</button>
-
-			<button>
-				<a href="mypage.bo"> <img
-					src="<%=contextPath%>/views/img/mypage-icon.svg">
-				</a>
-			</button>
-		</div>
-	</div>
-
 
 	<div class="menu">
 		<div class="category-button">

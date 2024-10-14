@@ -17,27 +17,16 @@ public class MemberDao {
 		List<Member> list = sqlSession.selectList("memberMapper.selectAllMembers");
 		System.out.println(list);
 		sqlSession.close();
-<<<<<<< HEAD
         return list;
     }
 	public int insertMember(SqlSession sqlSession, Member m) {		
 		return sqlSession.insert("memberMapper.insertMember", m);		
-=======
-		return list;
-	}
-
-	public int insertMember(SqlSession sqlSession, Member m) {
-		sqlSession.insert("memberMapper.insertMember", m);
-		return 0;
-
->>>>>>> 3d220014bc2f811661a403b2856a3329f27bdfc2
 	}
 
 	public int deleteMember(SqlSession sqlSession, Member m) {
 		sqlSession.delete("memberMapper.deleteMember", m);
 		return 0;
 	}
-<<<<<<< HEAD
 	
 	public int idCheck(SqlSession sqlSession, String userId) {		
 		return sqlSession.selectOne("memberMapper.checkId", userId);		
@@ -47,13 +36,7 @@ public class MemberDao {
     public List<Member> searchMembersByName(SqlSession sqlSession, String name) {
         return sqlSession.selectList("memberMapper.searchMembersByName", name);
     }
-=======
->>>>>>> 3d220014bc2f811661a403b2856a3329f27bdfc2
 
-	public int idCheck(SqlSession sqlSession, String userId) {
-
-		return sqlSession.selectOne("memberMapper.checkId", userId);
-	}
 
 	// 회원명으로 검색
 	public List<Member> adminsearchMembersByName(SqlSession sqlSession, String name) {

@@ -19,10 +19,8 @@ public interface MemberService {
     public List<Member> adminsearchMembersByName(String name);  // 회원명으로 검색
     public List<Member> searchMembersById(String id);      // 아이디로 검색
     public List<Member> searchMembersByGrade(String grade);// 회원 등급으로 검색
-<<<<<<< HEAD
     public void deleteMember(String memberId);  // 회원 삭제 메서드 추가
 
-=======
     public abstract Member loginMember(Member m);
 
     // 이름으로 회원 검색
@@ -30,5 +28,4 @@ public interface MemberService {
 
     // 전화번호로 회원 검색
     public abstract List<Member> searchMembersByPhone(String phone);
->>>>>>> 3d220014bc2f811661a403b2856a3329f27bdfc2
 }
