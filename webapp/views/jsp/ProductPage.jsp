@@ -28,7 +28,7 @@
             <div class="frame-5"><div class="text-wrapper-11">총가격: 32,970원</div></div>
             <div class="add-button">
 
-              <button class="typography-row" onclick="location.href='<%=path %>/MainPage.jsp'"><div class="header-2" >장바구니 담기</div></button>
+              <button class="typography-row" onclick="location.href='<%=path %>/index.jsp'"><div class="header-2" >장바구니 담기</div></button>
 
 
             </div>

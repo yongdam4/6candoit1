@@ -82,22 +82,7 @@
             </div>
           </div>
         </div>
-        <footer class="footer">
-          <div class="top-2">
-            <div class="company"><div class="text-wrapper-8">푸드피아</div></div>
-            <div class="ceo"><div class="text-wrapper-9">대표자</div></div>
-            <div class="employee">
-              <div class="frame">
-                <div class="text-wrapper-9">전제민</div>
-                <div class="text-wrapper-9">김용담</div>
-                <div class="text-wrapper-9">이현선</div>
-                <div class="text-wrapper-9">정주희</div>
-                <div class="text-wrapper-9">조석현</div>
-              </div>
-            </div>
-          </div>
-          <div class="url"><p class="text-wrapper-10">CompanyName @ 202X All rights reserved.</p></div>
-        </footer>
+        <%@ include file="/views/jsp/footer.jsp" %>
       </div>
     </div>
   </body>

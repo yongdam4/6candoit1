@@ -72,19 +72,19 @@
               <!-- 성명 -->
               <div class="info-item">
                 <div class="info-title">성명 :</div>
-                <div class="info-content">${mem.userName}</div>
+                <div class="info-content"><!-- ${mem.userName} -->홍길동</div>
               </div>
       
               <!-- 아이디 -->
               <div class="info-item">
                 <div class="info-title">아이디 :</div>
-                <div class="info-content">${mem.userId}</div>
+                <div class="info-content"><!--  ${mem.userId}-->user01</div>
               </div>
       
               <!-- 비밀번호 -->
               <div class="info-item">
                 <div class="info-title">비밀번호 :</div>
-                <div class="frame-wrapper">${mem.userPwd}
+                <div class="frame-wrapper"><!--${mem.userPwd}-->
                   <div class="change-password">
                     비밀번호 변경하기
                   </div>
@@ -94,31 +94,31 @@
               <!-- 주소 -->
               <div class="info-item">
                 <div class="info-title">주소 :</div>
-                <div class="info-content">${mem.address}</div>
+                <div class="info-content"><!--${mem.address}--> 서울시 양천구 목동</div>
               </div>
       
               <!-- 전화번호 -->
               <div class="info-item">
                 <div class="info-title">전화번호 :</div>
-                <div class="info-content">${mem.phone}</div>
+                <div class="info-content"><!-- ${mem.phone} -->010-3333-2222</div>
               </div>
       
               <!-- 이메일 -->
               <div class="info-item">
                 <div class="info-title">이메일 :</div>
-                <div class="info-content">${mem.email}</div>
+                <div class="info-content"><!--${mem.email}-->user01@kh.or.kr</div>
               </div>
       
               <!-- 회원등급 -->
               <div class="info-item">
                 <div class="info-title">회원등급 :</div>
-                <div class="info-content">${mem.grade}</div>
+                <div class="info-content"><!-- ${mem.grade}-->GOLD</div>
               </div>
       
               <!-- 성별 -->
               <div class="info-item">
                 <div class="info-title">성별 :</div>
-                <div class="info-content">${mem.gender}</div>
+                <div class="info-content"><!-- ${mem.gender}-->남자</div>
               </div>
             </div>
           </div>

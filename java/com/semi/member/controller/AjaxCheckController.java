@@ -27,17 +27,17 @@ public class AjaxCheckController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
-		String userId = request.getParameter("checkId");
-		
-		int count = new MemberServiceImpl().idCheck(userId);
-		
-		response.setContentType("application/json");
-		response.setCharacterEncoding("UTF-8");
-		
-		boolean isDuplicated = count > 0;		
-		String jsonResponse = "{\"isDuplicated\":" + isDuplicated + "}";
-		
-		response.getWriter().write(jsonResponse);
+		String userId = request.getParameter("userId");
+	      
+	      int count = new MemberServiceImpl().idCheck(userId);
+	      
+	      response.setContentType("application/json");
+	      response.setCharacterEncoding("UTF-8");
+	      
+	      boolean isDuplicated = count > 0;      
+	      String jsonResponse = "{\"isDuplicated\":" + isDuplicated + "}";
+	      
+	      response.getWriter().write(jsonResponse);
 	}
 
 	/**

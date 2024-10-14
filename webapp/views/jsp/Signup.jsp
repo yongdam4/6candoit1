@@ -35,7 +35,7 @@
           <!-- 테이블 내용 -->
           <tr>
             <td class="signup-text">아이디</td>
-            <td><input type="text" name="userId" class="input-box" placeholder="아이디 입력칸" required></td>
+            <td><input type="text" id="userId" name="userId" class="input-box" placeholder="아이디 입력칸" required></td>
             <td><button class="id-check-btn" onclick="checkId(event)">중복확인</button></td>
           </tr>
           <tr>

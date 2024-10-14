@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="orderMapper">
+	<!-- 관리자 정보 매핑 -->
+	<resultMap type="Order" id="orderResultSet">
+		<result column="ORDER_NO" property="orderNo" />
+		<result column="USER_ID" property="userId" />
+		<result column="PRODUCT_CODE" property="productCode" />
+		<result column="PRODUCT_NAME" property="productName" />
+		<result column="ORDER_CODE" property="orderCode" />
+		<result column="ORDER_DATE" property="orderDate" />
+		<result column="ORDER_QUANTITY" property="orderQuantity" />
+		<result column="ORDER_PRICE" property="orderPrice" />
+		<result column="DELIVERY_STATUS" property="delistatus" />
+		<result column="PAYMENT_METHOD" property="payment" />
+	</resultMap>
+	
+	<!-- 회원정보 -->
+	<select id="selectAllOrders" resultMap="orderResultSet">
+		SELECT
+		ORDER_DATE,
+		ORDER_NO,
+		PRODUCT_NAME,
+		ORDER_QUANTITY,
+		ORDER_PRICE,
+		USER_ID,
+		DELIVERY_STATUS,
+		PAYMENT_METHOD
+		FROM PAYMENT
+	</select>
+	
+	<select id="searchOrdersByStatus" parameterType="String"
+		resultMap="orderResultSet">
+		SELECT * FROM PAYMENT
+		WHERE DELIVERY_STATUS LIKE '%' || #{status} || '%'
+	</select>
+
+	<!-- 아이디로 검색하는 쿼리 -->
+	<select id="searchOrdersById" parameterType="String"
+		resultMap="orderResultSet">
+		SELECT * FROM PAYMENT
+		WHERE USER_ID LIKE '%' || #{id} || '%'
+	</select>
+</mapper>
