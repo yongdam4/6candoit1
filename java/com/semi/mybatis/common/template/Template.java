@@ -27,8 +27,7 @@ public class Template {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		
+		}		
 		return sqlSession;
 	}
 }

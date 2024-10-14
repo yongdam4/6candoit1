@@ -5,6 +5,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 
 /**
@@ -25,8 +27,12 @@ public class LogoutController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession(false); // 기존 세션이 없으면 null 반환
+	    if (session != null) {
+	        session.invalidate(); // 세션 무효화 (로그아웃 처리)
+	    }
 		
-		response.sendRedirect(request.getContextPath()+"/MainPage.jsp");
+		response.sendRedirect(request.getContextPath()+"/index.jsp");
 	}
 
 	/**

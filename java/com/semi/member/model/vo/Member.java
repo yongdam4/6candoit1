@@ -7,11 +7,11 @@ public class Member {
 	private String userPwd;
 	private String userName;
 	private String gender;
-	private String birthday; // 생일 필드 추가
+	private String birthday;
 	private String email;
 	private String phone;
 	private String address;
-	private Date enrollDate;
+	private Date userEnrollDate;
 	private String grade;
 	private String admingrade;
 	private int userCoin;
@@ -23,6 +23,11 @@ public class Member {
 	}
 	
 	
+	public Member(int userCoin) {
+		super();
+		this.userCoin = userCoin;
+	}
+
 
 	public Member(String userId, String userPwd, String userName, String gender,  String email,
 			String address, String phone, String birthday) {
@@ -35,13 +40,12 @@ public class Member {
 		this.address = address;				
 		this.phone = phone;
 		this.birthday = birthday;
-		
-	}
+		}
 
 
 
 	public Member(String userId, String userPwd, String userName, String gender, String birthday, String email,
-			String phone, String address, Date enrollDate, String grade, String admingrade, int userCoin,
+			String phone, String address, Date userEnrollDate, String grade, String admingrade, int userCoin,
 			Date deleteDate, String delFlag) {
 		super();
 		this.userId = userId;
@@ -52,7 +56,7 @@ public class Member {
 		this.email = email;
 		this.phone = phone;
 		this.address = address;
-		this.enrollDate = enrollDate;
+		this.userEnrollDate = userEnrollDate;
 		this.grade = grade;
 		this.admingrade = admingrade;
 		this.userCoin = userCoin;
@@ -124,12 +128,12 @@ public class Member {
 		this.address = address;
 	}
 
-	public Date getEnrollDate() {
-		return enrollDate;
+	public Date getUserEnrollDate() {
+		return userEnrollDate;
 	}
 
-	public void setEnrollDate(Date enrollDate) {
-		this.enrollDate = enrollDate;
+	public void setUserEnrollDate(Date userEnrollDate) {
+		this.userEnrollDate = userEnrollDate;
 	}
 
 	public String getGrade() {
@@ -176,7 +180,7 @@ public class Member {
 	public String toString() {
 		return "Member [userId=" + userId + ", userPwd=" + userPwd + ", userName=" + userName + ", gender=" + gender
 				+ ", birthday=" + birthday + ", email=" + email + ", phone=" + phone + ", address=" + address
-				+ ", enrollDate=" + enrollDate + ", grade=" + grade + ", admingrade=" + admingrade + ", userCoin="
+				+ ", userEnrollDate=" + userEnrollDate + ", grade=" + grade + ", admingrade=" + admingrade + ", userCoin="
 				+ userCoin + ", deleteDate=" + deleteDate + ", delFlag=" + delFlag + "]";
 	}
 	

@@ -24,6 +24,17 @@
 </head>
 <body>
   
+ <%
+    if (session.getAttribute("alertMsg") != null) {
+	%>
+	        <script>
+	            alert("<%= session.getAttribute("alertMsg") %>");
+	        </script>
+	<%
+	        // 세션 메시지 제거 (한 번만 표시되도록)
+	        session.removeAttribute("alertMsg");
+	    }
+	%>
   <c:choose>
     <c:when test="${not empty loginUser}">
       <div class="user-info">
@@ -49,7 +60,8 @@
 
 
  <div class="header-mid">
-    <button class="home-button"><a href="${pageContext.request.contextPath}/MainPage.jsp">푸드피아</a></button>
+
+    <button class="home-button"><a href="${pageContext.request.contextPath}/index.jsp">푸드피아</a></button>
 
       <div class="search-bar">
         <button type="submit" class="search-icon-blank">
@@ -60,13 +72,13 @@
 
       <div class="cart-mypage">
         <button class="shopping-cart-button">
-          <a href="">
+          <a href="shoppingcartpage.bo">
             <img class="shopping-cart-icon" src="<%=contextPath%>/views/img/cart.svg" />
           </a>          
         </button>
   
         <button>
-          <a href="">
+          <a href="mypage.bo">
             <img src="<%=contextPath%>/views/img/mypage-icon.svg">              
           </a>              
         </button>
@@ -82,10 +94,11 @@
     
     <div class="menu-list">
       <button class="event-btn"><a href="">이벤트</a></button>
-      <button class="popular-btn"><a href="">인기상품</a></button>
-      <button class="luckybox-btn"><a href="">럭키박스</a></button>
-      <button class="inquiry-btn"><a href="">문의</a></button>
+      <button class="popular-btn"><a href="popularitems.bo">인기상품</a></button>
+      <button class="luckybox-btn"><a href="luckyboxshow.bo">럭키박스</a></button>
+      <button class="inquiry-btn"><a href="contactpage.bo">문의</a></button>
       <button class="admin-btn"><a href="<%=contextPath%>/views/jsp/AdminLoginPage.jsp">관리자
+
   		</a></button>
     </div>    
   </div>

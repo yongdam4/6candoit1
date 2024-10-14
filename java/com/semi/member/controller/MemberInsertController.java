@@ -5,6 +5,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 
 import com.semi.member.model.vo.Member;
@@ -12,8 +14,9 @@ import com.semi.member.service.MemberServiceImpl;
 
 /**
  * Servlet implementation class MemberInsertController
+ * @param <date>
  */
-public class MemberInsertController extends HttpServlet {
+public class MemberInsertController<date> extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -27,8 +30,9 @@ public class MemberInsertController extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {			
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
+		System.out.println("MemberInsertController - doPost called");
 		
 		String userId = request.getParameter("userId");
 	    String userPwd = request.getParameter("userPwd");
@@ -38,24 +42,35 @@ public class MemberInsertController extends HttpServlet {
 	    String address = request.getParameter("address");
 	    String phone = request.getParameter("phone");
 	    String birthday = request.getParameter("birthday");
-
-	    // 입력 값 출력
+	    
+//		Member m = new Member(
+//								request.getParameter("userId"),
+//								request.getParameter("userPwd"),
+//								request.getParameter("userName"),
+//								request.getParameter("gender"),
+//								request.getParameter("email"),
+//								request.getParameter("address"),
+//								request.getParameter("phone"),
+//								request.getParameter("birthday")
+//							);
+		
+		// 디버깅용 출력
 	    System.out.println("UserId: " + userId);
 	    System.out.println("UserPwd: " + userPwd);
 	    System.out.println("UserName: " + userName);
-	    System.out.println("Gender: " + gender);
-	    System.out.println("Email: " + email);
-	    System.out.println("Address: " + address);
-	    System.out.println("Phone: " + phone);
-	    System.out.println("Birthday: " + birthday);
-	    
-	    Member m = new Member(userId, userPwd, userName, gender, email, address, phone, birthday);
 		
+	    Member m = new Member(userId, userPwd, userName, gender, email, address, phone, birthday);
+	    
 		int result = new MemberServiceImpl().insertMember(m);
+	    
+	    System.out.println("Insert Result: " + result); // 트랜잭션 결과 로그		
 		
 		if(result > 0) {
-			request.setAttribute("alertMsg", "회원가입에 성공하셨습니다!");
-			response.sendRedirect(request.getContextPath());
+			// 세션에 메시지 저장
+		    HttpSession session = request.getSession();
+		    session.setAttribute("alertMsg", "회원가입에 성공하셨습니다!");
+		    
+		    response.sendRedirect(request.getContextPath());  // sendRedirect 방식
 		} else {
 			request.setAttribute("errorMsg", "회원가입 실패");
 		}
@@ -65,37 +80,7 @@ public class MemberInsertController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
-		
-		String userId = request.getParameter("userId");
-	    String userPwd = request.getParameter("userPwd");
-	    String userName = request.getParameter("userName");
-	    String gender = request.getParameter("gender");
-	    String email = request.getParameter("email");
-	    String address = request.getParameter("address");
-	    String phone = request.getParameter("phone");
-	    String birthday = request.getParameter("birthday");
-
-	    // 입력 값 출력
-	    System.out.println("UserId: " + userId);
-	    System.out.println("UserPwd: " + userPwd);
-	    System.out.println("UserName: " + userName);
-	    System.out.println("Gender: " + gender);
-	    System.out.println("Email: " + email);
-	    System.out.println("Address: " + address);
-	    System.out.println("Phone: " + phone);
-	    System.out.println("Birthday: " + birthday);
-	    
-	    Member m = new Member(userId, userPwd, userName, gender, email, address, phone, birthday);
-		
-		int result = new MemberServiceImpl().insertMember(m);
-		
-		if(result > 0) {
-			request.setAttribute("alertMsg", "회원가입에 성공하셨습니다!");
-			response.sendRedirect(request.getContextPath());
-		} else {
-			request.setAttribute("errorMsg", "회원가입 실패");
-		}
+		doGet(request, response);
 	}
 
 }
