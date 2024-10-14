@@ -10,7 +10,6 @@ import com.semi.member.model.vo.Member;
 
 public class MemberServiceImpl implements MemberService {
 
-    // MemberDao 인스턴스를 주입받거나 생성
     private MemberDao mDao = new MemberDao();
 
     @Override
@@ -35,5 +34,14 @@ public class MemberServiceImpl implements MemberService {
         List<Member> membersByPhone = mDao.findMembersByPhone(sqlSession, phone);
         sqlSession.close();
         return membersByPhone;
+    }
+
+    // 추가된 searchMembersByNameAndPhone 메서드 구현
+    @Override
+    public List<Member> searchMembersByNameAndPhone(String name, String phone) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> members = mDao.findMembersByNameAndPhone(sqlSession, name, phone);
+        sqlSession.close();
+        return members;
     }
 }
