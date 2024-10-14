@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace: 해당 mapper파일의 고유한 별칭 -->
+
+<mapper namespace="boardMapper">
+   <resultMap id="boardResultSet" type="Board">
+      <result column="UC_NO" property="ucNo" />
+      <result column="USER_ID" property="userId" />
+      <result column="PRODUCT_CODE" property="productCode" />
+      <result column="UC_TITLE" property="ucTitle" />
+      <result column="UC_WRITEDATE" property="writeDAte" />
+      <result column="ASK_DETAIL" property="askDeatil" />
+      <result column="ASK_COMMENT" property="askComment" />
+   </resultMap>
+
+   <insert id="insertContactList" parameterType="Board">
+      INSERT INTO NOTICE
+      (
+         USER_ID,
+         UC_TITLE,
+         ASK_DATAIL,
+         UC_WRITEDATE
+
+      )
+      VALUES
+      (
+         #{userId},
+         #{ucTitle},
+         #{aksDeatail},
+         SYSDATE
+      )
+   </insert>
+
+   
+
+</mapper>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="productMapper">
+	<!-- 관리자 정보 매핑 -->
+	<resultMap type="Product" id="productResultSet">
+		<result column="PRODUCT_CODE" property="productCode" />
+		<result column="CATEGORY_CODE" property="categoryCode" />
+		<result column="PRODUCT_NAME" property="productName" />
+		<result column="PRODUCT_PRICE" property="productPrice" />
+		<result column="PRODUCT_DESCRIPTION" property="productDescription" />
+		<result column="PRODUCT_QUANTITY" property="productQuantity" />
+	</resultMap>
+	<!-- 회원정보 -->
+	<select id="selectAllProducts" resultMap="productResultSet">
+		SELECT
+		PRODUCT_CODE,
+		PRODUCT_NAME,
+		CATEGORY_CODE,
+		PRODUCT_DESCRIPTION,
+		PRODUCT_PRICE,
+		PRODUCT_QUANTITY
+		FROM PRODUCT
+	</select>
+	
+	<select id="searchProductsByName" parameterType="String"
+		resultMap="productResultSet">
+		SELECT * FROM PRODUCT
+		WHERE PRODUCT_NAME LIKE '%' || #{name} || '%'
+	</select>
+
+	<!-- 아이디로 검색하는 쿼리 -->
+	<select id="searchProductsByCateNum" parameterType="String"
+		resultMap="productResultSet">
+		SELECT * FROM PRODUCT
+		WHERE CATEGORY_CODE LIKE '%' || #{catenum} || '%'
+	</select>
+	
+</mapper>
