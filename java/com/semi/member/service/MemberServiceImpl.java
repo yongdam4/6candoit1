@@ -104,6 +104,15 @@ public class MemberServiceImpl implements MemberService {
         sqlSession.close();
         return membersByPhone;
     }
+    
+    // 추가된 searchMembersByNameAndPhone 메서드 구현
+    @Override
+    public List<Member> searchMembersByNameAndPhone(String name, String phone) {
+        SqlSession sqlSession = Template.getSqlSession();
+        List<Member> members = mDao.findMembersByNameAndPhone(sqlSession, name, phone);
+        sqlSession.close();
+        return members;
+    }
 
 	@Override
 	public int deleteMember(Member m) {
@@ -116,5 +125,7 @@ public class MemberServiceImpl implements MemberService {
 		// TODO Auto-generated method stub
 		
 	}
+
+
 
 }

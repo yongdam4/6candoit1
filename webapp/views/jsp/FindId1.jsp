@@ -31,7 +31,7 @@
 							class="input-field">
 					</div>
 				</div>
-				<button class="find-button" onclick="location.href="${pageContext.request.contextPath}/FindId2.do">
+				<button class="find-button" onclick="location.href='${pageContext.request.contextPath}/FindId2.do'">
 					조회하기
 				</button>
 			</div>

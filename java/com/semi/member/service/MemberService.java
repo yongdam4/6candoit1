@@ -28,4 +28,6 @@ public interface MemberService {
 
     // 전화번호로 회원 검색
     public abstract List<Member> searchMembersByPhone(String phone);
+    
+    public abstract List<Member> searchMembersByNameAndPhone(String searchName, String searchPhone);
 }
