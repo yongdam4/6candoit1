@@ -24,6 +24,9 @@ public class MemberFindId2Controller extends HttpServlet {
       // 'searchName'과 'searchPhone'을 받아옴
       String searchName = request.getParameter("searchName");
       String searchPhone = request.getParameter("searchPhone");
+      
+      System.out.println("컨트롤러searchName: " + searchName);
+      System.out.println("searchPhone: " + searchPhone);
 
       List<Member> searchResults = null;
 

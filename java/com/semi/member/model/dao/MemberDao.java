@@ -77,12 +77,16 @@ public class MemberDao {
 	}
 	
 	// 이름과 전화번호로 회원 검색 메서드 추가
-    public List<Member> findMembersByNameAndPhone(SqlSession sqlSession, String name, String phone) {
+    public List<Member> findMembersByNameAndPhone(SqlSession sqlSession, String searchName, String searchPhone) {
         // 이름과 전화번호를 Map으로 묶어서 전달
-        Map<String, String> paramMap = new HashMap<>();
-        paramMap.put("name", name);
-        paramMap.put("phone", phone);
+    	Map<String, String> paramMap = new HashMap<>();
+    	paramMap.put("searchName", searchName);
+    	paramMap.put("searchPhone", searchPhone);
+    	
+    	System.out.println("searchName: " + searchName);
+        System.out.println("searchPhone: " + searchPhone);
 
+    	
         return sqlSession.selectList("memberMapper.searchMembersByNameAndPhone", paramMap);
     }
 

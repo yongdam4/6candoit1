@@ -67,115 +67,126 @@
 		'%'
 	</select>
 	<!-- 관리자 -->
-	
-	  <!-- 로그인 쿼리 -->
-    <select id="loginMember" parameterType="Member" resultMap="memberResultSet">
-        SELECT USER_ID,
-               USER_PWD,
-               USER_NAME,
-               GENDER,
-               USER_BIRTHDAY,
-               USER_EMAIL,
-               USER_PHONE,
-               USER_ENROLL_DATE,
-               USER_DELFLAG,
-               USER_DELETE_DATE,
-               USER_GRADE,
-               USER_ADDRESS,
-               GRADE_ADMIN,
-               USER_COIN
-        FROM MEMBER
-        WHERE USER_ID = #{userId}
-          AND USER_PWD = #{userPwd}
-    </select>
+
+	<!-- 로그인 쿼리 -->
+	<select id="loginMember" parameterType="Member"
+		resultMap="memberResultSet">
+		SELECT USER_ID,
+		USER_PWD,
+		USER_NAME,
+		GENDER,
+		USER_BIRTHDAY,
+		USER_EMAIL,
+		USER_PHONE,
+		USER_ENROLL_DATE,
+		USER_DELFLAG,
+		USER_DELETE_DATE,
+		USER_GRADE,
+		USER_ADDRESS,
+		GRADE_ADMIN,
+		USER_COIN
+		FROM MEMBER
+		WHERE USER_ID = #{userId}
+		AND USER_PWD = #{userPwd}
+	</select>
 
 
-    <!-- 이름으로 회원 검색 쿼리 (오라클용) -->
-    <select id="searchMembersByName" parameterType="String" resultMap="memberResultSet">
-        SELECT USER_ID,
-               USER_PWD,
-               USER_NAME,
-               GENDER,
-               USER_BIRTHDAY,
-               USER_EMAIL,
-               USER_PHONE,
-               USER_ENROLL_DATE,
-               USER_DELFLAG,
-               USER_DELETE_DATE,
-               USER_GRADE,
-               USER_ADDRESS,
-               GRADE_ADMIN,
-               USER_COIN
-        FROM MEMBER
-        WHERE USER_NAME LIKE '%' || #{name} || '%'
-    </select>
+	<!-- 이름으로 회원 검색 쿼리 (오라클용) -->
+	<select id="searchMembersByName" parameterType="String"
+		resultMap="memberResultSet">
+		SELECT USER_ID,
+		USER_PWD,
+		USER_NAME,
+		GENDER,
+		USER_BIRTHDAY,
+		USER_EMAIL,
+		USER_PHONE,
+		USER_ENROLL_DATE,
+		USER_DELFLAG,
+		USER_DELETE_DATE,
+		USER_GRADE,
+		USER_ADDRESS,
+		GRADE_ADMIN,
+		USER_COIN
+		FROM MEMBER
+		WHERE USER_NAME LIKE '%' || #{name} || '%'
+	</select>
 
-    <!-- 전화번호로 회원 검색 쿼리 -->
-    <select id="searchMembersByPhone" parameterType="String" resultMap="memberResultSet">
-        SELECT USER_ID,
-               USER_PWD,
-               USER_NAME,
-               GENDER,
-               USER_BIRTHDAY,
-               USER_EMAIL,
-               USER_PHONE,
-               USER_ENROLL_DATE,
-               USER_DELFLAG,
-               USER_DELETE_DATE,
-               USER_GRADE,
-               USER_ADDRESS,
-               GRADE_ADMIN,
-               USER_COIN
-        FROM MEMBER
-        WHERE USER_PHONE = #{phone}
-    </select>
-	
-	
+	<!-- 전화번호로 회원 검색 쿼리 -->
+	<select id="searchMembersByPhone" parameterType="String"
+		resultMap="memberResultSet">
+		SELECT USER_ID,
+		USER_PWD,
+		USER_NAME,
+		GENDER,
+		USER_BIRTHDAY,
+		USER_EMAIL,
+		USER_PHONE,
+		USER_ENROLL_DATE,
+		USER_DELFLAG,
+		USER_DELETE_DATE,
+		USER_GRADE,
+		USER_ADDRESS,
+		GRADE_ADMIN,
+		USER_COIN
+		FROM MEMBER
+		WHERE USER_PHONE = #{phone}
+	</select>
+
+
 	<!-- 회원가입 -->
-   <select id="insertMember" parameterType="Member">
-      INSERT
-        INTO MEMBER
-        (
-           USER_ID,
-           USER_PWD,
-           USER_NAME,
-           GENDER,           
-           USER_EMAIL,                 
-           USER_ADDRESS,
-           USER_PHONE,
-           USER_BIRTHDAY              
-                      
-        )
-        VALUES
-        (
-           #{userId},
-           #{userPwd},
-           #{userName},
-           #{gender},                   
-           #{email},
-           #{address},
-           #{phone},           
-           #{birthday}           
-        )
-   </select>
-   
-   <!-- 회원탈퇴 -->
-   <update id="deleteMember"  parameterType="Member">
-      UPDATE MEMBER
-         SET USER_DELFLAG = 'Y'
-         SET USER_DELETE_DATE = SYSDATE
-       WHERE USER_ID = #{userId}
-         AND USER_PWD = #{userPwd}
-         AND USER_NAME = #{userName}
-         AND USER_BIRTHDAY = #{birthday}   
-   </update>
-   
-   <!-- 아이디 중복확인 -->
-   <select id="checkId" resultType="_int">
-      SELECT count(*)
-        FROM MEMBER
-       WHERE USER_ID = #{userId}
-   </select>
-	
+	<select id="insertMember" parameterType="Member">
+		INSERT
+		INTO MEMBER
+		(
+		USER_ID,
+		USER_PWD,
+		USER_NAME,
+		GENDER,
+		USER_EMAIL,
+		USER_ADDRESS,
+		USER_PHONE,
+		USER_BIRTHDAY
+
+		)
+		VALUES
+		(
+		#{userId},
+		#{userPwd},
+		#{userName},
+		#{gender},
+		#{email},
+		#{address},
+		#{phone},
+		#{birthday}
+		)
+	</select>
+
+	<!-- 회원탈퇴 -->
+	<update id="deleteMember" parameterType="Member">
+		UPDATE MEMBER
+		SET USER_DELFLAG = 'Y'
+		SET USER_DELETE_DATE = SYSDATE
+		WHERE USER_ID = #{userId}
+		AND USER_PWD = #{userPwd}
+		AND USER_NAME = #{userName}
+		AND USER_BIRTHDAY = #{birthday}
+	</update>
+
+	<!-- 아이디 중복확인 -->
+	<select id="checkId" resultType="_int">
+		SELECT count(*)
+		FROM MEMBER
+		WHERE USER_ID = #{userId}
+	</select>
+
+	<select id="searchMembersByNameAndPhone" parameterType="map"
+		resultMap="memberResultSet">
+		SELECT USER_ID, USER_NAME, USER_PHONE
+		FROM MEMBER
+		WHERE USER_NAME = #{searchName}
+		AND USER_PHONE = #{searchPhone}
+	</select>
+
 
 </mapper>

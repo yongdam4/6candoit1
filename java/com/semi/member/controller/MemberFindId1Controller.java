@@ -25,6 +25,9 @@ public class MemberFindId1Controller extends HttpServlet {
         // 검색 조건인 이름과 전화번호를 가져옴
         String searchName = request.getParameter("searchName");
         String searchPhone = request.getParameter("searchPhone");
+        
+        System.out.println("searchName: " + searchName);
+        System.out.println("searchPhone: " + searchPhone);
 
         List<Member> searchResults = null;
 
@@ -37,6 +40,7 @@ public class MemberFindId1Controller extends HttpServlet {
 
         // 검색 결과를 request에 저장하고 JSP로 전달
         request.setAttribute("memberList", searchResults);
+        
         request.getRequestDispatcher("/views/jsp/FindId1.jsp").forward(request, response);
     }
 
